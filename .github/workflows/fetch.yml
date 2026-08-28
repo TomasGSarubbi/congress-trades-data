@@ -5,6 +5,11 @@ on:
     # 12:30 UTC = 09:30 en Buenos Aires. Corre todos los días.
     - cron: "30 12 * * *"
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scraper/**"
+      - ".github/workflows/fetch.yml"
 
 permissions:
   contents: write
