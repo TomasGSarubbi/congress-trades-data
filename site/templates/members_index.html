@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set page_id = 'members' %}
+{% block title %}Members of Congress who disclosed trades | {{ site.name }}{% endblock %}
+{% block description %}Every member of the US Congress with a stock transaction disclosed in the current window, with trade counts and total amounts disclosed.{% endblock %}
+{% block canonical %}/members.html{% endblock %}
+{% block content %}
+<h1>Members</h1>
+<p class="lede">Everyone with at least one disclosed transaction in the current window.</p>
+<p class="stamp">{{ members | length }} members · last updated {{ as_of | pretty_date }}</p>
+<div class="cardgrid">
+{% for mem in members %}
+  <a class="card" href="member/{{ mem.slug }}.html">
+    <div class="card-title">{{ m.party(mem) }} {{ mem.name }}</div>
+    <div class="card-sub">{{ mem.chamber }}{% if mem.state %} · {{ mem.state }}{% endif %} · {{ mem.count }} trade{{ 's' if mem.count != 1 else '' }}</div>
+    <div class="card-sub">{{ mem.total | range_money }}</div>
+  </a>
+{% endfor %}
+</div>
+{% endblock %}

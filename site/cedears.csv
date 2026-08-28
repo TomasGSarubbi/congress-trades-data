@@ -1,0 +1,94 @@
+# CEDEARs available on BYMA (Buenos Aires) for US-listed tickers.
+# ratio = CEDEARs per 1 underlying US share, written N:1.
+#
+# IMPORTANT: ratios change with splits, spin-offs and issuer adjustments.
+# Only the rows marked note=CONFIRMED were supplied as known-good. Every other
+# row carries note=VERIFY and MUST be checked against the BYMA / Comafi CEDEAR
+# programme listing before being relied on. The site renders VERIFY rows with a
+# visible "unverified ratio" marker.
+#
+# A ticker is listed here ONLY if a CEDEAR is believed to exist for it. When in
+# doubt, the row is omitted entirely - an absent row shows "no CEDEAR" on the
+# site, which is the safe error.
+ticker_us,ratio,available,note
+AAPL,20:1,yes,CONFIRMED
+MSFT,15:1,yes,CONFIRMED
+NVDA,24:1,yes,CONFIRMED
+GOOGL,58:1,yes,CONFIRMED
+AMZN,144:1,yes,CONFIRMED
+TSLA,15:1,yes,CONFIRMED
+META,24:1,yes,CONFIRMED
+INTC,10:1,yes,CONFIRMED
+KO,5:1,yes,CONFIRMED
+JPM,15:1,yes,VERIFY
+BAC,10:1,yes,VERIFY
+WFC,5:1,yes,VERIFY
+C,5:1,yes,VERIFY
+GS,30:1,yes,VERIFY
+MS,6:1,yes,VERIFY
+AXP,15:1,yes,VERIFY
+V,12:1,yes,VERIFY
+MA,20:1,yes,VERIFY
+PYPL,4:1,yes,VERIFY
+BRKB,20:1,yes,VERIFY
+WMT,12:1,yes,VERIFY
+COST,40:1,yes,VERIFY
+HD,20:1,yes,VERIFY
+LOW,12:1,yes,VERIFY
+TGT,8:1,yes,VERIFY
+MCD,15:1,yes,VERIFY
+SBUX,6:1,yes,VERIFY
+NKE,8:1,yes,VERIFY
+DIS,8:1,yes,VERIFY
+NFLX,24:1,yes,VERIFY
+PG,10:1,yes,VERIFY
+PEP,10:1,yes,VERIFY
+JNJ,10:1,yes,VERIFY
+PFE,3:1,yes,VERIFY
+MRK,5:1,yes,VERIFY
+ABT,5:1,yes,VERIFY
+BMY,3:1,yes,VERIFY
+LLY,30:1,yes,VERIFY
+UNH,30:1,yes,VERIFY
+XOM,6:1,yes,VERIFY
+CVX,8:1,yes,VERIFY
+CSCO,4:1,yes,VERIFY
+ORCL,8:1,yes,VERIFY
+IBM,10:1,yes,VERIFY
+AMD,8:1,yes,VERIFY
+QCOM,6:1,yes,VERIFY
+TXN,8:1,yes,VERIFY
+ADBE,24:1,yes,VERIFY
+CRM,12:1,yes,VERIFY
+AVGO,30:1,yes,VERIFY
+MU,4:1,yes,VERIFY
+TSM,8:1,yes,VERIFY
+BABA,9:1,yes,VERIFY
+JD,3:1,yes,VERIFY
+MELI,60:1,yes,VERIFY
+GLOB,10:1,yes,VERIFY
+VALE,1:1,yes,VERIFY
+PBR,4:1,yes,VERIFY
+GOLD,2:1,yes,VERIFY
+FCX,3:1,yes,VERIFY
+X,2:1,yes,VERIFY
+AA,3:1,yes,VERIFY
+CAT,12:1,yes,VERIFY
+BA,12:1,yes,VERIFY
+GE,6:1,yes,VERIFY
+MMM,8:1,yes,VERIFY
+HON,8:1,yes,VERIFY
+UPS,8:1,yes,VERIFY
+T,2:1,yes,VERIFY
+VZ,4:1,yes,VERIFY
+F,1:1,yes,VERIFY
+GM,3:1,yes,VERIFY
+SPY,20:1,yes,VERIFY
+QQQ,20:1,yes,VERIFY
+DIA,20:1,yes,VERIFY
+IWM,10:1,yes,VERIFY
+EEM,5:1,yes,VERIFY
+EFA,5:1,yes,VERIFY
+XLE,5:1,yes,VERIFY
+XLF,3:1,yes,VERIFY
+ARKK,5:1,yes,VERIFY
