@@ -1,20 +1,70 @@
 {% extends "base.html" %}
 {% import "_macros.html" as m with context %}
 {% set page_id = 'members' %}
-{% block title %}Members of Congress who disclosed trades | {{ site.name }}{% endblock %}
-{% block description %}Every member of the US Congress with a stock transaction disclosed in the current window, with trade counts and total amounts disclosed.{% endblock %}
+{% block title %}Every member of Congress we track | {{ site.name }}{% endblock %}
+{% block description %}All {{ members | length }} tracked members of the US Congress, showing who disclosed stock trades in the last 120 days and who did not.{% endblock %}
 {% block canonical %}/members.html{% endblock %}
 {% block content %}
-<h1>Members</h1>
-<p class="lede">Everyone with at least one disclosed transaction in the current window.</p>
-<p class="stamp">{{ members | length }} members · last updated {{ as_of | pretty_date }}</p>
-<div class="cardgrid">
-{% for mem in members %}
-  <a class="card" href="member/{{ mem.slug }}.html">
-    <div class="card-title">{{ m.party(mem) }} {{ mem.name }}</div>
-    <div class="card-sub">{{ mem.chamber }}{% if mem.state %} · {{ mem.state }}{% endif %} · {{ mem.count }} trade{{ 's' if mem.count != 1 else '' }}</div>
-    <div class="card-sub">{{ mem.total | range_money }}</div>
-  </a>
+<h1>Who we track</h1>
+<p class="lede">Every sitting member of Congress, plus former members whose filings still fall inside the window. {{ active }} of {{ members | length }} disclosed at least one trade in the last 120 days.</p>
+<p class="stamp">{{ members | length }} people tracked · last updated {{ as_of | pretty_date }}</p>
+
+<div class="note">
+Congress only. The President, the cabinet and federal agencies disclose through a separate system, and the Supreme Court through another — none of them are covered here. See <a href="methodology.html">who is not covered</a>.
+</div>
+
+<div class="filters">
+  <input id="q" type="search" placeholder="Search by name or state…" aria-label="Search members">
+  <select id="f-chamber" data-filter="chamber" aria-label="Filter by chamber">
+    <option value="">Both chambers</option>
+    <option value="Senate">Senate</option>
+    <option value="House">House</option>
+  </select>
+  <select id="f-party" data-filter="party" aria-label="Filter by party">
+    <option value="">All parties</option>
+    <option value="D">Democrat</option>
+    <option value="R">Republican</option>
+    <option value="I">Independent</option>
+  </select>
+  <label class="toggle"><input type="checkbox" data-filter="trades" value="1"> Only with trades</label>
+  <span id="result-count">{{ members | length }} people</span>
+</div>
+
+<div class="table-wrap">
+<table data-filterable="people">
+<thead>
+<tr>
+  <th data-sort="name">Member</th>
+  <th data-sort="chamber">Chamber</th>
+  <th data-sort="count">Trades</th>
+  <th data-sort="amount">Total disclosed</th>
+</tr>
+</thead>
+<tbody>
+{% for p in members %}
+<tr data-chamber="{{ p.chamber }}" data-party="{{ p.party or '' }}"
+    data-trades="{{ '1' if p.has_trades else '0' }}"
+    data-search="{{ (p.name ~ ' ' ~ (p.state or '')) | lower }}"
+    data-name="{{ p.name }}" data-count="{{ p.count }}"
+    data-amount="{{ p.total[0] }}">
+  <td data-label="Member">
+    <div>
+      {% if p.has_trades %}
+      <a class="c-member" href="member/{{ p.slug }}.html">{{ m.party(p) }} {{ p.name }}</a>
+      {% else %}
+      <a class="c-member c-quiet" href="member/{{ p.slug }}.html">{{ m.party(p) }} {{ p.name }}</a>
+      {% endif %}
+    </div>
+  </td>
+  <td data-label="Chamber"><span class="c-sub">{{ p.chamber }}{% if p.state %} · {{ p.state }}{% endif %}</span></td>
+  <td data-label="Trades"><span class="num">{% if p.has_trades %}{{ p.count }}{% else %}<span class="c-sub">—</span>{% endif %}</span></td>
+  <td data-label="Total disclosed">
+    {% if p.has_trades %}<span class="amount-text">{{ p.total | range_money }}</span>
+    {% else %}<span class="c-sub">No trades in window</span>{% endif %}
+  </td>
+</tr>
 {% endfor %}
+</tbody>
+</table>
 </div>
 {% endblock %}

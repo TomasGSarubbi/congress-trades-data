@@ -51,12 +51,12 @@
 <h2>Latest {{ recent | length }} trades</h2>
 <div class="filters">
   <input id="q" type="search" placeholder="Search member, asset or ticker…" aria-label="Search trades">
-  <select id="f-chamber" aria-label="Filter by chamber">
+  <select id="f-chamber" data-filter="chamber" aria-label="Filter by chamber">
     <option value="">All chambers</option>
     <option value="Senate">Senate</option>
     <option value="House">House</option>
   </select>
-  <select id="f-direction" aria-label="Filter by trade type">
+  <select id="f-direction" data-filter="direction" aria-label="Filter by trade type">
     <option value="">Buys and sells</option>
     <option value="buy">Buys only</option>
     <option value="sell">Sells only</option>

@@ -288,3 +288,8 @@ tbody tr:hover { background: var(--page); }
   .c-asset { max-width: 22ch; }
   #result-count { margin-left: 0; width: 100%; }
 }
+
+/* roster */
+.toggle { display: inline-flex; align-items: center; gap: 6px; font-size: .84rem; color: var(--ink-2); white-space: nowrap; }
+.toggle input { accent-color: var(--party-d); }
+.c-quiet { color: var(--ink-2); font-weight: 500; }

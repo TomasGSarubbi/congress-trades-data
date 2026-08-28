@@ -67,3 +67,28 @@ def test_no_wall_clock_anywhere_in_site_package():
         src += p.read_text()
     for banned in ("datetime.now(", "date.today(", "time.time("):
         assert banned not in src, f"non-deterministic call {banned} found"
+
+
+def test_member_slug_is_canonical_from_the_roster_not_the_filing():
+    """One person, one URL - even when filings spell the name differently."""
+    row = {"chamber": "Senate", "member": "David H Mccormick", "owner": "Self",
+           "ticker": "AAPL", "asset": "Apple Inc", "asset_type": "ST",
+           "tx_type": "Purchase", "tx_date": "01/01/2026",
+           "filed_date": "01/10/2026", "amount": "$1,001 - $15,000",
+           "source": "http://x", "id": "s"}
+    members = {"david mccormick": {"name": "David McCormick", "party": "R",
+                                   "state": "PA", "chamber": "Senate",
+                                   "slug": "david-mccormick"}}
+    rec = build.build_records([row], members, {})[0]
+    assert rec["member_slug"] == "david-mccormick"
+
+
+def test_unmatched_member_still_gets_a_slug_from_the_filing_name():
+    row = {"chamber": "House", "member": "Unknown Person", "owner": "Self",
+           "ticker": None, "asset": "X", "asset_type": "ST",
+           "tx_type": "Purchase", "tx_date": "01/01/2026",
+           "filed_date": "01/10/2026", "amount": "$1,001 - $15,000",
+           "source": "http://x", "id": "u"}
+    rec = build.build_records([row], {}, {})[0]
+    assert rec["member_slug"] == "unknown-person"
+    assert rec["party"] is None

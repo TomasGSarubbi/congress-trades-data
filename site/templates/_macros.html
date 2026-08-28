@@ -24,7 +24,7 @@
 
 {% macro trade_table(rows, base, filterable=False) -%}
 <div class="table-wrap">
-<table{% if filterable %} data-filterable{% endif %}>
+<table{% if filterable %} data-filterable="trades"{% endif %}>
 <thead>
 <tr>
   <th data-sort="member">Member</th>

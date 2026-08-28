@@ -11,6 +11,7 @@
 <meta property="og:description" content="{{ self.description() }}">
 <meta property="og:url" content="{{ site.url }}{% block canonical %}/{% endblock %}">
 <meta name="twitter:card" content="summary">
+{% block robots %}{% endblock %}
 <link rel="canonical" href="{{ site.url }}{{ self.canonical() }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ base }}feed.xml">
 <link rel="stylesheet" href="{{ base }}styles.css">

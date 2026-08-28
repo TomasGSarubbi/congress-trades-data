@@ -80,7 +80,8 @@ def _extreme_delay(records, pick):
     return pick(scored, key=lambda r: (r["delay"], r["id"]))
 
 
-def render_site(records, meta, cedears, out_dir, assets_dir, template_dir, site):
+def render_site(records, meta, cedears, roster, out_dir, assets_dir,
+                template_dir, site):
     out_dir = pathlib.Path(out_dir)
     if out_dir.exists():
         shutil.rmtree(out_dir)
@@ -125,10 +126,21 @@ def render_site(records, meta, cedears, out_dir, assets_dir, template_dir, site)
     for r in records:
         by_member[r["member_slug"]].append(r)
 
+    # Every tracked person gets a page, whether or not they traded. People who
+    # appear in filings but are not on the roster are appended so no disclosed
+    # trade is ever orphaned.
+    people = {p["slug"]: dict(p) for p in roster}
+    for slug, rows in by_member.items():
+        if slug not in people:
+            first = rows[0]
+            people[slug] = {"slug": slug, "name": first["member"],
+                            "party": first["party"], "state": first["state"],
+                            "chamber": first["chamber"]}
+
     members_index = []
-    for slug in sorted(by_member):
-        rows = by_member[slug]
-        first = rows[0]
+    for slug in sorted(people):
+        person = people[slug]
+        rows = by_member.get(slug, [])
         stats = {
             "total": total_range(rows),
             "count": len(rows),
@@ -138,12 +150,14 @@ def render_site(records, meta, cedears, out_dir, assets_dir, template_dir, site)
             "sells": sum(1 for r in rows if r["direction"] == "sell"),
             "late": sum(1 for r in rows if r["late"]),
         }
-        members_index.append({"slug": slug, "name": first["member"],
-                              "party": first["party"], "state": first["state"],
-                              "chamber": first["chamber"], "count": len(rows),
-                              "total": stats["total"]})
+        member = {"member": person["name"], "member_slug": slug,
+                  "party": person.get("party"), "state": person.get("state"),
+                  "chamber": person.get("chamber") or "—"}
+        members_index.append({**member, "slug": slug, "name": person["name"],
+                              "count": len(rows), "total": stats["total"],
+                              "has_trades": bool(rows)})
         page("member.html", f"member/{slug}.html",
-             member=first, rows=rows, stats=stats)
+             member=member, rows=rows, stats=stats)
 
     # ---- tickers ---------------------------------------------------------
     by_ticker = defaultdict(list)
@@ -180,7 +194,8 @@ def render_site(records, meta, cedears, out_dir, assets_dir, template_dir, site)
     # ---- static pages ----------------------------------------------------
     page("methodology.html", "methodology.html")
     page("404.html", "404.html")
-    page("members_index.html", "members.html", members=members_index)
+    page("members_index.html", "members.html", members=members_index,
+         active=sum(1 for x in members_index if x["has_trades"]))
     page("tickers_index.html", "tickers.html", tickers=tickers_index)
 
     # ---- feed, sitemap, robots ------------------------------------------
@@ -246,7 +261,9 @@ def _write_feed(out_dir, records, site):
 def _write_sitemap(out_dir, members_index, tickers_index, site):
     urls = ["/", "/cedears.html", "/methodology.html", "/members.html",
             "/tickers.html"]
-    urls += [f"/member/{m['slug']}.html" for m in members_index]
+    # Pages with no disclosed trades are noindex, so they stay out of the
+    # sitemap until they have something to say.
+    urls += [f"/member/{m['slug']}.html" for m in members_index if m["has_trades"]]
     urls += [f"/ticker/{t['slug']}.html" for t in tickers_index]
     body = "\n".join(
         f"  <url><loc>{site['url']}{u}</loc></url>" for u in urls)

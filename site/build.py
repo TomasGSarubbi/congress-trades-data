@@ -17,7 +17,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from lib.amounts import bucket_index, format_range, parse_amount
 from lib.clean import clean_asset, recover_ticker, slugify
 from lib.enrich import (LATE_THRESHOLD_DAYS, delay_days, direction,
-                        direction_label, load_cedears, load_members,
+                        direction_label, load_cedears, load_roster,
                         lookup_member, parse_date)
 from lib import render
 
@@ -56,7 +56,10 @@ def build_records(rows, members, cedears):
         records.append({
             "chamber": row.get("chamber") or "—",
             "member": member,
-            "member_slug": slugify(member),
+            # Canonical slug: one person, one URL, even when filings spell
+            # the name differently. Falls back to the filing name when the
+            # person is not on the roster.
+            "member_slug": (info or {}).get("slug") or slugify(member),
             "party": (info or {}).get("party") or None,
             "state": (info or {}).get("state") or None,
             "owner": row.get("owner") or "—",
@@ -95,7 +98,7 @@ def build_records(rows, members, cedears):
 def main():
     rows = json.loads((DATA / "transactions.json").read_text())
     meta = json.loads((DATA / "meta.json").read_text())
-    members = load_members(HERE / "members.csv")
+    members, roster = load_roster(HERE / "legislators.csv", HERE / "members.csv")
     cedears = load_cedears(HERE / "cedears.csv")
 
     records = build_records(rows, members, cedears)
@@ -104,6 +107,7 @@ def main():
         records=records,
         meta=meta,
         cedears=cedears,
+        roster=roster,
         out_dir=OUT,
         assets_dir=HERE / "assets",
         template_dir=HERE / "templates",
@@ -111,7 +115,7 @@ def main():
               "newsletter_url": NEWSLETTER_URL,
               "late_threshold": LATE_THRESHOLD_DAYS},
     )
-    print(f"Built {len(records)} trades -> {OUT}")
+    print(f"Built {len(records)} trades, {len(roster)} tracked people -> {OUT}")
 
 
 if __name__ == "__main__":

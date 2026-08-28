@@ -5,12 +5,19 @@
 {% block title %}{{ member.member }} — stock trades | {{ site.name }}{% endblock %}
 {% block description %}Every stock trade disclosed by {{ member.member }} ({{ member.chamber }}{% if member.state %}, {{ member.state }}{% endif %}) under the STOCK Act: what they bought and sold, how much, and how long disclosure took.{% endblock %}
 {% block canonical %}/member/{{ member.member_slug }}.html{% endblock %}
+{% block robots %}{% if not rows %}<meta name="robots" content="noindex,follow">{% endif %}{% endblock %}
 {% block content %}
 <h1>{{ member.member }}</h1>
 <p class="lede">{{ m.party(member) }}
 {% if member.party == 'D' %}Democrat{% elif member.party == 'R' %}Republican{% elif member.party == 'I' %}Independent{% else %}Party unknown{% endif %}
 · {{ member.chamber }}{% if member.state %} · {{ member.state }}{% endif %}</p>
 <p class="stamp">{{ stats.count }} trades in the rolling window · last updated {{ as_of | pretty_date }}</p>
+
+{% if not rows %}
+<div class="disclaimer">
+<strong>No disclosed transactions in the last 120 days.</strong> This member is tracked, but has filed no periodic transaction report inside the current window. That may mean they did not trade, that they hold assets not subject to disclosure, or that a report was filed on paper and is therefore not machine-readable. See the <a href="../methodology.html">methodology</a>.
+</div>
+{% endif %}
 
 <div class="kpi-row">
   <div class="kpi">

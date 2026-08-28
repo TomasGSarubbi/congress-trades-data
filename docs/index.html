@@ -77,12 +77,12 @@
 <h2>Latest 50 trades</h2>
 <div class="filters">
   <input id="q" type="search" placeholder="Search member, asset or ticker…" aria-label="Search trades">
-  <select id="f-chamber" aria-label="Filter by chamber">
+  <select id="f-chamber" data-filter="chamber" aria-label="Filter by chamber">
     <option value="">All chambers</option>
     <option value="Senate">Senate</option>
     <option value="House">House</option>
   </select>
-  <select id="f-direction" aria-label="Filter by trade type">
+  <select id="f-direction" data-filter="direction" aria-label="Filter by trade type">
     <option value="">Buys and sells</option>
     <option value="buy">Buys only</option>
     <option value="sell">Sells only</option>
@@ -90,7 +90,7 @@
   <span id="result-count">50 trades</span>
 </div>
 <div class="table-wrap">
-<table data-filterable>
+<table data-filterable="trades">
 <thead>
 <tr>
   <th data-sort="member">Member</th>
@@ -111,10 +111,10 @@
   <td data-label="Member">
     <div>
       <a class="c-member" href="member/christopher-a-coons.html">Christopher A Coons</a>
-      <div class="c-sub"><span class="party" title="Party unknown">
-  <span class="dot"></span>
-  <span class="party-letter">?</span>
-</span> Senate · Spouse</div>
+      <div class="c-sub"><span class="party" title="Democrat">
+  <span class="dot dot--d"></span>
+  <span class="party-letter">D</span>
+</span> Senate · DE · Spouse</div>
     </div>
   </td>
   <td data-label="Asset">
@@ -144,7 +144,7 @@
     data-delay="8">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -178,7 +178,7 @@
     data-delay="9">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -212,7 +212,7 @@
     data-delay="10">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -246,7 +246,7 @@
     data-delay="15">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -280,7 +280,7 @@
     data-delay="16">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -314,7 +314,7 @@
     data-delay="17">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -348,7 +348,7 @@
     data-delay="17">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -382,7 +382,7 @@
     data-delay="21">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -416,7 +416,7 @@
     data-delay="22">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -450,7 +450,7 @@
     data-delay="23">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -484,7 +484,7 @@
     data-delay="24">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -518,7 +518,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -552,7 +552,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -586,7 +586,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -620,7 +620,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -654,7 +654,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -688,7 +688,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -722,7 +722,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -756,7 +756,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -790,7 +790,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -824,7 +824,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -858,7 +858,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -892,7 +892,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -926,7 +926,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -960,7 +960,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -994,7 +994,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1028,7 +1028,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1062,7 +1062,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1096,7 +1096,7 @@
     data-delay="27">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1130,7 +1130,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1164,7 +1164,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1198,7 +1198,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1232,7 +1232,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1266,7 +1266,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1300,7 +1300,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1334,7 +1334,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1368,7 +1368,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1402,7 +1402,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1436,7 +1436,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1470,7 +1470,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1504,7 +1504,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1538,7 +1538,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1572,7 +1572,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1606,7 +1606,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1640,7 +1640,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1674,7 +1674,7 @@
     data-delay="28">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>
@@ -1708,7 +1708,7 @@
     data-delay="30">
   <td data-label="Member">
     <div>
-      <a class="c-member" href="member/david-h-mccormick.html">David H Mccormick</a>
+      <a class="c-member" href="member/david-mccormick.html">David H Mccormick</a>
       <div class="c-sub"><span class="party" title="Republican">
   <span class="dot dot--r"></span>
   <span class="party-letter">R</span>

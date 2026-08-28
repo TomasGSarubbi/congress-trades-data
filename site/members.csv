@@ -1,55 +1,21 @@
-name,party,state,chamber
-Nancy Pelosi,D,CA,House
-John Boozman,R,AR,Senate
-David McCormick,R,PA,Senate
-Michael Rulli,R,OH,House
-Kelly Morrison,D,MN,House
-Suzan DelBene,D,WA,House
-William Keating,D,MA,House
-Ro Khanna,D,CA,House
-Marjorie Taylor Greene,R,GA,House
-Josh Gottheimer,D,NJ,House
-Dan Crenshaw,R,TX,House
-Michael McCaul,R,TX,House
-Debbie Wasserman Schultz,D,FL,House
-Virginia Foxx,R,NC,House
-Daniel Goldman,D,NY,House
-Julie Johnson,D,TX,House
-Gilbert Cisneros,D,CA,House
-Rob Bresnahan,R,PA,House
-Cleo Fields,D,LA,House
-Jared Moskowitz,D,FL,House
-Nicole Malliotakis,R,NY,House
-John James,R,MI,House
-Pete Sessions,R,TX,House
-Mike Kelly,R,PA,House
-Kevin Hern,R,OK,House
-August Pfluger,R,TX,House
-Lloyd Doggett,D,TX,House
-Greg Steube,R,FL,House
-Scott Franklin,R,FL,House
-Blake Moore,R,UT,House
-Thomas Kean,R,NJ,House
-Earl Blumenauer,D,OR,House
-Kathy Manning,D,NC,House
-Tommy Tuberville,R,AL,Senate
-Markwayne Mullin,R,OK,Senate
-Rick Scott,R,FL,Senate
-Sheldon Whitehouse,D,RI,Senate
-Bill Hagerty,R,TN,Senate
-Ashley Moody,R,FL,Senate
-Ron Wyden,D,OR,Senate
-Susan Collins,R,ME,Senate
-Jerry Moran,R,KS,Senate
-John Hickenlooper,D,CO,Senate
-Gary Peters,D,MI,Senate
-Angus King,I,ME,Senate
-Tina Smith,D,MN,Senate
-Katie Britt,R,AL,Senate
-Ted Cruz,R,TX,Senate
-Shelley Moore Capito,R,WV,Senate
-Mark Warner,D,VA,Senate
-Tim Kaine,D,VA,Senate
-Chris Coons,D,DE,Senate
-Jim Banks,R,IN,Senate
-Bernie Moreno,R,OH,Senate
+# Supplements site/legislators.csv, which carries only CURRENT members.
+#
+# Two kinds of row:
+#   1. A person the roster does not contain - typically a former member whose
+#      filings still fall inside the rolling 120-day window. Fill in
+#      party/state/chamber.
+#   2. An ALIAS: a name spelling used in filings that differs from the roster's
+#      formal name. Leave party/state/chamber empty and set same_as to the
+#      roster's exact full name. This links the spelling without seating a
+#      second copy of the person in the roster.
+#
+# Never guess a party. An unmatched member renders "Party unknown", which is
+# correct; a wrong party is not.
+name,party,state,chamber,same_as
+Marjorie Taylor Greene,R,GA,House,
+Earl Blumenauer,D,OR,House,
+Kathy Manning,D,NC,House,
+Markwayne Mullin,R,OK,Senate,
+Chris Coons,,,,Christopher A. Coons
+Greg Steube,,,,W. Gregory Steube
+Rob Bresnahan,,,,"Robert P. Bresnahan, Jr."
