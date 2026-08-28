@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ site.name }}{% endblock %}</title>
+<meta name="description" content="{% block description %}{{ site.tagline }}{% endblock %}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ site.url }}{% block canonical %}/{% endblock %}">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="{{ site.url }}{{ self.canonical() }}">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ base }}feed.xml">
+<link rel="stylesheet" href="{{ base }}styles.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{ base }}index.html"><span class="dot-mark"></span>{{ site.name }}</a>
+    <nav class="nav">
+      <a href="{{ base }}index.html"{% if page_id == 'index' %} aria-current="page"{% endif %}>Briefing</a>
+      <a href="{{ base }}members.html"{% if page_id == 'members' %} aria-current="page"{% endif %}>Members</a>
+      <a href="{{ base }}tickers.html"{% if page_id == 'tickers' %} aria-current="page"{% endif %}>Tickers</a>
+      <a href="{{ base }}cedears.html"{% if page_id == 'cedears' %} aria-current="page"{% endif %}>CEDEARs</a>
+      <a href="{{ base }}methodology.html"{% if page_id == 'methodology' %} aria-current="page"{% endif %}>Methodology</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+{% block content %}{% endblock %}
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span class="foot-brand">{{ site.name }} · Made in Buenos Aires</span>
+    <a href="{{ base }}methodology.html">Methodology &amp; disclaimer</a>
+    <a href="{{ base }}feed.xml">RSS</a>
+    <span class="newsletter-slot">
+      {% if site.newsletter_url and site.newsletter_url != '#' %}
+      <a href="{{ site.newsletter_url }}">Subscribe to the newsletter →</a>
+      {% else %}
+      Newsletter coming soon
+      {% endif %}
+    </span>
+  </div>
+</footer>
+<script src="{{ base }}app.js" defer></script>
+</body>
+</html>

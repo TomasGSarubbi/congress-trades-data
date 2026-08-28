@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set page_id = 'tickers' %}
+{% set base = '../' %}
+{% block title %}{{ ticker.ticker }} — who in Congress traded it | {{ site.name }}{% endblock %}
+{% block description %}Which members of Congress traded {{ ticker.ticker }}{% if ticker.asset %} ({{ ticker.asset }}){% endif %}, in which direction, for how much, and when they disclosed it.{% endblock %}
+{% block canonical %}/ticker/{{ ticker.ticker_slug }}.html{% endblock %}
+{% block content %}
+<h1>{{ ticker.ticker }}</h1>
+<p class="lede">{{ ticker.asset }}</p>
+<p class="stamp">{{ stats.count }} trades by {{ stats.members | length }} member{{ 's' if stats.members | length != 1 else '' }} · last updated {{ as_of | pretty_date }}</p>
+
+<div class="kpi-row">
+  <div class="kpi">
+    <div class="kpi-label">Buys / sells</div>
+    <div class="kpi-value">{{ stats.buys }} / {{ stats.sells }}</div>
+    <div class="kpi-sub">{{ stats.count }} trades total</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Total traded</div>
+    <div class="kpi-value" style="font-size:1.05rem">{{ stats.total | range_money }}</div>
+    <div class="kpi-sub">Ranges, as disclosed</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">From Argentina</div>
+    <div class="kpi-value" style="font-size:1.05rem">{% if ticker.cedear %}CEDEAR {{ ticker.cedear.ratio }}{% else %}No CEDEAR{% endif %}</div>
+    <div class="kpi-sub">{% if ticker.cedear %}<a href="../cedears.html">How this works</a>{% else %}Not replicable on BYMA{% endif %}</div>
+  </div>
+</div>
+
+<h2>Who traded it</h2>
+{{ m.trade_table(rows, '../') }}
+{% endblock %}

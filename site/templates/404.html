@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Page not found | {{ site.name }}{% endblock %}
+{% block description %}That page does not exist on Capitol Radar.{% endblock %}
+{% block canonical %}/404.html{% endblock %}
+{% block content %}
+<h1>Not found</h1>
+<p class="lede">That page does not exist. It may have been a member or ticker that has since dropped out of the rolling 120-day window.</p>
+<p><a href="index.html">Back to the briefing →</a></p>
+{% endblock %}

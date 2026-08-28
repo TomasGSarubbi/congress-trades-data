@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% set page_id = 'tickers' %}
+{% block title %}Tickers traded by Congress | {{ site.name }}{% endblock %}
+{% block description %}Every ticker symbol appearing in congressional STOCK Act disclosures in the current window, with trade counts and CEDEAR availability.{% endblock %}
+{% block canonical %}/tickers.html{% endblock %}
+{% block content %}
+<h1>Tickers</h1>
+<p class="lede">Every symbol appearing in the current window. Roughly two thirds of disclosed transactions carry no ticker at all — see the <a href="methodology.html">methodology</a>.</p>
+<p class="stamp">{{ tickers | length }} symbols · last updated {{ as_of | pretty_date }}</p>
+<div class="cardgrid">
+{% for t in tickers %}
+  <a class="card" href="ticker/{{ t.slug }}.html">
+    <div class="card-title">{{ t.ticker }}{% if t.cedear %} <span class="badge badge--cedear">🇦🇷 CEDEAR</span>{% endif %}</div>
+    <div class="card-sub">{{ t.asset }}</div>
+    <div class="card-sub">{{ t.count }} trade{{ 's' if t.count != 1 else '' }}</div>
+  </a>
+{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set page_id = 'members' %}
+{% set base = '../' %}
+{% block title %}{{ member.member }} — stock trades | {{ site.name }}{% endblock %}
+{% block description %}Every stock trade disclosed by {{ member.member }} ({{ member.chamber }}{% if member.state %}, {{ member.state }}{% endif %}) under the STOCK Act: what they bought and sold, how much, and how long disclosure took.{% endblock %}
+{% block canonical %}/member/{{ member.member_slug }}.html{% endblock %}
+{% block content %}
+<h1>{{ member.member }}</h1>
+<p class="lede">{{ m.party(member) }}
+{% if member.party == 'D' %}Democrat{% elif member.party == 'R' %}Republican{% elif member.party == 'I' %}Independent{% else %}Party unknown{% endif %}
+· {{ member.chamber }}{% if member.state %} · {{ member.state }}{% endif %}</p>
+<p class="stamp">{{ stats.count }} trades in the rolling window · last updated {{ as_of | pretty_date }}</p>
+
+<div class="kpi-row">
+  <div class="kpi">
+    <div class="kpi-label">Total traded</div>
+    <div class="kpi-value" style="font-size:1.05rem">{{ stats.total | range_money }}</div>
+    <div class="kpi-sub">Disclosure gives ranges, not exact figures</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Buys / sells</div>
+    <div class="kpi-value">{{ stats.buys }} / {{ stats.sells }}</div>
+    <div class="kpi-sub">{{ stats.count }} trades total</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Average delay</div>
+    <div class="kpi-value">{% if stats.avg_delay is not none %}{{ stats.avg_delay }}d{% else %}—{% endif %}</div>
+    <div class="kpi-sub">Legal limit is {{ site.late_threshold }} days</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Late filings</div>
+    <div class="kpi-value">{{ stats.late }}</div>
+    <div class="kpi-sub">Disclosed past the deadline</div>
+  </div>
+</div>
+
+{% if stats.top_tickers %}
+<h2>Most traded symbols</h2>
+<ul class="barlist">
+  {% set top = stats.top_tickers[0][1] %}
+  {% for t, n in stats.top_tickers %}
+  <li>
+    <a class="bl-name c-ticker" href="../ticker/{{ t | lower }}.html">{{ t }}</a>
+    <span class="bl-track"><span class="bl-fill" style="width: {{ (n / top * 100) | round(1) }}%"></span></span>
+    <span class="bl-n">{{ n }}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+<h2>All trades</h2>
+{{ m.trade_table(rows, '../') }}
+{% endblock %}

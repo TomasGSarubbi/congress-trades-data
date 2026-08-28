@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capitol Radar</title>
+    <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+    <description>Congressional stock trades, tracked daily.</description>
+    <language>en</language>
+    <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>47 congressional trades disclosed on 27 Aug 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-08-27</guid>
+      <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
+      <description>47 trades disclosed by 1 member (12 buys, 35 sells). Largest: David H Mccormick — ALLEGHENY CNTY HIGHER ED BLDG REV, SELL · partial, $250,001 – $500,000.</description>
+    </item>
+    <item>
+      <title>13 congressional trades disclosed on 25 Aug 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-08-25</guid>
+      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
+      <description>13 trades disclosed by 3 members (1 buys, 12 sells). Largest: Michael Rulli — Alphabet Inc. - Class A Common Stock (GOOGL), SELL · partial, $50,001 – $100,000.</description>
+    </item>
+    <item>
+      <title>14 congressional trades disclosed on 24 Aug 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-08-24</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <description>14 trades disclosed by 1 member (0 buys, 14 sells). Largest: John Boozman — First Trust Global Tactical Commodity Strategy Fun (FTGC), SELL · partial, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>10 congressional trades disclosed on 21 Aug 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-08-21</guid>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <description>10 trades disclosed by 2 members (9 buys, 1 sells). Largest: Nancy Pelosi — Bloom Energy Corporation Class A Common Stock (BE), BUY, $1,000,001 – $5,000,000.</description>
+    </item>
+  </channel>
+</rss>

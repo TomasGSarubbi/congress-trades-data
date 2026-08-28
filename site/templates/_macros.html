@@ -1,0 +1,80 @@
+{% macro party(rec) -%}
+<span class="party" title="{% if rec.party %}{{ {'D':'Democrat','R':'Republican','I':'Independent'}.get(rec.party, rec.party) }}{% else %}Party unknown{% endif %}">
+  <span class="dot{% if rec.party == 'D' %} dot--d{% elif rec.party == 'R' %} dot--r{% elif rec.party == 'I' %} dot--i{% endif %}"></span>
+  <span class="party-letter">{{ rec.party or '?' }}</span>
+</span>
+{%- endmacro %}
+
+{% macro pill(rec) -%}
+<span class="pill pill--{{ rec.direction if rec.direction in ['buy','sell'] else 'other' }}">
+  <span class="glyph" aria-hidden="true">{% if rec.direction == 'buy' %}▲{% elif rec.direction == 'sell' %}▼{% else %}●{% endif %}</span>{{ rec.direction_label }}</span>
+{%- endmacro %}
+
+{% macro meter(rec) -%}
+<span class="meter" role="img" aria-label="Amount bracket {{ rec.amount_bucket + 1 }} of 6">
+  {% for i in range(6) %}<span{% if i <= rec.amount_bucket %} class="s{{ i + 1 }}"{% endif %}></span>{% endfor %}
+</span>
+{%- endmacro %}
+
+{% macro delay_cell(rec) -%}
+{% if rec.delay is none %}<span class="num">—</span>
+{% elif rec.late %}<span class="badge badge--late" title="Filed beyond the STOCK Act's 45-day deadline">⚠ {{ rec.delay }}d · late</span>
+{% else %}<span class="num">{{ rec.delay }}d</span>{% endif %}
+{%- endmacro %}
+
+{% macro trade_table(rows, base, filterable=False) -%}
+<div class="table-wrap">
+<table{% if filterable %} data-filterable{% endif %}>
+<thead>
+<tr>
+  <th data-sort="member">Member</th>
+  <th>Asset</th>
+  <th data-sort="direction">Type</th>
+  <th data-sort="amount">Amount</th>
+  <th data-sort="txdate">Traded</th>
+  <th data-sort="fileddate">Disclosed</th>
+  <th data-sort="delay">Delay</th>
+</tr>
+</thead>
+<tbody>
+{% for r in rows %}
+<tr data-chamber="{{ r.chamber }}" data-direction="{{ r.direction }}"
+    data-search="{{ (r.member ~ ' ' ~ r.asset ~ ' ' ~ (r.ticker or '')) | lower }}"
+    data-member="{{ r.member }}" data-amount="{{ r.amount_lo or 0 }}"
+    data-txdate="{{ r.tx_date_sort }}" data-fileddate="{{ r.filed_date_sort }}"
+    data-delay="{{ r.delay if r.delay is not none else -1 }}">
+  <td data-label="Member">
+    <div>
+      <a class="c-member" href="{{ base }}member/{{ r.member_slug }}.html">{{ r.member }}</a>
+      <div class="c-sub">{{ party(r) }} {{ r.chamber }}{% if r.state %} · {{ r.state }}{% endif %}{% if r.owner and r.owner != 'Self' %} · {{ r.owner }}{% endif %}</div>
+    </div>
+  </td>
+  <td data-label="Asset">
+    <div>
+      <span class="c-asset">{{ r.asset }}</span>
+      {% if r.asset_detail %}<div class="c-sub">{{ r.asset_detail }}</div>{% endif %}
+      <div class="c-sub">
+        {% if r.ticker %}<a class="c-ticker" href="{{ base }}ticker/{{ r.ticker_slug }}.html">{{ r.ticker }}</a>{% if r.ticker_inferred %} <span class="badge badge--inferred" title="Symbol recovered from the filing text">inferred</span>{% endif %}
+        {% else %}<span>{{ r.asset_type }}</span>{% endif %}
+        {% if r.cedear %} <a class="badge badge--cedear" href="{{ base }}cedears.html" title="A CEDEAR for this ticker trades on BYMA">🇦🇷 CEDEAR</a>{% endif %}
+      </div>
+    </div>
+  </td>
+  <td data-label="Type">{{ pill(r) }}</td>
+  <td data-label="Amount">
+    <span class="amount">
+      <span class="amount-text">{{ r.amount_display }}</span>
+      {{ meter(r) }}
+    </span>
+  </td>
+  <td data-label="Traded"><span class="num">{{ r.tx_date_sort | pretty_date }}</span></td>
+  <td data-label="Disclosed"><span class="num"><a href="{{ r.source }}" rel="nofollow noopener">{{ r.filed_date_sort | pretty_date }}</a></span></td>
+  <td data-label="Delay">{{ delay_cell(r) }}</td>
+</tr>
+{% else %}
+<tr><td colspan="7" class="empty">No trades in this view.</td></tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{%- endmacro %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% set page_id = 'methodology' %}
+{% block title %}Methodology, limits and disclaimer | {{ site.name }}{% endblock %}
+{% block description %}Where Capitol Radar's data comes from, what the STOCK Act's 45-day rule requires, why amounts are ranges, what this dataset misses, and why none of it is investment advice.{% endblock %}
+{% block canonical %}/methodology.html{% endblock %}
+{% block content %}
+<h1>Methodology</h1>
+<p class="lede">What this data is, where it comes from, and — just as important — what it leaves out.</p>
+<p class="stamp">Last updated {{ as_of | pretty_date }}</p>
+
+<div class="prose">
+<h2>Where the data comes from</h2>
+<p>Two official sources, scraped daily and never edited by hand:</p>
+<ul>
+  <li><strong>Senate</strong> — the Electronic Financial Disclosure system at <a href="https://efdsearch.senate.gov" rel="nofollow noopener">efdsearch.senate.gov</a>, which publishes Periodic Transaction Reports as HTML.</li>
+  <li><strong>House</strong> — the Clerk of the House at <a href="https://disclosures-clerk.house.gov" rel="nofollow noopener">disclosures-clerk.house.gov</a>, which publishes an annual index plus one PDF per report.</li>
+</ul>
+<p>Every row on this site links back to the filing it came from. If our reading of a document disagrees with the document, the document is right.</p>
+
+<h2>The 45-day rule</h2>
+<p>The STOCK Act of 2012 requires members of Congress to disclose covered transactions within <strong>45 days</strong>. That is the entire basis of this site's timing data, and it has one consequence worth stating plainly: <strong>this is transparency on a delay, not a live feed.</strong> By the time a trade appears here, it may be six weeks old. Trades disclosed past the deadline are marked <span class="badge badge--late">⚠ late</span>.</p>
+
+<h2>Why the amounts are ranges</h2>
+<p>The law only requires a bracket — "$1,001 – $15,000", "$50,001 – $100,000" — never an exact figure. So there is no exact figure to show you. Where we total a member's activity we add the floors and the ceilings separately and present the result as a range. A small number of filings disclose only a floor with no upper bound; those are shown as, for example, "$15,001+", and we never invent the missing ceiling.</p>
+
+<h2>What this dataset misses</h2>
+<ul>
+  <li><strong>Paper filings are omitted.</strong> Reports filed on paper and scanned as images are not machine-readable and do not appear here. They are a minority, but they are not nothing.</li>
+  <li><strong>Most rows have no ticker.</strong> Roughly two thirds of disclosed transactions are municipal bonds, structured notes, mutual funds or private holdings with no ticker symbol. They are shown, but they have no per-symbol page.</li>
+  <li><strong>Asset names arrive damaged.</strong> Extraction from the source PDFs leaves metadata fragments embedded in asset names. We repair the known patterns. Where the real name was destroyed upstream, we show the ticker and link the original filing rather than guess at a name.</li>
+  <li><strong>Party affiliation is looked up, not derived.</strong> It comes from a hand-maintained list. A member we cannot match with certainty shows "Party unknown" — we do not guess party from a name.</li>
+  <li><strong>Rolling window.</strong> The site covers the last 120 days of filings, not the full history.</li>
+  <li><strong>A disclosure is not a trade you can see.</strong> Filings report the trade date and a bracket, not a price, a counterparty, or a reason.</li>
+</ul>
+
+<h2>Who actually made the trade</h2>
+<p>Filings distinguish the member from a spouse, a dependent child, or a jointly held account. We show that in the Owner field. Many transactions attributed to a member were executed by a spouse or a managed trust the member may not direct.</p>
+</div>
+
+<div class="disclaimer">
+<strong>Disclaimer.</strong> Capitol Radar republishes public records of the United States government for educational and journalistic purposes. It is <strong>not investment advice</strong>, not a recommendation to buy or sell any security, and not a claim that any person named here has done anything improper. Disclosure under the STOCK Act is a legal obligation, not evidence of wrongdoing. Data may contain errors from extraction or from the filings themselves; always verify against the linked original before relying on anything you read here. Nothing on this site creates a client, advisory or fiduciary relationship.
+</div>
+{% endblock %}

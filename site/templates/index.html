@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m with context %}
+{% set page_id = 'index' %}
+{% block title %}{{ site.name }} — congressional stock trades, tracked daily{% endblock %}
+{% block description %}Every stock trade disclosed by members of the US Congress under the STOCK Act, updated daily. Who bought, who sold, how much, and how long they took to tell you.{% endblock %}
+{% block canonical %}/{% endblock %}
+{% block content %}
+<h1>The daily briefing</h1>
+<p class="lede">Every trade disclosed by members of the US Congress under the STOCK Act — who bought, who sold, and how long they took to say so.</p>
+<p class="stamp">Last updated {{ as_of | pretty_date }} · {{ total_trades }} trades in the rolling window</p>
+
+<div class="kpi-row">
+  <div class="kpi">
+    <div class="kpi-label">New this run</div>
+    <div class="kpi-value">{{ kpi.new_trades }}</div>
+    <div class="kpi-sub">{{ kpi.week_count }} disclosed in the last 7 days</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Largest this week</div>
+    <div class="kpi-value">{% if kpi.largest %}{{ kpi.largest.amount_lo | money }}+{% else %}—{% endif %}</div>
+    <div class="kpi-sub">{% if kpi.largest %}{{ kpi.largest.member }}{% else %}No trades this week{% endif %}</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Fastest disclosure</div>
+    <div class="kpi-value">{% if kpi.fastest %}{{ kpi.fastest.delay }}d{% else %}—{% endif %}</div>
+    <div class="kpi-sub">{% if kpi.fastest %}{{ kpi.fastest.member }}{% endif %}</div>
+  </div>
+  <div class="kpi">
+    <div class="kpi-label">Slowest disclosure</div>
+    <div class="kpi-value">{% if kpi.slowest %}{{ kpi.slowest.delay }}d{% else %}—{% endif %}</div>
+    <div class="kpi-sub">{% if kpi.slowest %}{{ kpi.slowest.member }}{% endif %}</div>
+  </div>
+</div>
+
+{% if play_of_week %}
+<div class="hero">
+  <div class="hero-eyebrow">Trade of the week</div>
+  <div class="hero-figure">{{ play_of_week.amount_display }}</div>
+  <div class="hero-who">{{ m.party(play_of_week) }} <a class="c-member" href="member/{{ play_of_week.member_slug }}.html">{{ play_of_week.member }}</a></div>
+  <div class="hero-what">{{ play_of_week.asset }}{% if play_of_week.ticker %} (<a class="c-ticker" href="ticker/{{ play_of_week.ticker_slug }}.html">{{ play_of_week.ticker }}</a>){% endif %}</div>
+  <div class="hero-meta">
+    {{ m.pill(play_of_week) }}
+    <span>Traded {{ play_of_week.tx_date_sort | pretty_date }}</span>
+    <span>Disclosed {{ play_of_week.filed_date_sort | pretty_date }}</span>
+    {{ m.delay_cell(play_of_week) }}
+    {% if play_of_week.cedear %}<a class="badge badge--cedear" href="cedears.html">🇦🇷 CEDEAR available</a>{% endif %}
+  </div>
+</div>
+{% endif %}
+
+<h2>Latest {{ recent | length }} trades</h2>
+<div class="filters">
+  <input id="q" type="search" placeholder="Search member, asset or ticker…" aria-label="Search trades">
+  <select id="f-chamber" aria-label="Filter by chamber">
+    <option value="">All chambers</option>
+    <option value="Senate">Senate</option>
+    <option value="House">House</option>
+  </select>
+  <select id="f-direction" aria-label="Filter by trade type">
+    <option value="">Buys and sells</option>
+    <option value="buy">Buys only</option>
+    <option value="sell">Sells only</option>
+  </select>
+  <span id="result-count">{{ recent | length }} trades</span>
+</div>
+{{ m.trade_table(recent, '', filterable=True) }}
+{% endblock %}
