@@ -1,1 +1,58 @@
-[]
+[
+ {
+  "chamber": "Senate",
+  "member": "Christopher A Coons",
+  "owner": "Spouse",
+  "ticker": null,
+  "asset": "W.L. Gore & Associates, Inc.Company:W.L. Gore & Associates, Inc.\n                                                    \n                                                         (Newark, Delaware)Description:Advanced materials manufacturing",
+  "asset_type": "Non-Public Stock",
+  "tx_type": "Sale (Partial)",
+  "tx_date": "08/07/2026",
+  "filed_date": "08/28/2026",
+  "amount": "$100,001 - $250,000",
+  "source": "https://efdsearch.senate.gov/search/view/ptr/5a76ceb6-2d1d-4430-8a17-6512bcb402be/",
+  "id": "aaca78817fed1fba"
+ },
+ {
+  "chamber": "House",
+  "member": "Jared Moskowitz",
+  "owner": "Self",
+  "ticker": "AMAT",
+  "asset": "Applied Materials, Inc. - Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley Active Assets (1)",
+  "asset_type": "ST",
+  "tx_type": "Purchase",
+  "tx_date": "07/13/2026",
+  "filed_date": "8/27/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035243.pdf",
+  "id": "832c5479e1fb471e"
+ },
+ {
+  "chamber": "House",
+  "member": "Jared Moskowitz",
+  "owner": "Self",
+  "ticker": "STE",
+  "asset": "STERIS plc F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley Active Assets (1)",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "07/13/2026",
+  "filed_date": "8/27/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035243.pdf",
+  "id": "12c61c2e2d17b5f9"
+ },
+ {
+  "chamber": "House",
+  "member": "Jared Moskowitz",
+  "owner": "Self",
+  "ticker": "GWW",
+  "asset": "W.W. Grainger, Inc. Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley Active Assets (1)",
+  "asset_type": "ST",
+  "tx_type": "Sale (Partial)",
+  "tx_date": "07/13/2026",
+  "filed_date": "8/27/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035243.pdf",
+  "id": "56dd2bfb6c6fa558"
+ }
+]
