@@ -6,13 +6,20 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>47 congressional trades disclosed on 27 Aug 2026</title>
+      <title>1 congressional trades disclosed on 28 Aug 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-08-28</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <description>1 trades disclosed by 1 member (0 buys, 1 sells). Largest: Christopher A Coons — W.L. Gore &amp; Associates, Inc.Company:W.L. Gore &amp; Associates, Inc. (Newark, Delaware)Description:Advanced materials manufacturing, SELL · partial, $100,001 – $250,000.</description>
+    </item>
+    <item>
+      <title>50 congressional trades disclosed on 27 Aug 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
       <guid isPermaLink="false">capitol-radar-2026-08-27</guid>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
-      <description>47 trades disclosed by 1 member (12 buys, 35 sells). Largest: David H Mccormick — ALLEGHENY CNTY HIGHER ED BLDG REV, SELL · partial, $250,001 – $500,000.</description>
+      <description>50 trades disclosed by 2 members (13 buys, 37 sells). Largest: David H Mccormick — ALLEGHENY CNTY HIGHER ED BLDG REV, SELL · partial, $250,001 – $500,000.</description>
     </item>
     <item>
       <title>13 congressional trades disclosed on 25 Aug 2026</title>
