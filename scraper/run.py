@@ -55,6 +55,13 @@ def main():
     meta_path = os.path.join(DATA_DIR, "meta.json")
 
     existing = load_json(tx_path, [])
+    # Limpieza defensiva: descarta filas viejas mal parseadas (encabezados o
+    # montos filtrados dentro del nombre del activo).
+    existing = [
+        t for t in existing
+        if "$" not in t.get("asset", "") and "Gains" not in t.get("asset", "")
+        and "Type Date" not in t.get("asset", "")
+    ]
     known_ids = {t["id"] for t in existing if "id" in t}
 
     new_txs = []
