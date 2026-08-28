@@ -95,7 +95,9 @@ def _clean_asset(raw):
     s = TICKER_RE.sub("", raw)
     s = ATYPE_RE.sub("", s)
     s = re.sub(r"\$[\d,]+", "", s)          # montos que se colaron
-    s = re.sub(r"\s+", " ", s).strip(" -–.")
+    s = re.sub(r"F\s*S\s*:?\s*(New|Amended)?", "", s)  # restos de "Filing Status"
+    s = re.sub(r"\s+[FDS]\s*$", "", s)      # letras sueltas de metadatos al final
+    s = re.sub(r"\s+", " ", s).strip(" -–.:")
     return s, (ticker_m.group(1) if ticker_m else None), (atype_m.group(1) if atype_m else "ST")
 
 
