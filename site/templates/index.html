@@ -11,9 +11,9 @@
 
 <div class="kpi-row">
   <div class="kpi">
-    <div class="kpi-label">New this run</div>
-    <div class="kpi-value">{{ kpi.new_trades }}</div>
-    <div class="kpi-sub">{{ kpi.week_count }} disclosed in the last 7 days</div>
+    <div class="kpi-label">Disclosed this week</div>
+    <div class="kpi-value">{{ kpi.week_count }}</div>
+    <div class="kpi-sub">{% if kpi.new_trades %}{{ kpi.new_trades }} new since the last run{% else %}Nothing new since the last run{% endif %}</div>
   </div>
   <div class="kpi">
     <div class="kpi-label">Largest this week</div>
