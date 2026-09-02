@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 28 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>34 congressional trades disclosed on 1 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-01</guid>
+      <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+      <description>34 trades disclosed by 3 members (4 buys, 30 sells). Largest: Steve Cohen — US Treas Bills Int Rate 0.000% MAT 2/18/2027, BUY, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>1 congressional trades disclosed on 28 Aug 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
