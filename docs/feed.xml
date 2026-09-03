@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>10 congressional trades disclosed on 2 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-02</guid>
+      <pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate>
+      <description>10 trades disclosed by 4 members (3 buys, 7 sells). Largest: Sheldon Whitehouse — NVIDIA Corporation - Common Stock (NVDA), SELL · partial, $15,001 – $50,000.</description>
+    </item>
     <item>
       <title>34 congressional trades disclosed on 1 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
