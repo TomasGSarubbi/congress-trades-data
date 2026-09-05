@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>1 congressional trades disclosed on 3 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-03</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <description>1 trades disclosed by 1 member (0 buys, 1 sells). Largest: Jonathan Jackson — ViaSat, Inc. - Common Stock (VSAT), SELL · partial, $1,001 – $15,000.</description>
+    </item>
     <item>
       <title>10 congressional trades disclosed on 2 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
