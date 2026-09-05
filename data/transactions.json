@@ -1,5 +1,19 @@
 [
  {
+  "chamber": "House",
+  "member": "Jonathan Jackson",
+  "owner": "Joint",
+  "ticker": "VSAT",
+  "asset": "ViaSat, Inc. - Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley Trust Account",
+  "asset_type": "ST",
+  "tx_type": "Sale (Partial)",
+  "tx_date": "08/28/2026",
+  "filed_date": "9/3/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035370.pdf",
+  "id": "d0f44bb6e74f3335"
+ },
+ {
   "chamber": "Senate",
   "member": "Sheldon Whitehouse",
   "owner": "Self",
