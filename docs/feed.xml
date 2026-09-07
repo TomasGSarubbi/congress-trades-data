@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 03 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>9 congressional trades disclosed on 5 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-05</guid>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      <description>9 trades disclosed by 1 member (5 buys, 4 sells). Largest: David J. Taylor — Fifth Third Bancorp - Common Stock (FITB), BUY, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>66 congressional trades disclosed on 4 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-04</guid>
+      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
+      <description>66 trades disclosed by 1 member (39 buys, 27 sells). Largest: Gilbert Cisneros — Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share (BABA), SELL, $100,001 – $250,000.</description>
+    </item>
     <item>
       <title>1 congressional trades disclosed on 3 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
