@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>8 congressional trades disclosed on 9 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-09</guid>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      <description>8 trades disclosed by 2 members (1 buys, 7 sells). Largest: Cory A Booker — Amazon.com, Inc. - Common Stock (AMZN), SELL, $100,001 – $250,000.</description>
+    </item>
+    <item>
+      <title>3 congressional trades disclosed on 8 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-08</guid>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      <description>3 trades disclosed by 2 members (1 buys, 2 sells). Largest: Mike Kelly — Mississippi St Ref Go P/R 10/1/27 5% due 10/1/31, SELL, $50,001 – $100,000.</description>
+    </item>
     <item>
       <title>9 congressional trades disclosed on 5 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
