@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 09 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>9 congressional trades disclosed on 11 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-11</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <description>9 trades disclosed by 1 member (5 buys, 4 sells). Largest: John Boozman — Westwood Quality SmallCap Fund - Westwood Quality SmallCap Fund Ultra Shares (WWSYX), SELL, $15,001 – $50,000.</description>
+    </item>
+    <item>
+      <title>58 congressional trades disclosed on 10 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-10</guid>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <description>58 trades disclosed by 1 member (34 buys, 24 sells). Largest: Gilbert Cisneros — New Jersey Health Care Facilities Financing Authority Revenue Bonds, BUY, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>99 congressional trades disclosed on 9 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>

@@ -36,6 +36,7 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/acn.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/adbe.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/aep.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/agio.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/alc.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/alks.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/all.html</loc></url>
@@ -45,9 +46,13 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/amgn.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/amzn.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/aort.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/apg.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/aph.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/app.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/atrc.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/avav.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/avgo.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/avuv.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ba.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/baba.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/bcpc.html</loc></url>
@@ -56,16 +61,22 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/biib.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/brk-b.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/bro.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/bsx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/bud.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/bwxt.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/carr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cb.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cci.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cdw.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ceco.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ceg.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/chrw.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cl.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/clh.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cmcsa.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cnm.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/coco.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cohr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/coin.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/comp.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/cpay.html</loc></url>
@@ -73,10 +84,13 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/crm.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/crnx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/crwd.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/csgp.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/csw.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/dash.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/dco.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/dd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/dis.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/dltr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ea.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/efa.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/eipi.html</loc></url>
@@ -85,17 +99,22 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/epac.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/eqix.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ese.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/etn.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fdx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ferg.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fisv.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fitb.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fn.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fslr.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fsv.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ftgc.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/fwonk.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gap.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gbci.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gem.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gmed.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/googl.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gs.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/gww.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/hd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/hli.html</loc></url>
@@ -106,13 +125,17 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/hubb.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ibm.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/iclr.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ijr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/intc.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/intu.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/irt.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/itt.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ivv.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/iwm.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/jd.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/jnj.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/kmb.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/kmx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/kvue.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/lamr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/lh.html</loc></url>
@@ -125,10 +148,12 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mbgl.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mcd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mdt.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/meta.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mfp.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/midd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mkl.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mlm.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mog-a.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mrk.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mrna.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mrsh.html</loc></url>
@@ -138,20 +163,26 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mtsi.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/mtx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ndaq.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/neo.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/net.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nflx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nhi.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nke.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nsa.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nvda.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/nxpi.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/otis.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/payx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pcvx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pg.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pgr.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/phr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pkg.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pltr.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/podd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/prax.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/psky.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/pwr.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/qcom.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/rbc.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/rnwgx.html</loc></url>
@@ -161,31 +192,44 @@
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/sf.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/sfm.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/sgi.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/shak.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/sig.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/skhy.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/skwd.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/smtc.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/snow.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/sols.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/spcx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/spxc.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/spym.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ste.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/strl.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/stz.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tdg.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tdy.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tpyp.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/trmb.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tsco.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tsla.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/ttd.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/txrh.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/tyl.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/uber.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vea.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/viav.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vik.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vlto.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vnqi.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vrsk.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vrtx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vsat.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/vz.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wab.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wat.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wday.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wdc.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wmt.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wpm.html</loc></url>
+  <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/wwsyx.html</loc></url>
   <url><loc>https://tomasgsarubbi.github.io/congress-trades-data/ticker/zts.html</loc></url>
 </urlset>
