@@ -1,6 +1,20 @@
 [
  {
   "chamber": "Senate",
+  "member": "Angus S King, Jr.",
+  "owner": "Spouse",
+  "ticker": null,
+  "asset": "EA - Electronic Arts Inc",
+  "asset_type": "Stock",
+  "tx_type": "Sale (Full)",
+  "tx_date": "08/05/2026",
+  "filed_date": "09/14/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://efdsearch.senate.gov/search/view/ptr/e67c6e56-c81e-4e74-b960-849a460165e2/",
+  "id": "c28c63d35e88a05b"
+ },
+ {
+  "chamber": "Senate",
   "member": "John Boozman",
   "owner": "Joint",
   "ticker": "IVV",
