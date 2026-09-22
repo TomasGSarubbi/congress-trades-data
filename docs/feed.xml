@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 17 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>1 congressional trades disclosed on 21 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-21</guid>
+      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+      <description>1 trades disclosed by 1 member (1 buys, 0 sells). Largest: A. Mitchell Mcconnell, Jr. — Wells Fargo &amp; Company Common Stock (WFC), BUY, $15,001 – $50,000.</description>
+    </item>
+    <item>
+      <title>2 congressional trades disclosed on 18 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-18</guid>
+      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
+      <description>2 trades disclosed by 1 member (0 buys, 2 sells). Largest: Pete Sessions — Alphabet Inc. - Class A Common Stock (GOOGL), SELL, $15,001 – $50,000.</description>
+    </item>
     <item>
       <title>18 congressional trades disclosed on 17 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
