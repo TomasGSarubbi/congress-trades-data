@@ -1,5 +1,47 @@
 [
  {
+  "chamber": "Senate",
+  "member": "A. Mitchell Mcconnell, Jr.",
+  "owner": "Spouse",
+  "ticker": "WFC",
+  "asset": "Wells Fargo & Company Common Stock",
+  "asset_type": "Stock",
+  "tx_type": "Purchase",
+  "tx_date": "09/01/2026",
+  "filed_date": "09/21/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://efdsearch.senate.gov/search/view/ptr/028aef33-dc0d-44a1-992f-aa35ee42685b/",
+  "id": "50b4a05ec6892303"
+ },
+ {
+  "chamber": "House",
+  "member": "Pete Sessions",
+  "owner": "Self",
+  "ticker": "ABBV",
+  "asset": "AbbVie Inc. Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: ET IRA",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "09/14/2026",
+  "filed_date": "9/18/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035480.pdf",
+  "id": "eebc91529097d401"
+ },
+ {
+  "chamber": "House",
+  "member": "Pete Sessions",
+  "owner": "Self",
+  "ticker": "GOOGL",
+  "asset": "Alphabet Inc. - Class A Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: ET Invest",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "09/14/2026",
+  "filed_date": "9/18/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035480.pdf",
+  "id": "400f64dcc604c67e"
+ },
+ {
   "chamber": "House",
   "member": "Scott Scott Franklin",
   "owner": "Self",
