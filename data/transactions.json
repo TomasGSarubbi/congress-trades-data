@@ -602,34 +602,6 @@
   "id": "cc52a1d6a43d7422"
  },
  {
-  "chamber": "Senate",
-  "member": "Alan Armstrong",
-  "owner": "Joint",
-  "ticker": "WMB",
-  "asset": "Williams Companies, Inc. (The) Common StockOption Type: CallStrike price:$75.00Expires:2026-08-21",
-  "asset_type": "Stock Option",
-  "tx_type": "Purchase",
-  "tx_date": "08/20/2026",
-  "filed_date": "09/17/2026",
-  "amount": "$15,001 - $50,000",
-  "source": "https://efdsearch.senate.gov/search/view/ptr/b999bc0e-3eb0-4ca9-ab07-8e8f2e04b41f/",
-  "id": "8571af2bd4b432db"
- },
- {
-  "chamber": "Senate",
-  "member": "Alan Armstrong",
-  "owner": "Joint",
-  "ticker": "WMB",
-  "asset": "Williams Companies, Inc. (The) Common StockOption Type: CallStrike price:$75.00Expires:2026-08-21",
-  "asset_type": "Stock Option",
-  "tx_type": "Purchase",
-  "tx_date": "08/19/2026",
-  "filed_date": "09/17/2026",
-  "amount": "$1,001 - $15,000",
-  "source": "https://efdsearch.senate.gov/search/view/ptr/b999bc0e-3eb0-4ca9-ab07-8e8f2e04b41f/",
-  "id": "88fb52bde8ac270b"
- },
- {
   "chamber": "House",
   "member": "Byron Donalds",
   "owner": "Self",
