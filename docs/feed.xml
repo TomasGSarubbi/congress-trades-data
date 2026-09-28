@@ -6,7 +6,28 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 22 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>17 congressional trades disclosed on 28 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-28</guid>
+      <pubDate>Mon, 28 Sep 2026 00:00:00 +0000</pubDate>
+      <description>17 trades disclosed by 2 members (11 buys, 6 sells). Largest: James Conley Justice, Ii — Greenbrier Hotel Corporation and AffiliatesCompany:Greenbrier Hotel Corporation and Affiliates (White Sulphur Springs, WV)Description:Hospitality, SELL · partial, $50,000,000+.</description>
+    </item>
+    <item>
+      <title>1 congressional trades disclosed on 27 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-27</guid>
+      <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
+      <description>1 trades disclosed by 1 member (1 buys, 0 sells). Largest: Max Miller — Mercato Partners Traverse IV QP, LP (GLAS Funds, LP), BUY, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>98 congressional trades disclosed on 25 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-25</guid>
+      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
+      <description>98 trades disclosed by 1 member (12 buys, 86 sells). Largest: Kevin Hern — ONEOK, Inc. Common Stock (OKE), SELL, $500,001 – $1,000,000.</description>
+    </item>
     <item>
       <title>8 congressional trades disclosed on 22 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
