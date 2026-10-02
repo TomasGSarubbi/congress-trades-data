@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>5 congressional trades disclosed on 1 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-01</guid>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <description>5 trades disclosed by 1 member (0 buys, 5 sells). Largest: Sheldon Whitehouse — JP Morgan Chase &amp; Co. Common Stock (JPM), SELL · partial, $15,001 – $50,000.</description>
+    </item>
+    <item>
+      <title>5 congressional trades disclosed on 30 Sep 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-09-30</guid>
+      <pubDate>Wed, 30 Sep 2026 00:00:00 +0000</pubDate>
+      <description>5 trades disclosed by 1 member (3 buys, 2 sells). Largest: Suzan K. Delbene — San Joaquin VY Calif Clean Energy Auth 5.50% Due Jan 1, 2056, SELL, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>17 congressional trades disclosed on 28 Sep 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
