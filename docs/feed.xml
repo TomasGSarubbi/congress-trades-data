@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>5 congressional trades disclosed on 5 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-05</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>5 trades disclosed by 2 members (5 buys, 0 sells). Largest: Vince Fong — U.S. Treasury Bill 0.0% Int Mat 12/10/2026, BUY, $15,001 – $50,000.</description>
+    </item>
+    <item>
+      <title>4 congressional trades disclosed on 2 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-02</guid>
+      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+      <description>4 trades disclosed by 2 members (2 buys, 2 sells). Largest: Nancy Pelosi — REOF XXX, LLC, BUY, $500,001 – $1,000,000.</description>
+    </item>
     <item>
       <title>18 congressional trades disclosed on 1 Oct 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
