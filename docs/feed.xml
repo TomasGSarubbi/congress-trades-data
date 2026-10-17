@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 14 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>8 congressional trades disclosed on 15 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-15</guid>
+      <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+      <description>8 trades disclosed by 2 members (6 buys, 2 sells). Largest: Scott H. Peters — U.S. Treasury Bill, SELL, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>10 congressional trades disclosed on 14 Oct 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-08-27</guid>
       <pubDate>Thu, 27 Aug 2026 00:00:00 +0000</pubDate>
       <description>50 trades disclosed by 2 members (13 buys, 37 sells). Largest: David H Mccormick — ALLEGHENY CNTY HIGHER ED BLDG REV, SELL · partial, $250,001 – $500,000.</description>
-    </item>
-    <item>
-      <title>13 congressional trades disclosed on 25 Aug 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-08-25</guid>
-      <pubDate>Tue, 25 Aug 2026 00:00:00 +0000</pubDate>
-      <description>13 trades disclosed by 3 members (1 buys, 12 sells). Largest: Michael Rulli — Alphabet Inc. - Class A Common Stock (GOOGL), SELL · partial, $50,001 – $100,000.</description>
     </item>
   </channel>
 </rss>
