@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>8 congressional trades disclosed on 19 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-19</guid>
+      <pubDate>Mon, 19 Oct 2026 00:00:00 +0000</pubDate>
+      <description>8 trades disclosed by 2 members (3 buys, 5 sells). Largest: Jonathan Jackson — Datadog, Inc. - Class A Common Stock (DDOG), BUY, $50,001 – $100,000.</description>
+    </item>
     <item>
       <title>2 congressional trades disclosed on 16 Oct 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-01</guid>
       <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
       <description>34 trades disclosed by 3 members (4 buys, 30 sells). Largest: Steve Cohen — US Treas Bills Int Rate 0.000% MAT 2/18/2027, BUY, $250,001 – $500,000.</description>
-    </item>
-    <item>
-      <title>1 congressional trades disclosed on 28 Aug 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-08-28</guid>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <description>1 trades disclosed by 1 member (0 buys, 1 sells). Largest: Christopher A Coons — W.L. Gore &amp; Associates, Inc.Company:W.L. Gore &amp; Associates, Inc. (Newark, Delaware)Description:Advanced materials manufacturing, SELL · partial, $100,001 – $250,000.</description>
     </item>
   </channel>
 </rss>
