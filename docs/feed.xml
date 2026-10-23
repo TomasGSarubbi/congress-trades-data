@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 21 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>6 congressional trades disclosed on 22 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-22</guid>
+      <pubDate>Thu, 22 Oct 2026 00:00:00 +0000</pubDate>
+      <description>6 trades disclosed by 2 members (5 buys, 1 sells). Largest: Darrell E. Issa — US Treasury Note 3.375% due 09/15/28 CUSIP 91282CNY3, SELL, $5,000,001 – $25,000,000.</description>
+    </item>
     <item>
       <title>17 congressional trades disclosed on 21 Oct 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-04</guid>
       <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
       <description>66 trades disclosed by 1 member (39 buys, 27 sells). Largest: Gilbert Cisneros — Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share (BABA), SELL, $100,001 – $250,000.</description>
-    </item>
-    <item>
-      <title>1 congressional trades disclosed on 3 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-03</guid>
-      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
-      <description>1 trades disclosed by 1 member (0 buys, 1 sells). Largest: Jonathan Jackson — ViaSat, Inc. - Common Stock (VSAT), SELL · partial, $1,001 – $15,000.</description>
     </item>
   </channel>
 </rss>
