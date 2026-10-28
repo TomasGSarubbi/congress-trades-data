@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>2 congressional trades disclosed on 28 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-28</guid>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+      <description>2 trades disclosed by 1 member (1 buys, 1 sells). Largest: Suzan K. Delbene — Black Belt Energy Gas Dist Ala Gas 05.00% 12/01/2035 Proj Rev BDS Ser. 2025, BUY, $250,001 – $500,000.</description>
+    </item>
+    <item>
+      <title>34 congressional trades disclosed on 27 Oct 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-10-27</guid>
+      <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
+      <description>34 trades disclosed by 4 members (1 buys, 33 sells). Largest: Pete Sessions — Costco Wholesale Corporation - Common Stock (COST), SELL, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>6 congressional trades disclosed on 22 Oct 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -202,20 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-08</guid>
       <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
       <description>3 trades disclosed by 2 members (1 buys, 2 sells). Largest: Mike Kelly — Mississippi St Ref Go P/R 10/1/27 5% due 10/1/31, SELL, $50,001 – $100,000.</description>
-    </item>
-    <item>
-      <title>9 congressional trades disclosed on 5 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-05</guid>
-      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
-      <description>9 trades disclosed by 1 member (5 buys, 4 sells). Largest: David J. Taylor — Fifth Third Bancorp - Common Stock (FITB), BUY, $1,001 – $15,000.</description>
-    </item>
-    <item>
-      <title>66 congressional trades disclosed on 4 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-04</guid>
-      <pubDate>Fri, 04 Sep 2026 00:00:00 +0000</pubDate>
-      <description>66 trades disclosed by 1 member (39 buys, 27 sells). Largest: Gilbert Cisneros — Alibaba Group Holding Limited American Depositary Shares each representing eight Ordinary share (BABA), SELL, $100,001 – $250,000.</description>
     </item>
   </channel>
 </rss>
