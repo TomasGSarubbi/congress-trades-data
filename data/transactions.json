@@ -1,6 +1,20 @@
 [
  {
   "chamber": "House",
+  "member": "Ann Wagner",
+  "owner": "Joint",
+  "ticker": null,
+  "asset": "American Expr Natl Bank CD F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Fidelity Trust",
+  "asset_type": "GS",
+  "tx_type": "Sale (Partial)",
+  "tx_date": "10/20/2026",
+  "filed_date": "11/2/2026",
+  "amount": "$100,001 - $250,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035751.pdf",
+  "id": "2c9a7763b912cc72"
+ },
+ {
+  "chamber": "House",
   "member": "John J Mr Mcguire",
   "owner": "Spouse",
   "ticker": "AVGO",
