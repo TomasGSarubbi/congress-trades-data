@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 02 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>1 congressional trades disclosed on 3 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-03</guid>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+      <description>1 trades disclosed by 1 member (1 buys, 0 sells). Largest: Robert E. Latta — Farmers &amp; Merchants Bancorp, Inc. (FMAO), BUY, $1,001 – $15,000.</description>
+    </item>
     <item>
       <title>1 congressional trades disclosed on 2 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-14</guid>
       <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
       <description>13 trades disclosed by 4 members (6 buys, 7 sells). Largest: Josh Gottheimer — Microsoft Corporation - Common Stock (MSFT), BUY, $500,001 – $1,000,000.</description>
-    </item>
-    <item>
-      <title>8 congressional trades disclosed on 12 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-12</guid>
-      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
-      <description>8 trades disclosed by 2 members (2 buys, 6 sells). Largest: John W. Rose — 2000140446 American Funds AMCAP Fund Class A M/F [MF} (SMCWX), SELL, $500,001 – $1,000,000.</description>
     </item>
   </channel>
 </rss>
