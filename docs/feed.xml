@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>6 congressional trades disclosed on 5 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-05</guid>
+      <pubDate>Thu, 05 Nov 2026 00:00:00 +0000</pubDate>
+      <description>6 trades disclosed by 2 members (4 buys, 2 sells). Largest: Daniel Meuser — NVIDIA Corporation - Common Stock (NVDA), SELL · partial, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>2 congressional trades disclosed on 4 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-04</guid>
+      <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
+      <description>2 trades disclosed by 1 member (1 buys, 1 sells). Largest: Mike Kelly — North Carolina Hsg Fin Agy Hom, BUY, $50,001 – $100,000.</description>
+    </item>
     <item>
       <title>1 congressional trades disclosed on 3 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -202,20 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-17</guid>
       <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
       <description>16 trades disclosed by 3 members (9 buys, 7 sells). Largest: Scott Scott Franklin — JP Morgan Chase &amp; Co. Common Stock (JPM), SELL · partial, $1,001 – $15,000.</description>
-    </item>
-    <item>
-      <title>6 congressional trades disclosed on 15 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-15</guid>
-      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
-      <description>6 trades disclosed by 1 member (2 buys, 4 sells). Largest: Byron Donalds — Howmet Aerospace Inc. Common Stock (HWM), SELL · partial, $1,001 – $15,000.</description>
-    </item>
-    <item>
-      <title>13 congressional trades disclosed on 14 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-14</guid>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
-      <description>13 trades disclosed by 4 members (6 buys, 7 sells). Largest: Josh Gottheimer — Microsoft Corporation - Common Stock (MSFT), BUY, $500,001 – $1,000,000.</description>
     </item>
   </channel>
 </rss>
