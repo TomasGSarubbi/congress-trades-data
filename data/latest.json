@@ -1,1 +1,44 @@
-[]
+[
+ {
+  "chamber": "House",
+  "member": "Josh Gottheimer",
+  "owner": "Joint",
+  "ticker": "AMAT",
+  "asset": "Applied Materials, Inc. - Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley - Select UMA Account # 1",
+  "asset_type": "ST",
+  "tx_type": "Purchase",
+  "tx_date": "10/26/2026",
+  "filed_date": "11/5/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+  "id": "fb311380518c865f"
+ },
+ {
+  "chamber": "House",
+  "member": "Josh Gottheimer",
+  "owner": "Joint",
+  "ticker": "BHE",
+  "asset": "Benchmark Electronics, Inc. Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley - Select UMA Account # 1",
+  "asset_type": "ST",
+  "tx_type": "Purchase",
+  "tx_date": "10/12/2026",
+  "filed_date": "11/5/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+  "id": "a9928e32667ac237"
+ },
+ {
+  "chamber": "House",
+  "member": "Josh Gottheimer",
+  "owner": "Joint",
+  "ticker": "TLK",
+  "asset": "PT Telekomunikasi Indonesia, Tbk F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Morgan Stanley - Select UMA Account # 1",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "10/15/2026",
+  "filed_date": "11/5/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+  "id": "3cab1cb715484749"
+ }
+]

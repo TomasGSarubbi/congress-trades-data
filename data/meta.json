@@ -1,7 +1,7 @@
 {
- "last_run_utc": "2026-11-06T19:37:34.399650Z",
- "new_transactions": 0,
- "total_kept": 856,
+ "last_run_utc": "2026-11-07T17:49:41.169680Z",
+ "new_transactions": 3,
+ "total_kept": 859,
  "lookback_days": 7,
  "errors": [
   "senate: 403 Client Error: Forbidden for url: https://efdsearch.senate.gov/search/report/data/"
