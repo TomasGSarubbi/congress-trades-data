@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>2 congressional trades disclosed on 6 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-06</guid>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+      <description>2 trades disclosed by 2 members (0 buys, 2 sells). Largest: Nancy Pelosi — Warner Bros. Discovery, Inc. - Series A Common Stock (WBD), SELL, $50,001 – $100,000.</description>
+    </item>
     <item>
       <title>9 congressional trades disclosed on 5 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -15,11 +22,11 @@
       <description>9 trades disclosed by 3 members (6 buys, 3 sells). Largest: Josh Gottheimer — PT Telekomunikasi Indonesia, Tbk (TLK), SELL, $1,001 – $15,000.</description>
     </item>
     <item>
-      <title>2 congressional trades disclosed on 4 Nov 2026</title>
+      <title>6 congressional trades disclosed on 4 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
       <guid isPermaLink="false">capitol-radar-2026-11-04</guid>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-      <description>2 trades disclosed by 1 member (1 buys, 1 sells). Largest: Mike Kelly — North Carolina Hsg Fin Agy Hom, BUY, $50,001 – $100,000.</description>
+      <description>6 trades disclosed by 2 members (1 buys, 5 sells). Largest: Mike Kelly — North Carolina Hsg Fin Agy Hom, BUY, $50,001 – $100,000.</description>
     </item>
     <item>
       <title>1 congressional trades disclosed on 3 Nov 2026</title>
@@ -29,11 +36,11 @@
       <description>1 trades disclosed by 1 member (1 buys, 0 sells). Largest: Robert E. Latta — Farmers &amp; Merchants Bancorp, Inc. (FMAO), BUY, $1,001 – $15,000.</description>
     </item>
     <item>
-      <title>1 congressional trades disclosed on 2 Nov 2026</title>
+      <title>3 congressional trades disclosed on 2 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
       <guid isPermaLink="false">capitol-radar-2026-11-02</guid>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
-      <description>1 trades disclosed by 1 member (0 buys, 1 sells). Largest: Ann Wagner — American Expr Natl Bank CD, SELL · partial, $100,001 – $250,000.</description>
+      <description>3 trades disclosed by 2 members (0 buys, 3 sells). Largest: Ann Wagner — American Expr Natl Bank CD, SELL · partial, $100,001 – $250,000.</description>
     </item>
     <item>
       <title>5 congressional trades disclosed on 1 Nov 2026</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-18</guid>
       <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
       <description>2 trades disclosed by 1 member (0 buys, 2 sells). Largest: Pete Sessions — Alphabet Inc. - Class A Common Stock (GOOGL), SELL, $15,001 – $50,000.</description>
-    </item>
-    <item>
-      <title>16 congressional trades disclosed on 17 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-17</guid>
-      <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
-      <description>16 trades disclosed by 3 members (9 buys, 7 sells). Largest: Scott Scott Franklin — JP Morgan Chase &amp; Co. Common Stock (JPM), SELL · partial, $1,001 – $15,000.</description>
     </item>
   </channel>
 </rss>
