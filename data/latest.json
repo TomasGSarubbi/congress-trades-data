@@ -1,1 +1,44 @@
-[]
+[
+ {
+  "chamber": "House",
+  "member": "David Kustoff",
+  "owner": "Joint",
+  "ticker": "WBD",
+  "asset": "Warner Bros. Discovery, Inc. - Series A Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Fidelity Retail Account",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "10/07/2026",
+  "filed_date": "11/9/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20024921.pdf",
+  "id": "08a9356caeb97430"
+ },
+ {
+  "chamber": "House",
+  "member": "Thomas Suozzi",
+  "owner": "Self",
+  "ticker": null,
+  "asset": "US Treasury Bill F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Thomas Suozzi IRA FBO Thomas Suozzi",
+  "asset_type": "GS",
+  "tx_type": "Purchase",
+  "tx_date": "10/13/2026",
+  "filed_date": "11/9/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035014.pdf",
+  "id": "326bb5ae4f76ba82"
+ },
+ {
+  "chamber": "House",
+  "member": "Thomas Suozzi",
+  "owner": "Self",
+  "ticker": null,
+  "asset": "US Treasury Bill F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Thomas Suozzi IRA FBO Thomas Suozzi",
+  "asset_type": "GS",
+  "tx_type": "Purchase",
+  "tx_date": "10/15/2026",
+  "filed_date": "11/9/2026",
+  "amount": "$15,001 - $50,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035014.pdf",
+  "id": "2f0268c6e7d06cc0"
+ }
+]
