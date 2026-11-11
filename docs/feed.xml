@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>3 congressional trades disclosed on 9 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-09</guid>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+      <description>3 trades disclosed by 2 members (2 buys, 1 sells). Largest: Thomas Suozzi — US Treasury Bill, BUY, $15,001 – $50,000.</description>
+    </item>
     <item>
       <title>2 congressional trades disclosed on 6 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-21</guid>
       <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
       <description>17 trades disclosed by 2 members (10 buys, 7 sells). Largest: Scott H. Peters — Enterprise CA, SELL, $500,001 – $1,000,000.</description>
-    </item>
-    <item>
-      <title>2 congressional trades disclosed on 18 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-18</guid>
-      <pubDate>Fri, 18 Sep 2026 00:00:00 +0000</pubDate>
-      <description>2 trades disclosed by 1 member (0 buys, 2 sells). Largest: Pete Sessions — Alphabet Inc. - Class A Common Stock (GOOGL), SELL, $15,001 – $50,000.</description>
     </item>
   </channel>
 </rss>
