@@ -6,7 +6,14 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 09 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>66 congressional trades disclosed on 10 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-10</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>66 trades disclosed by 2 members (35 buys, 31 sells). Largest: Gilbert Cisneros — Wisconsin State Health &amp; Educational Facilities Authority Rev. Bonds, SELL, $250,001 – $500,000.</description>
+    </item>
     <item>
       <title>3 congressional trades disclosed on 9 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-22</guid>
       <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
       <description>8 trades disclosed by 3 members (5 buys, 3 sells). Largest: Sheri Biggs — Bank of Nova Scotia, BUY, $500,001 – $1,000,000.</description>
-    </item>
-    <item>
-      <title>17 congressional trades disclosed on 21 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-21</guid>
-      <pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
-      <description>17 trades disclosed by 2 members (10 buys, 7 sells). Largest: Scott H. Peters — Enterprise CA, SELL, $500,001 – $1,000,000.</description>
     </item>
   </channel>
 </rss>
