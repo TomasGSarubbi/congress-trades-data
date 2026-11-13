@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>19 congressional trades disclosed on 12 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+      <description>19 trades disclosed by 1 member (9 buys, 10 sells). Largest: David J. Taylor — Eaton Corporation, PLC Ordinary Shares (ETN), BUY, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>4 congressional trades disclosed on 11 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 +0000</pubDate>
+      <description>4 trades disclosed by 2 members (3 buys, 1 sells). Largest: Richard W. Allen — US Treasury Note 4% DUE 7/31/29 (91282CLC3), BUY, $15,001 – $50,000.</description>
+    </item>
     <item>
       <title>66 congressional trades disclosed on 10 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -202,20 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-09-27</guid>
       <pubDate>Sun, 27 Sep 2026 00:00:00 +0000</pubDate>
       <description>1 trades disclosed by 1 member (1 buys, 0 sells). Largest: Max Miller — Mercato Partners Traverse IV QP, LP (GLAS Funds, LP), BUY, $1,001 – $15,000.</description>
-    </item>
-    <item>
-      <title>98 congressional trades disclosed on 25 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-25</guid>
-      <pubDate>Fri, 25 Sep 2026 00:00:00 +0000</pubDate>
-      <description>98 trades disclosed by 1 member (12 buys, 86 sells). Largest: Kevin Hern — ONEOK, Inc. Common Stock (OKE), SELL, $500,001 – $1,000,000.</description>
-    </item>
-    <item>
-      <title>8 congressional trades disclosed on 22 Sep 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-09-22</guid>
-      <pubDate>Tue, 22 Sep 2026 00:00:00 +0000</pubDate>
-      <description>8 trades disclosed by 3 members (5 buys, 3 sells). Largest: Sheri Biggs — Bank of Nova Scotia, BUY, $500,001 – $1,000,000.</description>
     </item>
   </channel>
 </rss>
