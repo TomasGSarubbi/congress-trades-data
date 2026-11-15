@@ -1,7 +1,9 @@
 {
- "last_run_utc": "2026-11-14T18:24:03.622489Z",
+ "last_run_utc": "2026-11-15T19:01:35.412774Z",
  "new_transactions": 0,
  "total_kept": 959,
  "lookback_days": 7,
- "errors": []
+ "errors": [
+  "senate: 503 Server Error: Service Unavailable for url: https://efdsearch.senate.gov/search/report/data/"
+ ]
 }
