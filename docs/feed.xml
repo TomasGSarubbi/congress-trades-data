@@ -6,7 +6,21 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>6 congressional trades disclosed on 19 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+      <description>6 trades disclosed by 1 member (1 buys, 5 sells). Largest: Thomas H. Kean — U.S. Treasury Note, BUY, $50,001 – $100,000.</description>
+    </item>
+    <item>
+      <title>8 congressional trades disclosed on 18 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-18</guid>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+      <description>8 trades disclosed by 3 members (1 buys, 7 sells). Largest: Michael Rulli — Alphabet Inc. - Class A Common Stock (GOOGL), SELL · partial, $1,001 – $15,000.</description>
+    </item>
     <item>
       <title>4 congressional trades disclosed on 17 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
@@ -202,20 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-10-05</guid>
       <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
       <description>5 trades disclosed by 2 members (5 buys, 0 sells). Largest: Vince Fong — U.S. Treasury Bill 0.0% Int Mat 12/10/2026, BUY, $15,001 – $50,000.</description>
-    </item>
-    <item>
-      <title>4 congressional trades disclosed on 2 Oct 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-10-02</guid>
-      <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
-      <description>4 trades disclosed by 2 members (2 buys, 2 sells). Largest: Nancy Pelosi — REOF XXX, LLC, BUY, $500,001 – $1,000,000.</description>
-    </item>
-    <item>
-      <title>18 congressional trades disclosed on 1 Oct 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-10-01</guid>
-      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
-      <description>18 trades disclosed by 4 members (10 buys, 8 sells). Largest: Donald Sternoff Beyer — Indiana ST 5.00% 02/01/32, BUY, $50,001 – $100,000.</description>
     </item>
   </channel>
 </rss>
