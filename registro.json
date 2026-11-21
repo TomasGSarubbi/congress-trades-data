@@ -1,0 +1,23 @@
+[
+ {
+  "fecha": "2026-11-21",
+  "serie": "RADAR DEL CONGRESO",
+  "tema": "congreso-wbd-fusion",
+  "titulo": "6 congresistas vendieron la misma acción el mismo día",
+  "cifra": "6",
+  "fuentes": [
+   "https://raw.githubusercontent.com/TomasGSarubbi/congress-trades-data/main/data/transactions.json",
+   "PTR de la Cámara de Representantes 20035780 (Pelosi) y 20036844 (Kean), leídos en el PDF oficial"
+  ]
+ },
+ {
+  "fecha": "2026-11-21",
+  "serie": "CONCEPTO",
+  "tema": "interes-compuesto",
+  "titulo": "USD 100 por mes durante 30 años: ¿cuánto suman?",
+  "cifra": "116.945",
+  "fuentes": [
+   "cálculo propio: 7% anual efectivo, aportes a fin de cada mes, sin impuestos ni comisiones"
+  ]
+ }
+]

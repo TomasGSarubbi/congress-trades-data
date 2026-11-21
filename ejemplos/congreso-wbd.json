@@ -1,0 +1,311 @@
+{
+ "brand": "CIFRA CLAVE",
+ "voice": {
+  "name": "em_alex",
+  "speed": 1.0,
+  "lang": "es-419"
+ },
+ "scenes": [
+  {
+   "type": "people",
+   "count": 6,
+   "big": "6",
+   "title": "CONGRESISTAS",
+   "subtitle": "DE ESTADOS UNIDOS",
+   "tag": "VENTA",
+   "tagColor": "coral",
+   "tagCue": 2,
+   "stamp": "EL MISMO DÍA",
+   "stampCue": 3,
+   "lines": [
+    {
+     "tts": "Seis congresistas de Estados Unidos vendieron la misma acción, el mismo día.",
+     "caps": [
+      "*Seis* congresistas",
+      "de Estados Unidos",
+      "vendieron la misma acción,",
+      "el mismo día."
+     ],
+     "gap": 0.26
+    }
+   ]
+  },
+  {
+   "type": "asset",
+   "ticker": "WBD",
+   "name": "Warner Bros.\nDiscovery",
+   "tags": [
+    {
+     "text": "VENTA TOTAL",
+     "color": "coral",
+     "cue": 1
+    },
+    {
+     "text": "6 LEGISLADORES",
+     "color": "outline",
+     "cue": 1
+    }
+   ],
+   "calendar": {
+    "year": 2026,
+    "month": 10,
+    "marks": [
+     {
+      "day": 7,
+      "color": "amber",
+      "cue": 3,
+      "label": "6 VENTAS"
+     }
+    ]
+   },
+   "foot": "Fuente: declaraciones PTR · Cámara de Representantes de EE.UU.",
+   "lines": [
+    {
+     "tts": "La acción: Wárner Bros Discóveri. El día: siete de octubre.",
+     "caps": [
+      [
+       "La acción:",
+       "La acción:"
+      ],
+      [
+       "*Warner Bros. Discovery.*",
+       "Warner Bros Discovery."
+      ],
+      [
+       "El día:",
+       "El día:"
+      ],
+      [
+       "*7 de octubre.*",
+       "siete de octubre."
+      ]
+     ],
+     "gap": 0.26
+    }
+   ]
+  },
+  {
+   "type": "ranges",
+   "title": "MONTO DECLARADO, EN USD",
+   "max": 100000,
+   "ticks": [
+    {
+     "v": 0,
+     "label": "0"
+    },
+    {
+     "v": 50000,
+     "label": "50 mil"
+    },
+    {
+     "v": 100000,
+     "label": "100 mil"
+    }
+   ],
+   "rows": [
+    {
+     "name": "Gilbert Cisneros",
+     "sub": "cuenta propia",
+     "lo": 1001,
+     "hi": 15000,
+     "label": "1.001 – 15.000"
+    },
+    {
+     "name": "Steve Cohen",
+     "sub": "cuenta propia",
+     "lo": 1001,
+     "hi": 15000,
+     "label": "1.001 – 15.000"
+    },
+    {
+     "name": "Julie Johnson",
+     "sub": "cuenta conjunta",
+     "lo": 1001,
+     "hi": 15000,
+     "label": "1.001 – 15.000"
+    },
+    {
+     "name": "Thomas H. Kean",
+     "sub": "propia y cónyuge",
+     "lo": 1001,
+     "hi": 15000,
+     "label": "1.001 – 15.000 ×2"
+    },
+    {
+     "name": "David Kustoff",
+     "sub": "cuenta conjunta",
+     "lo": 1001,
+     "hi": 15000,
+     "label": "1.001 – 15.000"
+    },
+    {
+     "name": "Nancy Pelosi",
+     "sub": "cónyuge",
+     "lo": 50001,
+     "hi": 100000,
+     "label": "50.001 – 100.000"
+    }
+   ],
+   "highlight": {
+    "index": 5,
+    "cue": 1,
+    "valCue": 2,
+    "badge": "LA MAYOR"
+   },
+   "lines": [
+    {
+     "tts": "Entre ellos, el esposo de Nancy Pelosi: entre cincuenta y cien mil dólares.",
+     "caps": [
+      [
+       "Entre ellos,",
+       "Entre ellos,"
+      ],
+      [
+       "el esposo de *Nancy Pelosi:*",
+       "el esposo de Nancy Pelosi:"
+      ],
+      [
+       "entre *50 y 100 mil dólares.*",
+       "entre cincuenta y cien mil dólares."
+      ]
+     ],
+     "gap": 0.36
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "question": "¿SABÍAN\nALGO?",
+   "answer": "NO.",
+   "answerCue": 1,
+   "lines": [
+    {
+     "tts": "¿Sabían algo?",
+     "caps": [
+      "¿Sabían algo?"
+     ],
+     "gap": 0.5
+    },
+    {
+     "tts": "No.",
+     "caps": [
+      "*No.*"
+     ],
+     "gap": 0.55
+    }
+   ]
+  },
+  {
+   "type": "merge",
+   "chip": "6 OCT 2026",
+   "kicker": "UN DÍA ANTES",
+   "a": "PARAMOUNT",
+   "verb": "COMPRA A",
+   "b": "WARNER BROS.\nDISCOVERY",
+   "result": "OPERACIÓN CERRADA",
+   "aCue": 1,
+   "bCue": 2,
+   "mergeDelay": 0.6,
+   "lines": [
+    {
+     "tts": "Un día antes, Páramaunt terminó de comprar la empresa.",
+     "caps": [
+      [
+       "Un día antes,",
+       "Un día antes,"
+      ],
+      [
+       "*Paramount* terminó",
+       "Paramount terminó"
+      ],
+      [
+       "de comprar la empresa.",
+       "de comprar la empresa."
+      ]
+     ],
+     "gap": 0.55
+    }
+   ]
+  },
+  {
+   "type": "payout",
+   "prefix": "USD",
+   "value": 31,
+   "label": "POR ACCIÓN · EN EFECTIVO",
+   "recipients": 6,
+   "valueCue": 1,
+   "recipientsCue": 1,
+   "recipientsDelay": 0.75,
+   "noteCue": 2,
+   "noteDelay": 0.0,
+   "note": {
+    "title": "Nota en la declaración de Pelosi (traducida):",
+    "quote": "«Efectivo recibido por la fusión de Warner Bros Discovery con Paramount Skydance»"
+   },
+   "lines": [
+    {
+     "tts": "A todos los accionistas les pagaron treinta y un dólares por acción, en efectivo.",
+     "caps": [
+      [
+       "A todos los accionistas",
+       "A todos los accionistas"
+      ],
+      [
+       "les pagaron *31 dólares*",
+       "les pagaron treinta y un dólares"
+      ],
+      [
+       "por acción, *en efectivo.*",
+       "por acción, en efectivo."
+      ]
+     ],
+     "gap": 0.8
+    }
+   ],
+   "peopleLabel": "ACCIONISTAS"
+  },
+  {
+   "type": "equation",
+   "kicker": "EN UNA DECLARACIÓN",
+   "left": "VENTA",
+   "op": "≠",
+   "right": "DECISIÓN",
+   "lines": [
+    {
+     "tts": "Una venta en una declaración no siempre es una decisión.",
+     "caps": [
+      "Una venta",
+      "en una declaración",
+      "no siempre",
+      "es una *decisión.*"
+     ],
+     "gap": 0.38
+    }
+   ],
+   "leftIcon": "doc",
+   "rightIcon": "person"
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuente: declaraciones de operaciones (PTR) de la Cámara de Representantes de EE.UU., presentadas del 6 al 19 de noviembre de 2026. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ],
+ "series": "RADAR DEL CONGRESO"
+}

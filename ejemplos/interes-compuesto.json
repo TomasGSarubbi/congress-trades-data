@@ -1,0 +1,393 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "CONCEPTO",
+ "voice": {
+  "name": "em_alex",
+  "speed": 1.0,
+  "lang": "es-419"
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "AHORRO MENSUAL",
+   "prefix": "USD",
+   "value": 100,
+   "label": "POR MES · DURANTE 30 AÑOS",
+   "chips": [
+    {
+     "text": "360 APORTES",
+     "color": "outline",
+     "cue": 1
+    },
+    {
+     "text": "¿CUÁNTO SUMAN?",
+     "color": "amber",
+     "cue": 2
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Cien dólares por mes, durante treinta años.",
+     "caps": [
+      [
+       "*100 dólares* por mes,",
+       "Cien dólares por mes,"
+      ],
+      [
+       "durante *30 años.*",
+       "durante treinta años."
+      ]
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "¿En cuánto se convierten?",
+     "caps": [
+      "¿En cuánto se convierten?"
+     ],
+     "gap": 0.35
+    }
+   ],
+   "dots": {
+    "count": 360,
+    "cols": 30,
+    "color": "amber",
+    "cue": 1,
+    "dur": 2.6,
+    "label": "Cada punto es un aporte mensual · cada columna, un año"
+   }
+  },
+  {
+   "type": "columns",
+   "title": "DESPUÉS DE 30 AÑOS · EN USD",
+   "max": 116945,
+   "cues": [
+    0,
+    2
+   ],
+   "lines": [
+    {
+     "tts": "Guardados, son treinta y seis mil.",
+     "caps": [
+      [
+       "Guardados,",
+       "Guardados,"
+      ],
+      [
+       "son *36.000.*",
+       "son treinta y seis mil."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "Invertidos al siete por ciento anual: casi ciento diecisiete mil.",
+     "caps": [
+      [
+       "Invertidos al *7% anual:*",
+       "Invertidos al siete por ciento anual:"
+      ],
+      [
+       "casi *117.000.*",
+       "casi ciento diecisiete mil."
+      ]
+     ],
+     "gap": 0.35
+    }
+   ],
+   "cols": [
+    {
+     "label": "Guardados",
+     "sub": "sin invertir",
+     "value": 36000,
+     "display": "36.000",
+     "color": "soft"
+    },
+    {
+     "label": "Invertidos",
+     "sub": "al 7% anual",
+     "value": 116945,
+     "display": "116.945",
+     "color": "mint",
+     "hl": true
+    }
+   ]
+  },
+  {
+   "type": "line",
+   "title": "USD 100 POR MES · SALDO ACUMULADO",
+   "yTicks": [
+    {
+     "v": 0,
+     "label": "0"
+    },
+    {
+     "v": 50000,
+     "label": "50 mil"
+    },
+    {
+     "v": 100000,
+     "label": "100 mil"
+    }
+   ],
+   "xTicks": [
+    {
+     "i": 0,
+     "label": "Hoy"
+    },
+    {
+     "i": 10,
+     "label": "Año 10"
+    },
+    {
+     "i": 20,
+     "label": "Año 20"
+    },
+    {
+     "i": 30,
+     "label": "Año 30"
+    }
+   ],
+   "series": [
+    {
+     "name": "Guardados",
+     "color": "soft",
+     "values": [
+      0,
+      1200,
+      2400,
+      3600,
+      4800,
+      6000,
+      7200,
+      8400,
+      9600,
+      10800,
+      12000,
+      13200,
+      14400,
+      15600,
+      16800,
+      18000,
+      19200,
+      20400,
+      21600,
+      22800,
+      24000,
+      25200,
+      26400,
+      27600,
+      28800,
+      30000,
+      31200,
+      32400,
+      33600,
+      34800,
+      36000
+     ],
+     "end": "36 mil"
+    },
+    {
+     "name": "Invertidos al 7%",
+     "color": "mint",
+     "values": [
+      0,
+      1238,
+      2563,
+      3980,
+      5497,
+      7120,
+      8856,
+      10714,
+      12702,
+      14829,
+      17105,
+      19541,
+      22146,
+      24935,
+      27918,
+      31110,
+      34526,
+      38181,
+      42092,
+      46276,
+      50754,
+      55544,
+      60671,
+      66156,
+      72024,
+      78304,
+      85024,
+      92213,
+      99906,
+      108138,
+      116945
+     ],
+     "end": "117 mil"
+    }
+   ],
+   "marks": [
+    {
+     "i": 10,
+     "s": 1,
+     "label": "Año 10: +5 mil",
+     "color": "amber"
+    }
+   ],
+   "drawCue": 0,
+   "drawDur": 3.4,
+   "lines": [
+    {
+     "tts": "Al principio, casi no se nota.",
+     "caps": [
+      "Al principio,",
+      "casi no se nota."
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "La diferencia aparece al final.",
+     "caps": [
+      "La diferencia",
+      "aparece *al final.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "title": "¿DE DÓNDE SALEN LOS 117 MIL?",
+   "center": {
+    "big": "117 MIL",
+    "small": "USD · TOTAL"
+   },
+   "parts": [
+    {
+     "label": "Tus aportes",
+     "value": 36000,
+     "display": "USD 36.000",
+     "color": "soft",
+     "cue": 1
+    },
+    {
+     "label": "Intereses",
+     "value": 80945,
+     "display": "USD 80.945",
+     "color": "mint",
+     "cue": 3
+    }
+   ],
+   "lines": [
+    {
+     "tts": "De ese total, menos de un tercio son tus aportes.",
+     "caps": [
+      "De ese total,",
+      "menos de *un tercio*",
+      "son tus aportes."
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "El resto lo generaron los intereses.",
+     "caps": [
+      "El resto",
+      "lo generaron *los intereses.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "title": "¿QUÉ PESA MÁS?",
+   "max": 116945,
+   "rows": [
+    {
+     "label": "USD 100 × 30 años",
+     "value": 116945,
+     "display": "117 mil",
+     "color": "mint"
+    },
+    {
+     "label": "USD 200 × 20 años",
+     "value": 101507,
+     "display": "101 mil",
+     "color": "soft"
+    }
+   ],
+   "cues": [
+    0,
+    2
+   ],
+   "lines": [
+    {
+     "tts": "Cien dólares durante treinta años le ganan a doscientos durante veinte.",
+     "caps": [
+      [
+       "*100* dólares",
+       "Cien dólares"
+      ],
+      [
+       "durante 30 años",
+       "durante treinta años"
+      ],
+      [
+       "le ganan a *200*",
+       "le ganan a doscientos"
+      ],
+      [
+       "durante 20.",
+       "durante veinte."
+      ]
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "equation",
+   "kicker": "EN ESTE EJEMPLO",
+   "left": "TIEMPO",
+   "op": ">",
+   "right": "MONTO",
+   "leftCue": 1,
+   "kickerCue": 0,
+   "opCue": 2,
+   "rightCue": 3,
+   "lines": [
+    {
+     "tts": "Con interés compuesto, el tiempo puede pesar más que el monto.",
+     "caps": [
+      "Con interés compuesto,",
+      "el *tiempo*",
+      "puede pesar más",
+      "que el *monto.*"
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Ejemplo hipotético: aportes a fin de cada mes y rendimiento constante del 7% anual, sin impuestos, comisiones ni inflación. Los rendimientos reales varían y no están garantizados. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}

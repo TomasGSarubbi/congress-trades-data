@@ -1,0 +1,5 @@
+trabajo/
+*.mp4
+*.wav
+__pycache__/
+*.pyc
