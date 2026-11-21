@@ -13,7 +13,7 @@ Esta rama (`shorts-kit`) es independiente del resto del repo: no toca `main` ni 
 | `make_audio.py` | Voz (Kokoro, `em_alex`) + ecualización cálida + tiempos de cada subtítulo. |
 | `engine.html` | Motor de escenas animadas. No se edita para un video normal. |
 | `render.py` | Valida el spec, saca cuadros de revisión, filma y arma el `.mp4`. |
-| `ejemplos/` | Dos specs completos de videos ya producidos: copiarlos como punto de partida. |
+| `publicados/` | El spec de cada video ya hecho. Sirven de ejemplo y permiten rehacer un video (por ejemplo, si cambia el nombre del canal). |
 | `registro.json` | Qué videos ya se hicieron (para no repetir temas). |
 | `aprendizajes.md` | Qué funcionó y qué no según las métricas del canal. Leer antes de elegir tema. |
 | `fonts/` | Anton e Inter (licencia OFL), por si la sesión no las trae instaladas. |
@@ -187,7 +187,7 @@ Consejos que salen de los videos ya hechos:
 - Las cifras en pantalla van con formato español: `1.234,5`. Aclarar la moneda (`USD`).
 - Redondear en la voz («casi ciento diecisiete mil») y dejar el número exacto en pantalla.
 
-Los dos archivos de `ejemplos/` muestran casi todas las escenas en uso real.
+Los archivos de `publicados/` muestran casi todas las escenas en uso real: copiar uno parecido como punto de partida.
 
 ---
 
@@ -219,13 +219,21 @@ Archivo: `cifra-clave_AAAA-MM-DD_tema.mp4`. Junto al video, un mensaje corto con
 - **Fuentes**: enlaces usados.
 - **Verificado**: qué se comprobó contra la fuente y qué no se pudo comprobar.
 
-Después, agregar el video a `registro.json`:
+Después, guardar el spec en `publicados/AAAA-MM-DD_tema.json` y agregar el video a `registro.json`
+(son los únicos dos cambios que se suben a esta rama en una corrida normal):
 
 ```json
 {"fecha": "2026-11-21", "serie": "CONCEPTO", "tema": "interes-compuesto",
  "titulo": "USD 100 por mes durante 30 años: ¿cuánto suman?", "cifra": "116.945",
+ "spec": "publicados/2026-11-21_interes-compuesto.json",
  "fuentes": ["cálculo propio: 7% anual, aportes a fin de mes"]}
 ```
+
+---
+
+**Rehacer un video.** Con el spec guardado alcanza: copiarlo a la carpeta de trabajo y correr
+los pasos de la sección 1. Para cambiar el nombre del canal en videos viejos, editar `brand`,
+`brandLines` y la frase de cierre en cada spec y volver a filmar.
 
 ---
 

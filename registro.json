@@ -8,7 +8,8 @@
   "fuentes": [
    "https://raw.githubusercontent.com/TomasGSarubbi/congress-trades-data/main/data/transactions.json",
    "PTR de la Cámara de Representantes 20035780 (Pelosi) y 20036844 (Kean), leídos en el PDF oficial"
-  ]
+  ],
+  "spec": "publicados/2026-11-21_congreso-wbd-fusion.json"
  },
  {
   "fecha": "2026-11-21",
@@ -18,6 +19,7 @@
   "cifra": "116.945",
   "fuentes": [
    "cálculo propio: 7% anual efectivo, aportes a fin de cada mes, sin impuestos ni comisiones"
-  ]
+  ],
+  "spec": "publicados/2026-11-21_interes-compuesto.json"
  }
 ]
