@@ -1,0 +1,341 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "COMPARACIÓN",
+ "voice": {
+  "name": "em_alex",
+  "speed": 1.0,
+  "lang": "es-419"
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "USD 100 GUARDADOS DESDE 2000",
+   "value": -50,
+   "suffix": "%",
+   "color": "coral",
+   "label": "PODER DE COMPRA",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "ENERO 2000 → OCTUBRE 2026",
+     "color": "outline",
+     "cue": 1
+    }
+   ],
+   "max": 100,
+   "rows": [
+    {
+     "label": "Enero de 2000",
+     "sub": "compraban",
+     "value": 100,
+     "display": "USD 100",
+     "color": "soft",
+     "cue": 0
+    },
+    {
+     "label": "Hoy",
+     "sub": "compran como",
+     "value": 50.01,
+     "display": "USD 50",
+     "color": "coral",
+     "cue": 2
+    }
+   ],
+   "foot": "Fuente: BLS · IPC de EE.UU., ene. 2000 – oct. 2026",
+   "lines": [
+    {
+     "tts": "Cien dólares guardados desde el año dos mil hoy compran la mitad.",
+     "caps": [
+      [
+       "*100 dólares* guardados",
+       "Cien dólares guardados"
+      ],
+      [
+       "desde el año 2000",
+       "desde el año dos mil"
+      ],
+      [
+       "hoy compran *la mitad.*",
+       "hoy compran la mitad."
+      ]
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "line",
+   "title": "LO QUE COMPRAN USD 100 DE 2000",
+   "yMin": 0,
+   "yMax": 104,
+   "yTicks": [
+    {
+     "v": 0,
+     "label": "0"
+    },
+    {
+     "v": 50,
+     "label": "50"
+    },
+    {
+     "v": 100,
+     "label": ""
+    }
+   ],
+   "xTicks": [
+    {
+     "i": 0,
+     "label": "2000"
+    },
+    {
+     "i": 10,
+     "label": "2010"
+    },
+    {
+     "i": 20,
+     "label": "2020"
+    },
+    {
+     "i": 27,
+     "label": "Oct. 2026"
+    }
+   ],
+   "series": [
+    {
+     "color": "coral",
+     "values": [
+      100.0,
+      96.4,
+      95.3,
+      92.9,
+      91.1,
+      88.5,
+      85.1,
+      83.4,
+      80.0,
+      79.9,
+      77.9,
+      76.6,
+      74.5,
+      73.3,
+      72.2,
+      72.2,
+      71.2,
+      69.5,
+      68.1,
+      67.1,
+      65.4,
+      64.5,
+      60.0,
+      56.4,
+      54.7,
+      53.1,
+      51.9,
+      50.0
+     ]
+    }
+   ],
+   "marks": [
+    {
+     "i": 0,
+     "s": 0,
+     "label": "USD 100",
+     "color": "white"
+    },
+    {
+     "i": 27,
+     "s": 0,
+     "label": "USD 50",
+     "color": "coral",
+     "pos": "below"
+    }
+   ],
+   "drawCue": 0,
+   "drawDur": 2.8,
+   "lines": [
+    {
+     "tts": "No fue de golpe.",
+     "caps": [
+      "No fue de golpe."
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "Fue poco a poco, a lo largo de los años.",
+     "caps": [
+      "Fue *poco a poco,*",
+      "a lo largo de los años."
+     ],
+     "gap": 0.55
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "LA MISMA CANASTA · EN USD",
+   "max": 199.95,
+   "cues": [
+    0,
+    4
+   ],
+   "cols": [
+    {
+     "label": "Enero 2000",
+     "sub": "costaba",
+     "value": 100,
+     "display": "100",
+     "color": "soft"
+    },
+    {
+     "label": "Octubre 2026",
+     "sub": "cuesta",
+     "value": 199.95,
+     "display": "199,95",
+     "color": "amber",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Lo que costaba cien dólares hoy cuesta, en promedio, casi doscientos.",
+     "caps": [
+      "Lo que costaba",
+      [
+       "*100 dólares*",
+       "cien dólares"
+      ],
+      "hoy cuesta,",
+      "en promedio,",
+      [
+       "*casi 200.*",
+       "casi doscientos."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "title": "¿CÓMO PASÓ?",
+   "top": 400,
+   "gap": 270,
+   "nodes": [
+    {
+     "chip": "27",
+     "text": "años, casi: de enero de 2000 a octubre de 2026",
+     "color": "soft"
+    },
+    {
+     "chip": "2,6%",
+     "text": "de inflación promedio por año",
+     "color": "amber"
+    },
+    {
+     "chip": "x2",
+     "text": "los precios: de USD 100 a USD 199,95",
+     "color": "coral"
+    }
+   ],
+   "cues": [
+    0,
+    2,
+    3
+   ],
+   "foot": "Tasa anual compuesta del IPC de EE.UU. · cálculo propio",
+   "lines": [
+    {
+     "tts": "En casi veintisiete años, la inflación promedio fue de dos coma seis por ciento anual.",
+     "caps": [
+      [
+       "En casi *27 años,*",
+       "En casi veintisiete años,"
+      ],
+      "la inflación promedio",
+      [
+       "fue de *2,6% anual.*",
+       "fue de dos coma seis por ciento anual."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "Acumulada, duplica los precios.",
+     "caps": [
+      "Acumulada,",
+      "*duplica* los precios."
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "title": "¿QUÉ PASÓ CON LOS USD 100?",
+   "center": {
+    "big": "USD 100",
+    "small": "EN EL BILLETE"
+   },
+   "parts": [
+    {
+     "label": "Lo que aún compran",
+     "value": 50.01,
+     "color": "soft",
+     "cue": 2
+    },
+    {
+     "label": "Se lo llevó la inflación",
+     "value": 49.99,
+     "color": "coral",
+     "cue": 3
+    }
+   ],
+   "lines": [
+    {
+     "tts": "El billete sigue diciendo cien.",
+     "caps": [
+      "El billete",
+      [
+       "sigue diciendo *100.*",
+       "sigue diciendo cien."
+      ]
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "Pero compra como cincuenta: la otra mitad se la llevó la inflación.",
+     "caps": [
+      [
+       "Pero compra como *50:*",
+       "Pero compra como cincuenta:"
+      ],
+      "la otra mitad",
+      "se la llevó *la inflación.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuente: Oficina de Estadísticas Laborales de EE.UU. (BLS), IPC-U sin ajuste estacional: enero de 2000 (168,8) y octubre de 2026 (337,511), publicado el 10/11/2026. Cálculo propio. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}

@@ -21,5 +21,19 @@
    "cálculo propio: 7% anual efectivo, aportes a fin de cada mes, sin impuestos ni comisiones"
   ],
   "spec": "publicados/2026-11-21_interes-compuesto.json"
+ },
+ {
+  "fecha": "2026-11-22",
+  "serie": "COMPARACIÓN",
+  "tema": "efectivo-dolar-vs-inflacion",
+  "titulo": "USD 100 guardados desde 2000: hoy compran la mitad",
+  "cifra": "-50%",
+  "fuentes": [
+   "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+   "https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202104.pdf",
+   "BLS, IPC-U sin ajuste estacional: enero de 2000 = 168,8 y octubre de 2026 = 337,511 (publicado el 10/11/2026); eneros de 2022 a 2026 leídos en los comunicados del BLS del 14/02/2023, 12/02/2025 y 13/02/2026",
+   "cálculo propio: 100 × 168,8 / 337,511 = 50,01; 100 × 337,511 / 168,8 = 199,95; tasa anual compuesta en 26 años y 9 meses = 2,62%"
+  ],
+  "spec": "publicados/2026-11-22_efectivo-dolar-vs-inflacion.json"
  }
 ]
