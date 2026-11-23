@@ -10,7 +10,7 @@ Esta rama (`shorts-kit`) es independiente del resto del repo: no toca `main` ni 
 | Archivo | Para qué |
 |---|---|
 | `setup.sh` | Prepara una sesión nueva (voz, fuentes, Chrome). Correrlo siempre primero. |
-| `make_audio.py` | Voz (Kokoro, `em_alex`) + ecualización cálida + tiempos de cada subtítulo. |
+| `make_audio.py` | Voz (Supertonic 3, `M1`) + control automático de pronunciación + tiempos de cada subtítulo. |
 | `engine.html` | Motor de escenas animadas. No se edita para un video normal. |
 | `render.py` | Valida el spec, saca cuadros de revisión, filma y arma el `.mp4`. |
 | `publicados/` | El spec de cada video ya hecho. Sirven de ejemplo y permiten rehacer un video (por ejemplo, si cambia el nombre del canal). |
@@ -25,9 +25,9 @@ Esta rama (`shorts-kit`) es independiente del resto del repo: no toca `main` ni 
 ```bash
 git clone --depth 1 --single-branch -b shorts-kit https://github.com/TomasGSarubbi/congress-trades-data kit
 bash kit/setup.sh                       # termina con "LISTO"; si dice "HAY FALTANTES", frenar y avisar
-M=$HOME/.cache/cifra-clave/kokoro; W=trabajo; mkdir -p $W
+W=trabajo; mkdir -p $W
 # escribir $W/spec.json (secciones 2 a 4)
-python3 -I kit/make_audio.py $M/kokoro-v1.0.onnx $M/voices-v1.0.bin $W/spec.json $W
+python3 -I kit/make_audio.py $W/spec.json $W                          # voz + control: "OIDO: N de N", sin "AVISO VOZ"
 python3 kit/render.py build  kit/engine.html $W/spec.timed.json $W    # valida: 0 errores, leer los avisos
 python3 kit/render.py stills $W                                       # mirar stills/sheet.jpg (sección 5)
 python3 kit/render.py video  $W                                       # 2–3 minutos
@@ -35,6 +35,9 @@ python3 kit/render.py finish $W $W/voz.wav cifra-clave_AAAA-MM-DD_tema.mp4    # 
 python3 kit/render.py sheet  cifra-clave_AAAA-MM-DD_tema.mp4 $W/final.jpg     # mirar el archivo final
 ```
 
+- Si `make_audio.py` deja un `AVISO VOZ`, esa frase no se entendió: reescribirla en `tts` (otra palabra,
+  otro orden, o unirla con la frase vecina) y volver a correr. No se filma con avisos pendientes,
+  salvo que lo único distinto sea un nombre propio que quedó bien dicho.
 - Si cambia una frase (`tts` o `caps`): volver a correr desde `make_audio.py`.
 - Si cambia solo un gráfico: volver a correr desde `build`. Para refilmar una sola escena: `render.py video $W s4` y después `finish`.
 - Un solo render completo por video: los errores se cazan antes, en los cuadros de revisión.
@@ -140,6 +143,8 @@ Cada escena lleva `lines`: una o dos frases. Cada frase tiene:
   Lo dicho en todos los tramos, sumado, tiene que ser la frase `tts` completa.
 - Máximo 40 letras por subtítulo (mejor menos de 28). `*así*` resalta en amarillo: una o dos palabras por frase.
 - `gap` es la pausa después de la frase, en segundos (0.3 normal, 0.5 para dejar respirar).
+- Las frases sueltas de dos a cuatro palabras son las que más le cuestan a la voz («No fue de golpe.»
+  no le sale): si el control las marca, unirlas a la frase vecina o decirlas de otra manera.
 
 **Los `cue`.** Los subtítulos de una escena se numeran 0, 1, 2… a través de todas sus frases.
 Un campo `…Cue` dice en qué subtítulo aparece un elemento: así el gráfico cambia justo cuando
@@ -152,9 +157,16 @@ y la segunda con el 2.
 
 ```json
 {"brand": "CIFRA CLAVE", "series": "CONCEPTO",
- "voice": {"name": "em_alex", "speed": 1.0, "lang": "es-419"},
+ "voice": {"name": "M1", "speed": 1.1},
  "scenes": [ {"type": "...", "lines": [...]}, ... ]}
 ```
+
+**Voz.** La del canal es `M1` a velocidad `1.1` (Supertonic 3, 44,1 kHz): no cambiarla de un video a otro.
+Esta voz lee las letras tal cual y con palabras mal escritas a propósito pronuncia peor: en `tts` se
+escribe con ortografía normal y solo se cambia la grafía de un nombre extranjero si el control lo marca.
+Hay otras nueve voces (`M2` a `M5`, `F1` a `F5`) por si el dueño del canal pide un cambio. Los specs de
+`publicados/` hasta el 23/11/2026 usan la voz anterior (`{"name": "em_alex", "speed": 1.0, "lang": "es-419"}`,
+Kokoro) y se pueden rehacer tal cual.
 
 Colores disponibles en cualquier campo `color`: `amber` (destacado), `mint` (positivo),
 `coral` (negativo o alerta), `soft` (neutro), `white`; en chips también `outline`.
@@ -202,10 +214,13 @@ Los archivos de `publicados/` muestran casi todas las escenas en uso real: copia
 4. El gráfico de cada escena cambia cuando la voz lo nombra (revisar los `cue`).
 5. La marca y la serie se ven arriba a la izquierda; el cierre tiene fuente y aviso.
 6. Duración entre 25 y 45 segundos.
+7. La voz dijo lo que dice el guion: `make_audio.py` terminó con `OIDO: N de N frases confirmadas`.
 
 Corregir y repetir hasta que esté limpio. Después del render, mirar la hoja del archivo final
-(`render.py sheet`). No se puede escuchar el audio desde la sesión: `make_audio.py` informa
-el volumen (objetivo −14 LUFS) y eso es lo verificable.
+(`render.py sheet`). El audio no se puede escuchar desde la sesión, pero `make_audio.py` lo controla
+solo: transcribe cada frase con Whisper, la compara con el guion (y con el subtítulo, para cifras y
+nombres) y, si no se entiende, graba otra toma y se queda con la mejor. En `oido.json` queda lo que
+se oyó en cada frase. También informa el volumen (objetivo −14 LUFS).
 
 ---
 
@@ -214,7 +229,8 @@ el volumen (objetivo −14 LUFS) y eso es lo verificable.
 Archivo: `cifra-clave_AAAA-MM-DD_tema.mp4`. Junto al video, un mensaje corto con:
 
 - **Título** (hasta 60 letras, con la cifra): listo para pegar en YouTube.
-- **Descripción** (2 o 3 renglones) + fuentes + «Contenido informativo. No es recomendación de inversión.»
+- **Descripción** (2 o 3 renglones) + fuentes + «Contenido informativo. No es recomendación de inversión.
+  Voz generada con IA.» (la licencia de la voz pide avisar que es sintética: no quitarlo).
 - **Hashtags**: 3 a 5, con `#Shorts` y `#finanzas`.
 - **Fuentes**: enlaces usados.
 - **Verificado**: qué se comprobó contra la fuente y qué no se pudo comprobar.
@@ -248,4 +264,7 @@ por video y compartidos.
 ---
 
 Fuentes tipográficas: Anton e Inter, bajo SIL Open Font License 1.1 (ver `fonts/`).
-Voz: Kokoro (modelo abierto, licencia Apache 2.0) mediante `kokoro-onnx`.
+Voz: Supertonic 3 (Supertone Inc., licencia BigScience OpenRAIL-M: admite uso comercial y pide avisar
+que el contenido es generado por máquina) mediante `sherpa-onnx` (Apache 2.0).
+Control de pronunciación: Whisper large-v3-turbo (OpenAI, licencia MIT) mediante `sherpa-onnx`.
+Voz de los videos hasta el 23/11/2026: Kokoro (Apache 2.0) mediante `kokoro-onnx`.
