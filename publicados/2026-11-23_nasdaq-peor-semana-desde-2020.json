@@ -1,0 +1,481 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "MERCADOS",
+ "voice": {
+  "name": "em_alex",
+  "speed": 1.0,
+  "lang": "es-419"
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "NASDAQ · 16 AL 20 NOV. 2026",
+   "value": -10,
+   "suffix": "%",
+   "color": "coral",
+   "label": "EN UNA SEMANA",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "EXACTO: -10,02%",
+     "color": "outline",
+     "cue": 1
+    }
+   ],
+   "max": 25136.27,
+   "rows": [
+    {
+     "label": "Viernes 13",
+     "sub": "cierre",
+     "value": 25136.27,
+     "display": "25.136",
+     "color": "soft",
+     "cue": 1
+    },
+    {
+     "label": "Viernes 20",
+     "sub": "cierre",
+     "value": 22617.73,
+     "display": "22.618",
+     "color": "coral",
+     "cue": 2
+    }
+   ],
+   "foot": "Fuente: Nasdaq, Inc. · índice Nasdaq Composite, en puntos",
+   "lines": [
+    {
+     "tts": "El Násdaq perdió diez por ciento en una sola semana.",
+     "caps": [
+      [
+       "El *Nasdaq*",
+       "El Násdaq"
+      ],
+      [
+       "perdió *10%*",
+       "perdió diez por ciento"
+      ],
+      "en una sola semana."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "NASDAQ · LA SEMANA, DÍA POR DÍA",
+   "max": 5.28,
+   "cues": [
+    0,
+    0,
+    1,
+    1,
+    2
+   ],
+   "cols": [
+    {
+     "label": "Lun 16",
+     "value": 2.49,
+     "display": "-2,5%",
+     "color": "coral",
+     "hl": false
+    },
+    {
+     "label": "Mar 17",
+     "value": 0.74,
+     "display": "-0,7%",
+     "color": "coral",
+     "hl": false
+    },
+    {
+     "label": "Mié 18",
+     "value": 0.42,
+     "display": "+0,4%",
+     "color": "mint",
+     "hl": false
+    },
+    {
+     "label": "Jue 19",
+     "value": 2.25,
+     "display": "-2,3%",
+     "color": "coral",
+     "hl": false
+    },
+    {
+     "label": "Vie 20",
+     "value": 5.28,
+     "display": "-5,3%",
+     "color": "coral",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Cayó cuatro de los cinco días.",
+     "caps": [
+      "Cayó *cuatro*",
+      "de los cinco días."
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "Solo el viernes, más de cinco por ciento.",
+     "caps": [
+      "Solo el *viernes,*",
+      [
+       "más de *5%.*",
+       "más de cinco por ciento."
+      ]
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "title": "PEORES SEMANAS DESDE MARZO 2020",
+   "max": 12.64,
+   "rows": [
+    {
+     "label": "Marzo 2020",
+     "sub": "semana del 16 al 20 · pandemia",
+     "value": 12.64,
+     "display": "-12,6%",
+     "color": "soft"
+    },
+    {
+     "label": "Noviembre 2026",
+     "sub": "semana del 16 al 20",
+     "value": 10.02,
+     "display": "-10,0%",
+     "color": "coral"
+    },
+    {
+     "label": "Abril 2025",
+     "sub": "semana del 31/3 al 4/4",
+     "value": 10.02,
+     "display": "-10,0%",
+     "color": "soft"
+    }
+   ],
+   "cues": [
+    1,
+    0,
+    2
+   ],
+   "foot": "Variación semanal. Nov. 2026: -10,020% · abr. 2025: -10,017%",
+   "lines": [
+    {
+     "tts": "Es su peor semana desde marzo de dos mil veinte, en plena pandemia.",
+     "caps": [
+      "Es su *peor semana*",
+      [
+       "desde marzo de *2020,*",
+       "desde marzo de dos mil veinte,"
+      ],
+      "en plena pandemia."
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "question": "¿QUÉ\nPASÓ?",
+   "answer": "IA",
+   "answerCue": 3,
+   "lines": [
+    {
+     "tts": "¿Qué pasó?",
+     "caps": [
+      "¿Qué pasó?"
+     ],
+     "gap": 0.3
+    },
+    {
+     "tts": "Una ola de ventas en acciones de inteligencia artificial.",
+     "caps": [
+      "Una *ola de ventas*",
+      "en acciones",
+      "de *inteligencia artificial.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "title": "LA SEMANA EN WALL STREET",
+   "top": 400,
+   "gap": 250,
+   "cues": [
+    0,
+    0,
+    1
+   ],
+   "nodes": [
+    {
+     "chip": "-10,0%",
+     "text": "Nasdaq Composite: mucho peso de tecnológicas",
+     "color": "coral"
+    },
+    {
+     "chip": "-8,6%",
+     "text": "S&P 500: grandes empresas de Estados Unidos",
+     "color": "soft"
+    },
+    {
+     "chip": "-8,0%",
+     "text": "Dow Jones: 30 grandes empresas",
+     "color": "soft"
+    }
+   ],
+   "foot": "Variación del 13 al 20/11/2026 · S&P Dow Jones Indices y Nasdaq",
+   "lines": [
+    {
+     "tts": "El ese y pe quinientos y el Dau Yons también perdieron más de ocho por ciento.",
+     "caps": [
+      [
+       "El *S&P 500*",
+       "El ese y pe quinientos"
+      ],
+      [
+       "y el *Dow Jones*",
+       "y el Dau Yons"
+      ],
+      "también perdieron",
+      [
+       "más de *8%.*",
+       "más de ocho por ciento."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "line",
+   "title": "NASDAQ COMPOSITE EN 2026",
+   "hero": {
+    "text": "-18%",
+    "sub": "DESDE EL RÉCORD",
+    "color": "coral",
+    "cue": 1
+   },
+   "yMin": 20000,
+   "yMax": 28400,
+   "yTicks": [
+    {
+     "v": 20000,
+     "label": "20.000"
+    },
+    {
+     "v": 24000,
+     "label": "24.000"
+    },
+    {
+     "v": 28000,
+     "label": "28.000"
+    }
+   ],
+   "xTicks": [
+    {
+     "i": 0,
+     "label": "Ene."
+    },
+    {
+     "i": 14,
+     "label": "Abr."
+    },
+    {
+     "i": 27,
+     "label": "Jul."
+    },
+    {
+     "i": 40,
+     "label": "Oct."
+    }
+   ],
+   "series": [
+    {
+     "color": "coral",
+     "values": [
+      23241.99,
+      23235.63,
+      23671.35,
+      23515.39,
+      23501.24,
+      23461.82,
+      23031.21,
+      22546.67,
+      22886.07,
+      22668.21,
+      22387.68,
+      22105.36,
+      21647.61,
+      20948.36,
+      21879.18,
+      22902.89,
+      24468.48,
+      24836.6,
+      25114.44,
+      26247.08,
+      26225.14,
+      26343.97,
+      26972.62,
+      25709.43,
+      25888.84,
+      26517.93,
+      25297.62,
+      25832.67,
+      26281.61,
+      25520.24,
+      24975.82,
+      25373.85,
+      26690.62,
+      26729.16,
+      26180.45,
+      26402.42,
+      26506.99,
+      26333.04,
+      26522.55,
+      27068.72,
+      27190.86,
+      27599.89,
+      27366.17,
+      26140.03,
+      25955.34,
+      25437.0,
+      24579.42,
+      25136.27,
+      22617.73
+     ],
+     "area": true
+    },
+    {
+     "color": "soft",
+     "values": [
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99,
+      23241.99
+     ],
+     "dash": "4 16",
+     "width": 5,
+     "area": false
+    }
+   ],
+   "marks": [
+    {
+     "i": 41,
+     "s": 0,
+     "label": "Récord: 27.600",
+     "color": "white"
+    },
+    {
+     "i": 48,
+     "s": 0,
+     "label": "22.618",
+     "color": "coral",
+     "pos": "below"
+    },
+    {
+     "i": 27,
+     "s": 1,
+     "label": "Inicio de 2026",
+     "color": "soft",
+     "pos": "below",
+     "cue": 2
+    }
+   ],
+   "drawCue": 0,
+   "drawDur": 1.5,
+   "lines": [
+    {
+     "tts": "Desde su récord de octubre, el Násdaq ya bajó dieciocho por ciento.",
+     "caps": [
+      "Desde su *récord* de octubre,",
+      [
+       "el Nasdaq ya bajó *18%.*",
+       "el Násdaq ya bajó dieciocho por ciento."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "Y borró lo ganado en el año.",
+     "caps": [
+      "Y borró lo ganado",
+      "*en el año.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuentes: Nasdaq, Inc. y S&P Dow Jones Indices (cierres oficiales al 20/11/2026, vía FRED y AP). Variaciones: cálculo propio, cierre a cierre. Causa de la baja: según AP y Reuters. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}

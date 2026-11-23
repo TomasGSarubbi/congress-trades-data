@@ -35,5 +35,23 @@
    "cálculo propio: 100 × 168,8 / 337,511 = 50,01; 100 × 337,511 / 168,8 = 199,95; tasa anual compuesta en 26 años y 9 meses = 2,62%"
   ],
   "spec": "publicados/2026-11-22_efectivo-dolar-vs-inflacion.json"
+ },
+ {
+  "fecha": "2026-11-23",
+  "serie": "MERCADOS",
+  "tema": "nasdaq-peor-semana-desde-2020",
+  "titulo": "El Nasdaq perdió 10% en una semana: la peor desde 2020",
+  "cifra": "-10%",
+  "fuentes": [
+   "https://fred.stlouisfed.org/series/NASDAQCOM",
+   "https://indexes.nasdaq.com/Index/History/COMP",
+   "https://fred.stlouisfed.org/series/SP500",
+   "https://fred.stlouisfed.org/series/DJIA",
+   "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135",
+   "Nasdaq Composite, cierres oficiales (Nasdaq, Inc., vía FRED y sitio de índices de Nasdaq): 13/11/2026 = 25.136,27 y 20/11/2026 = 22.617,73; récord 06/10/2026 = 27.599,89; cierre de 2025 = 23.241,99. S&P 500 y Dow Jones (S&P Dow Jones Indices, vía FRED; S&P 500 del 20/11 según AP): 7.561,67 → 6.910,39 y 52.347,55 → 48.147,33",
+   "cálculo propio, cierre a cierre: semana -10,020% (22.617,73 / 25.136,27 − 1); semanas de comparación con la misma serie: 13→20/03/2020 = -12,640% y 28/03→04/04/2025 = -10,017% (se revisaron las 351 variaciones semanales desde febrero de 2020); desde el récord = -18,05%; en el año = -2,69%; S&P 500 = -8,61%; Dow Jones = -8,02%",
+   "causa de la baja (ventas en acciones de inteligencia artificial): según AP y Reuters, 20/11/2026"
+  ],
+  "spec": "publicados/2026-11-23_nasdaq-peor-semana-desde-2020.json"
  }
 ]
