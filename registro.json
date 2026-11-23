@@ -44,10 +44,12 @@
   "cifra": "-10%",
   "fuentes": [
    "https://fred.stlouisfed.org/series/NASDAQCOM",
+   "https://fred.stlouisfed.org/data/NASDAQCOM",
    "https://indexes.nasdaq.com/Index/History/COMP",
-   "https://fred.stlouisfed.org/series/SP500",
-   "https://fred.stlouisfed.org/series/DJIA",
-   "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135",
+   "https://fred.stlouisfed.org/series/SP500?cid=32255",
+   "https://fred.stlouisfed.org/series/DJIA/",
+   "AP, \"How major US stock indexes fared Friday 11/20/2026\", leída en la copia del Yakima Herald (el original de apnews.com no se abrió): https://www.yakimaherald.com/news/nation_and_world/business/how-major-us-stock-indexes-fared-friday-11-20-2026/article_963ce6d2-85a3-5fd6-981d-e60b72a58fbb.html",
+   "AP, mismos partes del lunes 16 al jueves 19/11/2026, leídos en las copias de La Nación: https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-monday-11162026-nid16112026/",
    "Nasdaq Composite, cierres oficiales (Nasdaq, Inc., vía FRED y sitio de índices de Nasdaq): 13/11/2026 = 25.136,27 y 20/11/2026 = 22.617,73; récord 06/10/2026 = 27.599,89; cierre de 2025 = 23.241,99. S&P 500 y Dow Jones (S&P Dow Jones Indices, vía FRED; S&P 500 del 20/11 según AP): 7.561,67 → 6.910,39 y 52.347,55 → 48.147,33",
    "cálculo propio, cierre a cierre: semana -10,020% (22.617,73 / 25.136,27 − 1); semanas de comparación con la misma serie: 13→20/03/2020 = -12,640% y 28/03→04/04/2025 = -10,017% (se revisaron las 351 variaciones semanales desde febrero de 2020); desde el récord = -18,05%; en el año = -2,69%; S&P 500 = -8,61%; Dow Jones = -8,02%",
    "causa de la baja (ventas en acciones de inteligencia artificial): según AP y Reuters, 20/11/2026"
