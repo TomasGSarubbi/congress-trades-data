@@ -1,1 +1,30 @@
-[]
+[
+ {
+  "chamber": "House",
+  "member": "Ed Case",
+  "owner": "Spouse",
+  "ticker": "AAPL",
+  "asset": "Apple Inc. - Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New D\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000: Automatic stock dividend reinvestment",
+  "asset_type": "ST",
+  "tx_type": "Purchase",
+  "tx_date": "11/16/2026",
+  "filed_date": "11/21/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036891.pdf",
+  "id": "9942559a023d8568"
+ },
+ {
+  "chamber": "House",
+  "member": "Jennifer Mcclellan",
+  "owner": "Self",
+  "ticker": "VZ",
+  "asset": "Verizon Communications Inc. Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Fidelity Investment Account",
+  "asset_type": "ST",
+  "tx_type": "Sale (Partial)",
+  "tx_date": "11/19/2026",
+  "filed_date": "11/20/2026",
+  "amount": "$50,001 - $100,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036883.pdf",
+  "id": "b1635df1612995ae"
+ }
+]
