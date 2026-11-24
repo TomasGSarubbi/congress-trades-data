@@ -1,0 +1,311 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "EMPRESA EN CIFRAS",
+ "voice": {
+  "name": "M1",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "MERCADO LIBRE · JUL.–SEP. 2026",
+   "value": 109,
+   "color": "amber",
+   "label": "PRODUCTOS POR SEGUNDO",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "PROMEDIO DEL TRIMESTRE",
+     "color": "outline",
+     "cue": 1
+    }
+   ],
+   "dots": {
+    "count": 109,
+    "cols": 16,
+    "color": "amber",
+    "cue": 1,
+    "dur": 1.0,
+    "label": "Cada cuadrado es un producto: 109 en un solo segundo"
+   },
+   "lines": [
+    {
+     "tts": "En Mercado Libre se venden ciento nueve productos por segundo.",
+     "caps": [
+      "En *Mercado Libre*",
+      [
+       "se venden *109*",
+       "se venden ciento nueve"
+      ],
+      "productos por segundo."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "title": "VENTAS EN MERCADO LIBRE",
+   "top": 400,
+   "gap": 250,
+   "cues": [
+    0,
+    0,
+    2
+   ],
+   "nodes": [
+    {
+     "chip": "109",
+     "text": "productos por segundo",
+     "color": "amber"
+    },
+    {
+     "chip": "9,4",
+     "text": "millones por día",
+     "color": "soft"
+    },
+    {
+     "chip": "867",
+     "text": "millones en tres meses: julio a septiembre de 2026",
+     "color": "mint"
+    }
+   ],
+   "foot": "Artículos vendidos en su plataforma · promedios: cálculo propio",
+   "lines": [
+    {
+     "tts": "Son más de nueve millones por día: ochocientos sesenta y siete millones en tres meses.",
+     "caps": [
+      [
+       "Son más de *9 millones*",
+       "Son más de nueve millones"
+      ],
+      "por día:",
+      [
+       "*867 millones*",
+       "ochocientos sesenta y siete millones"
+      ],
+      "en tres meses."
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "POR SEGUNDO · +36% EN UN AÑO",
+   "max": 109.07,
+   "cues": [
+    1,
+    2
+   ],
+   "cols": [
+    {
+     "label": "Jul.–sep. 2025",
+     "sub": "635 millones",
+     "value": 79.89,
+     "display": "80",
+     "color": "soft"
+    },
+    {
+     "label": "Jul.–sep. 2026",
+     "sub": "867 millones",
+     "value": 109.07,
+     "display": "109",
+     "color": "amber",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Hace un año eran ochenta: creció treinta y seis por ciento.",
+     "caps": [
+      "Hace un año",
+      [
+       "eran *80:*",
+       "eran ochenta:"
+      ],
+      [
+       "creció *36%.*",
+       "creció treinta y seis por ciento."
+      ]
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "people",
+   "count": 8,
+   "big": "94",
+   "title": "MILLONES",
+   "subtitle": "DE COMPRADORES",
+   "subCue": 1,
+   "stamp": "+22% EN UN AÑO",
+   "stampCue": 2,
+   "lines": [
+    {
+     "tts": "Detrás hay noventa y cuatro millones de compradores.",
+     "caps": [
+      "Detrás hay",
+      [
+       "*94 millones*",
+       "noventa y cuatro millones"
+      ],
+      "de compradores."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "title": "INGRESOS POR PAÍS",
+   "max": 100,
+   "cues": [
+    3,
+    0,
+    1,
+    2
+   ],
+   "rows": [
+    {
+     "label": "Brasil",
+     "sub": "USD 6.001 millones",
+     "value": 55.8,
+     "display": "55,8%",
+     "color": "amber"
+    },
+    {
+     "label": "México",
+     "sub": "USD 2.429 millones",
+     "value": 22.6,
+     "display": "22,6%",
+     "color": "soft"
+    },
+    {
+     "label": "Argentina",
+     "sub": "USD 1.818 millones",
+     "value": 16.9,
+     "display": "16,9%",
+     "color": "soft"
+    },
+    {
+     "label": "Otros países",
+     "sub": "USD 502 millones",
+     "value": 4.7,
+     "display": "4,7%",
+     "color": "soft"
+    }
+   ],
+   "foot": "Ingresos netos y financieros, jul.–sep. 2026: USD 10.750 millones",
+   "lines": [
+    {
+     "tts": "Y más de la mitad de sus ingresos viene de un solo país: Brasil.",
+     "caps": [
+      "Y *más de la mitad*",
+      "de sus ingresos",
+      "viene de un solo país:",
+      "*Brasil.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "title": "INGRESOS POR NEGOCIO",
+   "center": {
+    "big": "10.750",
+    "small": "USD MILLONES"
+   },
+   "parts": [
+    {
+     "label": "Comercio",
+     "value": 6141,
+     "display": "6.141",
+     "color": "soft",
+     "cue": 0
+    },
+    {
+     "label": "Mercado Pago",
+     "value": 4609,
+     "display": "4.609",
+     "color": "mint",
+     "cue": 1
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Además, el cuarenta y tres por ciento de los ingresos llega por Mercado Pago, su negocio financiero.",
+     "caps": [
+      "Además,",
+      [
+       "el *43%* de los ingresos",
+       "el cuarenta y tres por ciento de los ingresos"
+      ],
+      "llega por",
+      [
+       "*Mercado Pago,*",
+       "Mercado Pago,"
+      ],
+      "su negocio financiero."
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "equation",
+   "kicker": "DE INGRESOS A GANANCIA",
+   "left": "USD 100",
+   "op": "→",
+   "right": "USD 4",
+   "leftIcon": "bill",
+   "rightIcon": "bill",
+   "leftCue": 0,
+   "kickerCue": 1,
+   "opCue": 2,
+   "rightCue": 2,
+   "foot": "Ingresos: USD 10.750 millones · ganancia neta: USD 448 millones",
+   "lines": [
+    {
+     "tts": "De cada cien dólares que ingresan, cuatro quedan como ganancia.",
+     "caps": [
+      [
+       "De cada *100 dólares*",
+       "De cada cien dólares"
+      ],
+      "que ingresan,",
+      [
+       "*4* quedan",
+       "cuatro quedan"
+      ],
+      "como *ganancia.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuente: MercadoLibre, Inc., resultados del tercer trimestre de 2026 (julio a septiembre), publicados el 4/11/2026. Por segundo y por día: cálculo propio, promedio de 92 días. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}

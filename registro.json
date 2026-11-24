@@ -55,5 +55,23 @@
    "causa de la baja (ventas en acciones de inteligencia artificial): según AP y Reuters, 20/11/2026"
   ],
   "spec": "publicados/2026-11-23_nasdaq-peor-semana-desde-2020.json"
+ },
+ {
+  "fecha": "2026-11-24",
+  "serie": "EMPRESA EN CIFRAS",
+  "tema": "mercado-libre-109-por-segundo",
+  "titulo": "Mercado Libre: 109 productos vendidos por segundo",
+  "cifra": "109",
+  "fuentes": [
+   "https://www.sec.gov/Archives/edgar/data/0001099590/000109959026000027/meli-20260930xex991.htm",
+   "https://www.sec.gov/Archives/edgar/data/1099590/000109959026000029/meli-20260930.htm",
+   "https://www.diarioestrategia.cl/texto-diario/mostrar/6079866/ingresos-mercado-libre-alcanzan-us-1075-mil-millones-45-respecto-ano-anterior",
+   "https://dplnews.com/?p=336397",
+   "MercadoLibre, Inc., carta a los accionistas del 3.er trimestre de 2026 (anexo 99.1 del 8-K, fechada el 04/11/2026), leída en la SEC: artículos vendidos jul.–sep. 2026 = 867 millones y jul.–sep. 2025 = 635 millones; compradores activos únicos = 94 y 77 millones; ingresos netos e ingresos financieros = USD 10.750 millones (Brasil 6.001, México 2.429, Argentina 1.818, otros países 502); ganancia neta = USD 448 millones (margen 4,2%)",
+   "Form 10-Q del trimestre al 30/09/2026, leído en la SEC: mismos ingresos y ganancia neta; ingresos de comercio = USD 6.141 millones y de fintech (Mercado Pago) = USD 4.609 millones",
+   "cálculo propio, promedio sobre los 92 días del trimestre (7.948.800 segundos): 867 millones / 7.948.800 = 109,07 artículos por segundo (hace un año: 79,89); 867 millones / 92 = 9,42 millones por día; Brasil 55,8%, México 22,6%, Argentina 16,9%, otros 4,7% de los ingresos; Mercado Pago 42,9%; ganancia neta / ingresos = 4,17%",
+   "crecimiento de artículos vendidos (+36%) y de compradores (+22%): cifras del comunicado de la empresa según Diario Estrategia (05/11/2026); DPL News (06/11/2026) repite el +36%; con la tabla oficial, redondeada a millones, el cálculo da 36,5% y 22,1%"
+  ],
+  "spec": "publicados/2026-11-24_mercado-libre-109-por-segundo.json"
  }
 ]
