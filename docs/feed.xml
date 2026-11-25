@@ -8,11 +8,18 @@
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
     <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>14 congressional trades disclosed on 24 Nov 2026</title>
+      <title>15 congressional trades disclosed on 24 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
       <guid isPermaLink="false">capitol-radar-2026-11-24</guid>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
-      <description>14 trades disclosed by 1 member (12 buys, 2 sells). Largest: Richard Blumenthal — MH Four Winds LLCCompany:MH Four Winds LLC (New York, NY)Description:Partnership, BUY, $500,001 – $1,000,000.</description>
+      <description>15 trades disclosed by 2 members (12 buys, 3 sells). Largest: Richard Blumenthal — MH Four Winds LLCCompany:MH Four Winds LLC (New York, NY)Description:Partnership, BUY, $500,001 – $1,000,000.</description>
+    </item>
+    <item>
+      <title>167 congressional trades disclosed on 23 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-23</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+      <description>167 trades disclosed by 1 member (74 buys, 93 sells). Largest: Harriet Hageman — Verizon Communications Inc. Common Stock (VZ), SELL · partial, $15,001 – $50,000.</description>
     </item>
     <item>
       <title>1 congressional trades disclosed on 21 Nov 2026</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-10-14</guid>
       <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
       <description>10 trades disclosed by 5 members (5 buys, 5 sells). Largest: Suzan K. Delbene — Black Belt Energy Gas Dist Ala Gas 05.00% 10/01/2032 Proj Rev BDS Ser. 2026 M-1, BUY, $250,001 – $500,000.</description>
-    </item>
-    <item>
-      <title>24 congressional trades disclosed on 13 Oct 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-10-13</guid>
-      <pubDate>Tue, 13 Oct 2026 00:00:00 +0000</pubDate>
-      <description>24 trades disclosed by 1 member (5 buys, 19 sells). Largest: Kevin Hern — Devon Energy Corporation Common Stock (DVN), SELL, $50,001 – $100,000.</description>
     </item>
   </channel>
 </rss>
