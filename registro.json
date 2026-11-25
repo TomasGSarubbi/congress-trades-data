@@ -73,5 +73,23 @@
    "crecimiento de artículos vendidos (+36%) y de compradores (+22%): cifras del comunicado de la empresa según Diario Estrategia (05/11/2026); DPL News (06/11/2026) repite el +36%; con la tabla oficial, redondeada a millones, el cálculo da 36,5% y 22,1%"
   ],
   "spec": "publicados/2026-11-24_mercado-libre-109-por-segundo.json"
+ },
+ {
+  "fecha": "2026-11-25",
+  "serie": "CONCEPTO",
+  "tema": "regla-del-72",
+  "titulo": "La regla del 72: ¿en cuántos años se duplica tu dinero?",
+  "cifra": "72",
+  "fuentes": [
+   "https://www.investor.gov/additional-resources/information/youth/teachers-classroom-resources/what-compound-interest",
+   "https://www.stlouisfed.org/open-vault/2018/september/how-compound-interest-works",
+   "https://www.stlouisfed.org/publications/page-one-economics/2026/nov/compound-interest-how-time-helps-money-grow",
+   "SEC (Investor.gov), \"What is compound interest?\", leída el 25/11/2026: la regla del 72 sirve para estimar en cuánto tiempo se duplica una inversión; se divide 72 por la tasa de rendimiento esperada (ejemplo de la página: 9% → unos 8 años, 72 ÷ 9 = 8)",
+   "Banco de la Reserva Federal de St. Louis, Open Vault (12/09/2018) y Page One Economics (02/11/2026), leídas el 25/11/2026: se divide 72 por la tasa de interés anual (ejemplos de las páginas: 2% → 36 años, 6% → unos 12, 8% → 9, 12% → 6); la de 2018 aclara que la regla es una aproximación",
+   "cálculo propio del 25/11/2026 (interés compuesto con capitalización anual y tasa constante, sin aportes, pagos, impuestos ni comisiones): años exactos para duplicar = ln 2 / ln(1 + tasa) → 3%: 23,45; 4%: 17,67; 6%: 11,90; 9%: 8,04; 24%: 3,22. USD 1.000 al 6% anual: 2.012,20 al año 12, 4.048,93 al año 24 y 8.147,25 al año 36. Entre 2% y 12% anual la regla difiere del cálculo exacto en menos de un año (máximo 0,997 años, al 2%)",
+   "las páginas oficiales consultadas usan la regla solo para ahorro o inversión; aplicarla a una deuda sin pagos (24% anual → 3 años según la regla, 3,22 exactos) es cálculo propio con la misma fórmula",
+   "no se usó: la entrada del glosario de Investor.gov (.../glossary/rule-72) abrió sin el texto de la definición"
+  ],
+  "spec": "publicados/2026-11-25_regla-del-72.json"
  }
 ]

@@ -1,0 +1,359 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "CONCEPTO",
+ "voice": {
+  "name": "M1",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "UN ATAJO DE CÁLCULO MENTAL",
+   "text": "72",
+   "color": "amber",
+   "label": "LA REGLA DEL 72",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "¿EN CUÁNTOS AÑOS SE DUPLICA?",
+     "color": "amber",
+     "cue": 1
+    }
+   ],
+   "max": 2000,
+   "rows": [
+    {
+     "label": "Hoy",
+     "sub": "",
+     "value": 1000,
+     "display": "USD 1.000",
+     "color": "soft",
+     "cue": 2
+    },
+    {
+     "label": "El doble",
+     "sub": "",
+     "value": 2000,
+     "display": "USD 2.000",
+     "color": "amber",
+     "cue": 3
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Setenta y dos: con este número se estima en cuántos años se duplica el dinero.",
+     "caps": [
+      [
+       "*72:* con este número",
+       "Setenta y dos: con este número"
+      ],
+      "se estima",
+      "en cuántos años",
+      "se *duplica* el dinero."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "equation",
+   "kicker": "AÑOS PARA DUPLICAR =",
+   "left": "72",
+   "op": "÷",
+   "right": "TASA",
+   "leftCue": 0,
+   "kickerCue": 0,
+   "opCue": 1,
+   "rightCue": 1,
+   "foot": "La tasa va en porcentaje: al 6% anual, se divide 72 por 6",
+   "lines": [
+    {
+     "tts": "Se divide por la tasa de interés anual.",
+     "caps": [
+      "Se divide",
+      "por la *tasa*",
+      "de interés anual."
+     ],
+     "gap": 0.6
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "title": "72 ÷ TASA = AÑOS PARA DUPLICAR",
+   "max": 18,
+   "cues": [
+    0,
+    1,
+    2
+   ],
+   "rows": [
+    {
+     "label": "Al 4% anual",
+     "sub": "72 ÷ 4 · exacto: 17,7 años",
+     "value": 18,
+     "display": "18 años",
+     "color": "soft"
+    },
+    {
+     "label": "Al 6% anual",
+     "sub": "72 ÷ 6 · exacto: 11,9 años",
+     "value": 12,
+     "display": "12 años",
+     "color": "amber"
+    },
+    {
+     "label": "Al 9% anual",
+     "sub": "72 ÷ 9 · exacto: 8,0 años",
+     "value": 8,
+     "display": "8 años",
+     "color": "mint"
+    }
+   ],
+   "foot": "Exacto: interés compuesto anual, tasa constante · cálculo propio",
+   "lines": [
+    {
+     "tts": "Al cuatro por ciento son dieciocho años; al seis, doce; y al nueve, ocho.",
+     "caps": [
+      [
+       "Al *4%* son *18 años;*",
+       "Al cuatro por ciento son dieciocho años;"
+      ],
+      [
+       "al *6%,* 12;",
+       "al seis, doce;"
+      ],
+      [
+       "y al *9%,* 8.",
+       "y al nueve, ocho."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "line",
+   "title": "USD 1.000 AL 6% ANUAL",
+   "hero": {
+    "text": "x2",
+    "sub": "CADA 12 AÑOS",
+    "color": "mint",
+    "cue": 0
+   },
+   "yTicks": [
+    {
+     "v": 1000,
+     "label": "1.000"
+    },
+    {
+     "v": 2000,
+     "label": "2.000"
+    },
+    {
+     "v": 4000,
+     "label": "4.000"
+    },
+    {
+     "v": 8000,
+     "label": "8.000"
+    }
+   ],
+   "xTicks": [
+    {
+     "i": 0,
+     "label": "Hoy"
+    },
+    {
+     "i": 12,
+     "label": "Año 12"
+    },
+    {
+     "i": 24,
+     "label": "Año 24"
+    },
+    {
+     "i": 36,
+     "label": "Año 36"
+    }
+   ],
+   "series": [
+    {
+     "color": "mint",
+     "values": [
+      1000,
+      1060,
+      1124,
+      1191,
+      1262,
+      1338,
+      1419,
+      1504,
+      1594,
+      1689,
+      1791,
+      1898,
+      2012,
+      2133,
+      2261,
+      2397,
+      2540,
+      2693,
+      2854,
+      3026,
+      3207,
+      3400,
+      3604,
+      3820,
+      4049,
+      4292,
+      4549,
+      4822,
+      5112,
+      5418,
+      5743,
+      6088,
+      6453,
+      6841,
+      7251,
+      7686,
+      8147
+     ],
+     "end": "USD 8.147",
+     "endCue": 5
+    }
+   ],
+   "marks": [
+    {
+     "i": 12,
+     "s": 0,
+     "label": "USD 2.012",
+     "color": "amber",
+     "cue": 3
+    },
+    {
+     "i": 24,
+     "s": 0,
+     "label": "USD 4.049",
+     "color": "amber",
+     "cue": 4
+    }
+   ],
+   "drawCue": 1,
+   "drawDelay": 0.4,
+   "drawDur": 3.0,
+   "lines": [
+    {
+     "tts": "Mil dólares al seis por ciento se duplicarían cada doce años: dos mil, cuatro mil, ocho mil.",
+     "caps": [
+      [
+       "*1.000 dólares* al 6%",
+       "Mil dólares al seis por ciento"
+      ],
+      "se duplicarían",
+      [
+       "cada *12 años:*",
+       "cada doce años:"
+      ],
+      "*dos mil,*",
+      "*cuatro mil,*",
+      "*ocho mil.*"
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "AÑOS PARA DUPLICARSE",
+   "max": 24,
+   "cues": [
+    0,
+    3
+   ],
+   "cols": [
+    {
+     "label": "Ahorro al 3%",
+     "sub": "exacto: 23,4 años",
+     "value": 24,
+     "display": "24 años",
+     "color": "mint"
+    },
+    {
+     "label": "Deuda al 24%",
+     "sub": "exacto: 3,2 años",
+     "value": 3,
+     "display": "3 años",
+     "color": "coral",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Un ahorro al tres por ciento tarda unos veinticuatro años en duplicarse; una deuda sin pagar al veinticuatro, poco más de tres.",
+     "caps": [
+      [
+       "Un *ahorro* al 3%",
+       "Un ahorro al tres por ciento"
+      ],
+      [
+       "tarda unos *24 años*",
+       "tarda unos veinticuatro años"
+      ],
+      "en duplicarse;",
+      "una *deuda* sin pagar",
+      [
+       "al *24%,*",
+       "al veinticuatro,"
+      ],
+      [
+       "poco más de *3.*",
+       "poco más de tres."
+      ]
+     ],
+     "gap": 0.5
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "question": "¿ES\nEXACTA?",
+   "answer": "CASI",
+   "answerCue": 1,
+   "lines": [
+    {
+     "tts": "¿Es exacta? Casi: es una aproximación para calcular mentalmente.",
+     "caps": [
+      "¿Es exacta?",
+      "*Casi:*",
+      "es una aproximación",
+      "para calcular",
+      "mentalmente."
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Regla del 72: SEC y Reserva Federal de St. Louis. Años exactos y ejemplos hipotéticos: cálculo propio del 25/11/2026, con interés compuesto anual y tasa constante, sin aportes, pagos, impuestos ni comisiones. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}
