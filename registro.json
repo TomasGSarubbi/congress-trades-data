@@ -91,5 +91,31 @@
    "no se usó: la entrada del glosario de Investor.gov (.../glossary/rule-72) abrió sin el texto de la definición"
   ],
   "spec": "publicados/2026-11-25_regla-del-72.json"
+ },
+ {
+  "fecha": "2026-11-26",
+  "serie": "RADAR DEL CONGRESO",
+  "tema": "congreso-169-operaciones-313-dias",
+  "titulo": "169 operaciones de bolsa declaradas hasta 313 días después",
+  "cifra": "169",
+  "fuentes": [
+   "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035776.pdf",
+   "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2026FD.txt",
+   "https://raw.githubusercontent.com/TomasGSarubbi/congress-trades-data/main/data/latest.json",
+   "https://uscode.house.gov/us/usc/119-120/t5/s13105/",
+   "https://ethics.house.gov/wp-content/uploads/2023/01/FINAL-PTR-Due-Date-Pink-Sheet.pdf",
+   "https://ethics.house.gov/periodic-transaction-report-calculator",
+   "https://hageman.house.gov/about",
+   "https://www.washingtonsun.com/congress/harriet-hageman-stock-act-late-disclosure",
+   "https://dailyletter.us/story/harriet-hageman-discloses-147-spouse-stock-trades-months-after-stock-act-deadline",
+   "PTR de la Cámara de Representantes n.º 20035776 (Hon. Harriet Hageman, Member, WY00), texto del PDF oficial leído el 26/11/2026: 169 filas, todas con titular SP (cónyuge) y activo [ST]; fechas de operación del 14/01/2026 al 20/10/2026; 156 filas de USD 1.001–15.000 y 13 de USD 15.001–50.000; nota «D: Independent professionally managed account.»; firma digital del 23/11/2026. No se vio el PDF como imagen (solo el texto extraído)",
+   "Índice oficial 2026FD.txt (Clerk of the House), leído el 26/11/2026: Hageman, Harriet · P · WY00 · 11/23/2026 · 20035776",
+   "data/latest.json de main (corrida del 25/11/2026): las mismas 169 filas, coinciden una por una con el PDF; transactions.json guarda 167 porque dos filas (WM compra y WMT venta parcial del 21/01/2026, misma cuenta y mismo rango) son idénticas a otras dos y comparten id",
+   "cálculo propio del 26/11/2026, en días corridos desde la fecha de cada operación hasta el 23/11/2026: máximo 313 (14/01/2026: COST compra y NOW venta parcial); 147 filas con más de 45 días y 22 con 45 o menos (20 del 14/10 y 2 del 20/10); 14/01 + 45 días = 28/02/2026; 75 compras y 94 ventas (81 parciales y 13 totales); 97 tickers",
+   "plazo: 5 U.S.C. § 13105(l), leído en uscode.house.gov (hasta 30 días desde la notificación y en ningún caso más de 45 desde la operación); memo del Comité de Ética de la Cámara del 30/01/2023 (\"30 days from being made aware of the transaction or 45 days from the transaction\", lo que ocurra primero)",
+   "cargo: hageman.house.gov/about (\"has represented the state of Wyoming in the U.S. House of Representatives since being elected in 2022\")",
+   "«esposo»: el PDF dice SP (cónyuge); The Washington Sun (24/11/2026) habla de las operaciones de su marido. No se usó en el video: el cargo por demora (mínimo de USD 200 según el memo de Ética), si su oficina respondió, ni la elección al Senado"
+  ],
+  "spec": "publicados/2026-11-26_congreso-169-operaciones-313-dias.json"
  }
 ]

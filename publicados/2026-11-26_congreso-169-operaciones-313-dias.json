@@ -1,0 +1,280 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "RADAR DEL CONGRESO",
+ "voice": {
+  "name": "M1",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "CÁMARA DE REPRESENTANTES",
+   "value": 169,
+   "countDur": 0.6,
+   "color": "amber",
+   "label": "OPERACIONES DE BOLSA",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "23 NOV 2026",
+     "color": "amber",
+     "cue": 3
+    },
+    {
+     "text": "HARRIET HAGEMAN",
+     "color": "outline",
+     "cue": 6
+    }
+   ],
+   "dots": {
+    "count": 169,
+    "cols": 20,
+    "color": "amber",
+    "cue": 0,
+    "dur": 2.4,
+    "label": "Cada cuadrado es una operación declarada"
+   },
+   "lines": [
+    {
+     "tts": "Ciento sesenta y nueve operaciones de bolsa, declaradas en un solo día.",
+     "caps": [
+      [
+       "*169* operaciones",
+       "Ciento sesenta y nueve operaciones"
+      ],
+      "de bolsa,",
+      "declaradas",
+      "en *un solo día.*"
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "Las presentó la representante Harriet Héigman, de Wyoming.",
+     "caps": [
+      "Las presentó",
+      "la representante",
+      [
+       "*Harriet Hageman,*",
+       "Harriet Héigman,"
+      ],
+      "de Wyoming."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "question": "¿QUÉ PLAZO\nDA LA LEY?",
+   "answer": "45",
+   "answerCue": 2,
+   "lines": [
+    {
+     "tts": "¿Qué plazo da la ley para declararlas? Cuarenta y cinco días como máximo.",
+     "caps": [
+      "¿Qué plazo da la ley",
+      "para declararlas?",
+      [
+       "*45 días*",
+       "Cuarenta y cinco días"
+      ],
+      "como máximo."
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "title": "LA OPERACIÓN MÁS ANTIGUA",
+   "top": 400,
+   "gap": 250,
+   "cues": [
+    1,
+    2,
+    3
+   ],
+   "nodes": [
+    {
+     "chip": "14 ENE",
+     "text": "Se hace la operación",
+     "color": "soft"
+    },
+    {
+     "chip": "28 FEB",
+     "text": "Vence el plazo de 45 días",
+     "color": "coral"
+    },
+    {
+     "chip": "23 NOV",
+     "text": "Se declara: día 313",
+     "color": "amber"
+    }
+   ],
+   "foot": "Plazo: STOCK Act, 5 U.S.C. § 13105(l) · 14 ene. + 45 días = 28 feb.",
+   "lines": [
+    {
+     "tts": "La más antigua es del catorce de enero: se declaró trescientos trece días después.",
+     "caps": [
+      "La más antigua",
+      [
+       "es del *14 de enero:*",
+       "es del catorce de enero:"
+      ],
+      "se declaró",
+      [
+       "*313 días* después.",
+       "trescientos trece días después."
+      ]
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "title": "DÍAS ENTRE OPERAR Y DECLARAR",
+   "center": {
+    "big": "169",
+    "small": "OPERACIONES",
+    "cue": 0
+   },
+   "parts": [
+    {
+     "label": "Más de 45 días",
+     "value": 147,
+     "display": "147",
+     "color": "amber",
+     "cue": 0
+    },
+    {
+     "label": "45 días o menos",
+     "value": 22,
+     "display": "22",
+     "color": "soft",
+     "cue": 1
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Ciento cuarenta y siete superaron ese plazo.",
+     "caps": [
+      [
+       "*147*",
+       "Ciento cuarenta y siete"
+      ],
+      "superaron *ese plazo.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "payout",
+   "prefix": "",
+   "value": 156,
+   "suffix": "/169",
+   "label": "ENTRE USD 1.001 Y 15.000",
+   "recipients": 1,
+   "peopleLabel": "CUENTAS DEL CÓNYUGE",
+   "valueCue": 0,
+   "peopleCue": 2,
+   "recipientsCue": 2,
+   "recipientsDelay": 0.35,
+   "noteCue": 3,
+   "noteDelay": 0.0,
+   "note": {
+    "title": "Nota en la declaración (traducida):",
+    "quote": "«Cuenta independiente, administrada profesionalmente.»"
+   },
+   "foot": "Montos declarados por rangos · las otras 13: USD 15.001 a 50.000",
+   "lines": [
+    {
+     "tts": "Casi todas: entre mil y quince mil dólares.",
+     "caps": [
+      "Casi todas: entre",
+      [
+       "*USD 1.001 y 15.000.*",
+       "mil y quince mil dólares."
+      ]
+     ],
+     "gap": 0.4
+    },
+    {
+     "tts": "Son cuentas de su esposo que, según la declaración, administra un profesional.",
+     "caps": [
+      "Son cuentas de *su esposo*",
+      "que, según la declaración,",
+      "administra un *profesional.*"
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "DÍAS PARA DECLARAR",
+   "max": 313,
+   "cues": [
+    1,
+    0
+   ],
+   "cols": [
+    {
+     "label": "PLAZO LEGAL",
+     "sub": "máximo",
+     "value": 45,
+     "display": "45",
+     "color": "soft"
+    },
+    {
+     "label": "MÁS ANTIGUA",
+     "sub": "de las 169",
+     "value": 313,
+     "display": "313",
+     "color": "amber",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Trescientos trece días contra cuarenta y cinco: es transparencia con retraso.",
+     "caps": [
+      [
+       "*313 días*",
+       "Trescientos trece días"
+      ],
+      [
+       "contra *45:*",
+       "contra cuarenta y cinco:"
+      ],
+      "es transparencia",
+      "*con retraso.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuente: declaración de operaciones (PTR) n.º 20035776 de la Cámara de Representantes de EE.UU., presentada el 23/11/2026. Días contados desde la fecha de cada operación. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}
