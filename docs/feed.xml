@@ -6,13 +6,20 @@
     <description>Congressional stock trades, tracked daily.</description>
     <language>en</language>
     <atom:link href="https://tomasgsarubbi.github.io/congress-trades-data/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 00:00:00 +0000</lastBuildDate>
     <item>
-      <title>15 congressional trades disclosed on 24 Nov 2026</title>
+      <title>3 congressional trades disclosed on 25 Nov 2026</title>
+      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
+      <guid isPermaLink="false">capitol-radar-2026-11-25</guid>
+      <pubDate>Wed, 25 Nov 2026 00:00:00 +0000</pubDate>
+      <description>3 trades disclosed by 1 member (3 buys, 0 sells). Largest: Rand Paul — NVIDIA Corporation - Common Stock (NVDA), BUY, $1,001 – $15,000.</description>
+    </item>
+    <item>
+      <title>38 congressional trades disclosed on 24 Nov 2026</title>
       <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
       <guid isPermaLink="false">capitol-radar-2026-11-24</guid>
       <pubDate>Tue, 24 Nov 2026 00:00:00 +0000</pubDate>
-      <description>15 trades disclosed by 2 members (12 buys, 3 sells). Largest: Richard Blumenthal — MH Four Winds LLCCompany:MH Four Winds LLC (New York, NY)Description:Partnership, BUY, $500,001 – $1,000,000.</description>
+      <description>38 trades disclosed by 4 members (13 buys, 25 sells). Largest: Richard Blumenthal — MH Four Winds LLCCompany:MH Four Winds LLC (New York, NY)Description:Partnership, BUY, $500,001 – $1,000,000.</description>
     </item>
     <item>
       <title>167 congressional trades disclosed on 23 Nov 2026</title>
@@ -209,13 +216,6 @@
       <guid isPermaLink="false">capitol-radar-2026-10-15</guid>
       <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
       <description>8 trades disclosed by 2 members (6 buys, 2 sells). Largest: Scott H. Peters — U.S. Treasury Bill, SELL, $250,001 – $500,000.</description>
-    </item>
-    <item>
-      <title>10 congressional trades disclosed on 14 Oct 2026</title>
-      <link>https://tomasgsarubbi.github.io/congress-trades-data/</link>
-      <guid isPermaLink="false">capitol-radar-2026-10-14</guid>
-      <pubDate>Wed, 14 Oct 2026 00:00:00 +0000</pubDate>
-      <description>10 trades disclosed by 5 members (5 buys, 5 sells). Largest: Suzan K. Delbene — Black Belt Energy Gas Dist Ala Gas 05.00% 10/01/2032 Proj Rev BDS Ser. 2026 M-1, BUY, $250,001 – $500,000.</description>
     </item>
   </channel>
 </rss>
