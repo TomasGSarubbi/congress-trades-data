@@ -1,0 +1,328 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "MACRO",
+ "voice": {
+  "name": "M1",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "type": "stat",
+   "kicker": "PIB DE ESTADOS UNIDOS",
+   "value": 4.3,
+   "decimals": 1,
+   "suffix": "%",
+   "countDur": 0.6,
+   "color": "amber",
+   "label": "TERCER TRIMESTRE DE 2026",
+   "valueCue": 0,
+   "chips": [
+    {
+     "text": "DATO OFICIAL · 25 NOV 2026",
+     "color": "outline",
+     "cue": 1
+    }
+   ],
+   "max": 4.3,
+   "rows": [
+    {
+     "label": "Segundo trimestre",
+     "sub": "abr.–jun.",
+     "value": 2.2,
+     "display": "2,2%",
+     "color": "soft",
+     "cue": 2
+    },
+    {
+     "label": "Tercer trimestre",
+     "sub": "jul.–sep.",
+     "value": 4.3,
+     "display": "4,3%",
+     "color": "amber",
+     "cue": 3
+    }
+   ],
+   "foot": "PIB real, variación trimestral a tasa anual · Fuente: BEA",
+   "lines": [
+    {
+     "tts": "Cuatro coma tres por ciento: el crecimiento de Estados Unidos en el tercer trimestre.",
+     "caps": [
+      [
+       "*4,3%:*",
+       "Cuatro coma tres por ciento:"
+      ],
+      "el crecimiento",
+      "de *Estados Unidos*",
+      "en el tercer trimestre."
+     ],
+     "gap": 0.35
+    }
+   ]
+  },
+  {
+   "type": "line",
+   "title": "CRECIMIENTO DEL PIB, POR TRIMESTRE",
+   "hero": {
+    "text": "4,3%",
+    "sub": "MÁS ALTO DESDE 2023",
+    "color": "amber",
+    "cue": 0
+   },
+   "yMin": 0,
+   "yMax": 5.2,
+   "yTicks": [
+    {
+     "v": 0,
+     "label": "0%"
+    },
+    {
+     "v": 2,
+     "label": "2%"
+    },
+    {
+     "v": 4,
+     "label": "4%"
+    }
+   ],
+   "xTicks": [
+    {
+     "i": 0,
+     "label": "2023"
+    },
+    {
+     "i": 4,
+     "label": "2024"
+    },
+    {
+     "i": 8,
+     "label": "2025"
+    },
+    {
+     "i": 12,
+     "label": "2026"
+    }
+   ],
+   "series": [
+    {
+     "color": "amber",
+     "values": [
+      3.4,
+      2.2,
+      4.5,
+      3.6,
+      1.4,
+      3.6,
+      3.2,
+      2.4,
+      0.1,
+      4.0,
+      3.9,
+      0.2,
+      2.5,
+      2.2,
+      4.3
+     ]
+    }
+   ],
+   "marks": [
+    {
+     "i": 2,
+     "s": 0,
+     "label": "4,5%",
+     "color": "white"
+    },
+    {
+     "i": 14,
+     "s": 0,
+     "label": "4,3%",
+     "color": "amber"
+    }
+   ],
+   "drawCue": 0,
+   "drawDur": 1.7,
+   "lines": [
+    {
+     "tts": "Es el ritmo más alto desde dos mil veintitrés.",
+     "caps": [
+      "Es el *ritmo más alto*",
+      [
+       "desde *2023.*",
+       "desde dos mil veintitrés."
+      ]
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "question",
+   "question": "¿4,3% EN\n3 MESES?",
+   "answer": "NO",
+   "answerCue": 2,
+   "lines": [
+    {
+     "tts": "Pero ¿creció eso en tres meses? No.",
+     "caps": [
+      "Pero ¿creció eso",
+      [
+       "en *3 meses?*",
+       "en tres meses?"
+      ],
+      "*No.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "equation",
+   "kicker": "EL MISMO TRIMESTRE",
+   "left": "1,1% EN 3 MESES",
+   "op": "=",
+   "right": "4,3% ANUALIZADO",
+   "leftCue": 0,
+   "kickerCue": 0,
+   "opCue": 1,
+   "rightCue": 2,
+   "foot": "Sin redondear: 1,05% en el trimestre; repetido 4 trimestres = 4,3% anual",
+   "lines": [
+    {
+     "tts": "En el trimestre creció uno coma uno por ciento.",
+     "caps": [
+      "En el trimestre",
+      [
+       "creció *1,1%.*",
+       "creció uno coma uno por ciento."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "El cuatro coma tres es anualizado: lo que crecería en un año a ese mismo ritmo.",
+     "caps": [
+      [
+       "El 4,3 es *anualizado:*",
+       "El cuatro coma tres es anualizado:"
+      ],
+      "lo que crecería",
+      "en un año",
+      "a ese *mismo ritmo.*"
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "columns",
+   "title": "LA CIFRA SE REVISA",
+   "max": 4.3,
+   "cues": [
+    1,
+    4
+   ],
+   "cols": [
+    {
+     "label": "29 OCT",
+     "sub": "1.ª estimación",
+     "value": 3.4,
+     "display": "3,4%",
+     "color": "soft"
+    },
+    {
+     "label": "25 NOV",
+     "sub": "2.ª estimación",
+     "value": 4.3,
+     "display": "4,3%",
+     "color": "amber",
+     "hl": true
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Y cambia: hace un mes, la primera estimación decía tres coma cuatro.",
+     "caps": [
+      "Y *cambia:*",
+      "hace un mes,",
+      "la primera estimación",
+      [
+       "decía *3,4.*",
+       "decía tres coma cuatro."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "Con más datos, subió a cuatro coma tres.",
+     "caps": [
+      "Con más datos,",
+      [
+       "subió a *4,3.*",
+       "subió a cuatro coma tres."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "asset",
+   "ticker": "PIB",
+   "name": "Estados Unidos\nTercer trimestre 2026",
+   "tags": [
+    {
+     "text": "TERCERA ESTIMACIÓN",
+     "color": "amber",
+     "cue": 1
+    }
+   ],
+   "calendar": {
+    "year": 2026,
+    "month": 12,
+    "marks": [
+     {
+      "day": 23,
+      "color": "amber",
+      "cue": 3
+     }
+    ]
+   },
+   "foot": "Fuente: BEA · próxima publicación del PIB: 23/12/2026",
+   "lines": [
+    {
+     "tts": "Y falta una tercera: llega el veintitrés de diciembre.",
+     "caps": [
+      "Y falta",
+      "una *tercera:*",
+      "llega el",
+      [
+       "*23 de diciembre.*",
+       "veintitrés de diciembre."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuente: Oficina de Análisis Económico de EE.UU. (BEA), PIB real del 3.er trimestre de 2026, segunda estimación, publicada el 25/11/2026. Variaciones trimestrales a tasa anual. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}

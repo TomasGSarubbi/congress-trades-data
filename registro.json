@@ -117,5 +117,34 @@
    "«esposo»: el PDF dice SP (cónyuge); The Washington Sun (24/11/2026) habla de las operaciones de su marido. No se usó en el video: el cargo por demora (mínimo de USD 200 según el memo de Ética), si su oficina respondió, ni la elección al Senado"
   ],
   "spec": "publicados/2026-11-26_congreso-169-operaciones-313-dias.json"
+ },
+ {
+  "fecha": "2026-11-27",
+  "serie": "MACRO",
+  "tema": "pib-eeuu-4-3-anualizado",
+  "titulo": "El PIB de EE.UU. creció 4,3%… pero no en tres meses",
+  "cifra": "4,3%",
+  "fuentes": [
+   "https://www.bea.gov/sites/default/files/2026-11/gdp3q26-2nd.pdf",
+   "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+   "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026/",
+   "https://www.bea.gov/",
+   "https://bea.gov/news/schedule",
+   "https://www.bea.gov/help/faq/122",
+   "https://www.bea.gov/help/glossary/annual-rates-change",
+   "https://bea.gov/sites/default/files/2026-10/relia.pdf",
+   "https://bea.gov/news/blog/2015-07-13/why-does-bea-revise-gdp-estimates",
+   "https://fred.stlouisfed.org/data/A191RL1Q225SBEA",
+   "https://fred.stlouisfed.org/data/GDPC1",
+   "BEA (Oficina de Análisis Económico de EE.UU.), comunicado BEA 26–50 «GDP (Second Estimate) and Corporate Profits, 3rd Quarter 2026», del miércoles 25/11/2026 (8:30 EST), texto del PDF oficial leído el 27/11/2026: PIB real +4,3% a tasa anual en el 3.er trimestre de 2026 (julio–septiembre); 2.º trimestre +2,2%; notas técnicas: «annual rate of 4.3 percent (1.1 percent at a quarterly rate)»; revisión de +0,9 puntos respecto de la estimación de avance (3,4%), sobre todo por inversión y consumo; próxima publicación: 23/12/2026, 8:30 EST. No se vio el PDF como imagen (solo el texto extraído) y la versión HTML del comunicado no se abrió",
+   "Portada de bea.gov, leída el 27/11/2026: «Gross Domestic Product · Q3 2026 (2nd) · +4.3%». Calendario de publicaciones del BEA (bea.gov/news/schedule), leído el 27/11/2026: 23 de diciembre, 8:30, «GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 3rd Quarter 2026»",
+   "BEA, comunicado BEA 26–45 «GDP (Advance Estimate), 3rd Quarter 2026», del jueves 29/10/2026 (8:30 EDT), leído en el PDF y en la página (que avisa que esos datos fueron reemplazados): PIB real +3,4% a tasa anual («0.8 percent at a quarterly rate»); 2.º trimestre +2,2%",
+   "FRED (Banco de la Reserva Federal de St. Louis), series del BEA actualizadas el 25/11/2026 y leídas el 27/11/2026. A191RL1Q225SBEA (variación trimestral del PIB real a tasa anual, desestacionalizada), del 1.er trimestre de 2023 al 3.º de 2026: 3,4 · 2,2 · 4,5 · 3,6 · 1,4 · 3,6 · 3,2 · 2,4 · 0,1 · 4,0 · 3,9 · 0,2 · 2,5 · 2,2 · 4,3. GDPC1 (PIB real, miles de millones de dólares encadenados de 2017): 3.er trimestre de 2025 = 24.112,966; 2.º de 2026 = 24.408,011; 3.º de 2026 = 24.665,201",
+   "cálculo propio del 27/11/2026 con GDPC1: 24.665,201 / 24.408,011 − 1 = 1,0537% en el trimestre (el BEA lo redondea a 1,1%); 1,010537^4 − 1 = 4,28%, es decir 4,3% a tasa anual; las 30 tasas anualizadas desde el 2.º trimestre de 2019, recalculadas con los niveles, coinciden con la serie publicada; el último trimestre con una tasa igual o mayor fue el 3.º de 2023 (4,5%) y el máximo entre medio fue 4,0% (2.º de 2025); 3.er trimestre de 2026 contra el de 2025: +2,29% (no se usó en el video)",
+   "qué es una tasa anual: pregunta frecuente n.º 122 del BEA («shows what the percent change would be if the quarterly rate continued for four quarters»; fórmula ((nivel del trimestre / nivel del anterior)^4 − 1) × 100) y glosario del BEA «Annual rates of change», leídos el 27/11/2026",
+   "por qué se revisa: BEA, «Comparisons of Revisions to Real GDP» (actualizado en octubre de 2026): la estimación de avance usa datos incompletos y la segunda y la tercera se publican «as more detailed and more comprehensive data become available»; revisión media sin signo entre el avance y la segunda estimación, 1999–2025: 0,5 puntos (no se usó en el video); blog del BEA del 13/07/2015, «Why Does BEA Revise GDP Estimates?»",
+   "no se usó: el otro dato del BEA del mismo día (comunicado BEA 26–51, ingresos y gastos personales de octubre de 2026: índice de precios PCE +3,8% interanual), para no repetir el tema de inflación del 22/11/2026"
+  ],
+  "spec": "publicados/2026-11-27_pib-eeuu-4-3-anualizado.json"
  }
 ]
