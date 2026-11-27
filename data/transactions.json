@@ -171,20 +171,6 @@
   "chamber": "House",
   "member": "Robert For Onder",
   "owner": "Self",
-  "ticker": null,
-  "asset": "US Bancorp Del DEPOSITARY SH S G (USB$N) F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Edward Jones Acct",
-  "asset_type": "ST",
-  "tx_type": "Sale (Full)",
-  "tx_date": "10/29/2026",
-  "filed_date": "11/24/2026",
-  "amount": "$1,001 - $15,000",
-  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036908.pdf",
-  "id": "db5030ec8a49e149"
- },
- {
-  "chamber": "House",
-  "member": "Robert For Onder",
-  "owner": "Self",
   "ticker": "VZ",
   "asset": "Verizon Communications Inc. Common Stock F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Edward Jones Acct",
   "asset_type": "ST",
@@ -208,6 +194,20 @@
   "amount": "$1,001 - $15,000",
   "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036908.pdf",
   "id": "32290fb1a3efee12"
+ },
+ {
+  "chamber": "House",
+  "member": "Robert For Onder",
+  "owner": "Self",
+  "ticker": null,
+  "asset": "US Bancorp Del DEPOSITARY SH S G (USB$N) F\u0000\u0000\u0000\u0000\u0000 S\u0000\u0000\u0000\u0000\u0000: New S\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 O\u0000: Edward Jones Acct",
+  "asset_type": "ST",
+  "tx_type": "Sale (Full)",
+  "tx_date": "10/29/2026",
+  "filed_date": "11/24/2026",
+  "amount": "$1,001 - $15,000",
+  "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036908.pdf",
+  "id": "db5030ec8a49e149"
  },
  {
   "chamber": "Senate",
