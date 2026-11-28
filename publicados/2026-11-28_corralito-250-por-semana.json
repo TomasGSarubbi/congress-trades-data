@@ -1,0 +1,260 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "HISTORIA",
+ "voice": {
+  "name": "M1",
+  "speed": 1.1
+ },
+ "scenes": [
+  {
+   "type": "payout",
+   "prefix": "USD",
+   "value": 250,
+   "suffix": "",
+   "label": "POR SEMANA, EN EFECTIVO",
+   "recipients": 1,
+   "peopleLabel": "POR TITULAR, EN CADA BANCO",
+   "valueCue": 0,
+   "peopleCue": 1,
+   "recipientsCue": 1,
+   "recipientsDelay": 0.3,
+   "noteCue": 2,
+   "noteDelay": 0.0,
+   "note": {
+    "title": "Decreto 1570/2001, artículo 2, en resumen:",
+    "quote": "No más de 250 pesos o 250 dólares por semana, en efectivo."
+   },
+   "foot": "Límite inicial; después se modificó. Entonces, 1 peso = 1 dólar.",
+   "lines": [
+    {
+     "tts": "Doscientos cincuenta dólares por semana: todo el efectivo que podías retirar de tu banco.",
+     "caps": [
+      [
+       "*USD 250*",
+       "Doscientos cincuenta dólares"
+      ],
+      "por semana:",
+      "todo el efectivo",
+      "que podías retirar",
+      "de *tu banco.*"
+     ],
+     "gap": 0.4
+    }
+   ]
+  },
+  {
+   "type": "people",
+   "count": 3,
+   "big": "2001",
+   "title": "ARGENTINA",
+   "subtitle": "1 DE DICIEMBRE",
+   "subCue": 0,
+   "stamp": "EL CORRALITO",
+   "stampCue": 2,
+   "lines": [
+    {
+     "tts": "Pasó en Argentina, hace veinticinco años: el corralito.",
+     "caps": [
+      "Pasó en *Argentina,*",
+      [
+       "hace *25 años:*",
+       "hace veinticinco años:"
+      ],
+      "el *corralito.*"
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "title": "DEPÓSITOS EN 2001",
+   "center": {
+    "big": "-23%",
+    "small": "EN EL AÑO",
+    "cue": 3
+   },
+   "parts": [
+    {
+     "label": "Siguieron en los bancos",
+     "value": 77,
+     "color": "soft",
+     "cue": 0
+    },
+    {
+     "label": "Salieron de los bancos",
+     "value": 23,
+     "color": "coral",
+     "cue": 3
+    }
+   ],
+   "lines": [
+    {
+     "tts": "Buscaba frenar la salida de depósitos: en dos mil uno cayeron veintitrés por ciento.",
+     "caps": [
+      "Buscaba frenar",
+      "la *salida de depósitos:*",
+      [
+       "en 2001",
+       "en dos mil uno"
+      ],
+      [
+       "cayeron *23%.*",
+       "cayeron veintitrés por ciento."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "equation",
+   "kicker": "DESDE ENERO DE 2002",
+   "left": "1 PESO",
+   "op": "≠",
+   "right": "USD 1",
+   "leftCue": 0,
+   "kickerCue": 0,
+   "opCue": 2,
+   "rightCue": 3,
+   "foot": "Ley 25.561 (6/1/2002): fin de la convertibilidad, vigente desde 1991",
+   "lines": [
+    {
+     "tts": "Un mes después, un peso dejó de valer un dólar.",
+     "caps": [
+      "Un mes después,",
+      "*un peso*",
+      "dejó de valer",
+      "*un dólar.*"
+     ],
+     "gap": 0.6
+    }
+   ]
+  },
+  {
+   "type": "bars",
+   "title": "PESOS POR CADA DÓLAR",
+   "max": 3.87,
+   "rows": [
+    {
+     "label": "Hasta enero de 2002",
+     "sub": "paridad fija por ley",
+     "value": 1.0,
+     "display": "1,00",
+     "color": "soft"
+    },
+    {
+     "label": "Depósitos en dólares",
+     "sub": "convertidos a pesos en febrero de 2002",
+     "value": 1.4,
+     "display": "1,40",
+     "color": "amber"
+    },
+    {
+     "label": "Dólar en junio de 2002",
+     "sub": "máximo del tipo de cambio de referencia",
+     "value": 3.87,
+     "display": "3,87",
+     "color": "coral"
+    }
+   ],
+   "cues": [
+    0,
+    2,
+    5
+   ],
+   "foot": "Los depósitos convertidos se ajustaron además por inflación (coeficiente CER) · Fuente: BCRA",
+   "lines": [
+    {
+     "tts": "Los depósitos en dólares se convirtieron a pesos, a uno coma cuarenta por dólar.",
+     "caps": [
+      "Los *depósitos en dólares*",
+      "se convirtieron a pesos,",
+      [
+       "a *1,40* por dólar.",
+       "a uno coma cuarenta por dólar."
+      ]
+     ],
+     "gap": 0.35
+    },
+    {
+     "tts": "En junio, el dólar llegó a tres coma ochenta y siete.",
+     "caps": [
+      "En junio,",
+      "el dólar llegó",
+      [
+       "a *3,87.*",
+       "a tres coma ochenta y siete."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "title": "UN AÑO DE CORRALITO",
+   "top": 400,
+   "gap": 250,
+   "cues": [
+    0,
+    1,
+    3
+   ],
+   "nodes": [
+    {
+     "chip": "1 DIC",
+     "text": "2001: empieza el corralito",
+     "color": "coral"
+    },
+    {
+     "chip": "6 ENE",
+     "text": "2002: fin del 1 a 1 con el dólar",
+     "color": "soft"
+    },
+    {
+     "chip": "2 DIC",
+     "text": "2002: termina el corralito",
+     "color": "mint"
+    }
+   ],
+   "foot": "Corralito: límites a las cuentas a la vista. Depósitos a plazo reprogramados: otro cronograma. Fuente: BCRA.",
+   "lines": [
+    {
+     "tts": "El corralito duró un año: terminó en diciembre de dos mil dos.",
+     "caps": [
+      "El *corralito*",
+      "duró *un año:*",
+      "terminó",
+      [
+       "en diciembre de *2002.*",
+       "en diciembre de dos mil dos."
+      ]
+     ],
+     "gap": 0.45
+    }
+   ]
+  },
+  {
+   "type": "outro",
+   "brandLines": [
+    "CIFRA",
+    "CLAVE"
+   ],
+   "tagline": "El dinero, explicado con datos.",
+   "footnote": "Fuentes: Decretos 1570/2001 y 214/2002 y Ley 25.561 (argentina.gob.ar); Banco Central de la República Argentina, Boletín Monetario y Financiero 2002. Datos de 2001 y 2002. No es recomendación de inversión.",
+   "lines": [
+    {
+     "tts": "El dinero, explicado con datos. Síguenos en Cifra Clave.",
+     "caps": [
+      "El dinero,",
+      "explicado con datos.",
+      "Síguenos en",
+      "*Cifra Clave.*"
+     ],
+     "gap": 0.3
+    }
+   ]
+  }
+ ]
+}
