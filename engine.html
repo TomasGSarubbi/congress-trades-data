@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>largo</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1920px;height:1080px;background:#141C48;overflow:hidden}
+#stage{position:relative;width:1920px;height:1080px;overflow:hidden;font-family:'Inter',sans-serif;color:#F5F2EA;
+  --ink:#0A0F1E;--panel:#1E2A5E;--line:rgba(255,255,255,.16);--text:#F5F2EA;--soft:#C9D2E8;--muted:#8E9BBA;--amber:#FFC83D;--coral:#FF6A3D;--mint:#35E0A1;--paper:#F3EBD8}
+.abs{position:absolute}
+.an{font-family:'Anton','Archivo Black',sans-serif;font-weight:400;letter-spacing:.012em;line-height:1}
+.bg{position:absolute;inset:0;background:radial-gradient(1000px 760px at 10% 6%,rgba(255,200,61,.24),transparent 70%),radial-gradient(1000px 860px at 96% 100%,rgba(255,106,61,.20),transparent 70%),radial-gradient(820px 700px at 88% 0%,rgba(53,224,161,.13),transparent 70%),linear-gradient(160deg,#26327A 0%,#1A2358 52%,#121840 100%)}
+#doodles{position:absolute;inset:0}
+#doodles div{position:absolute;opacity:.15}
+.vig{position:absolute;inset:0;background:radial-gradient(1700px 1100px at 50% 46%,transparent 60%,rgba(8,10,32,.38))}
+.art{position:absolute;transform-origin:50% 60%}
+.wob{display:inline-block;transform-origin:50% 60%}
+.band{position:absolute;left:0;bottom:0;width:1920px;height:230px;background:linear-gradient(transparent,rgba(10,13,40,.82))}
+.sc{position:absolute;inset:0;display:none}
+.panel{position:absolute;background:var(--panel);border:3px solid var(--line);border-radius:44px;box-shadow:0 14px 0 rgba(8,10,32,.35)}
+.kick{font-weight:800;font-size:32px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;white-space:nowrap}
+.chipx{display:inline-flex;align-items:center;height:66px;padding:0 26px;border-radius:14px;font-weight:800;font-size:30px;letter-spacing:.04em;white-space:nowrap}
+.c-mint{background:var(--mint);color:#06231a}.c-coral{background:var(--coral);color:#1b0b05}.c-amber{background:var(--amber);color:#1c1400}
+.c-line{border:2px solid var(--line);color:var(--soft);background:rgba(255,255,255,.05)}
+/* barra superior */
+#top{position:absolute;left:96px;top:44px;width:1728px;height:60px;display:flex;align-items:center;justify-content:space-between}
+#top .l,#top .r{display:flex;align-items:center;gap:22px}
+#brand{background:var(--amber);color:#1c1400;font-size:32px;height:56px;padding:0 20px;border-radius:10px;display:flex;align-items:center}
+#series{font-weight:800;font-size:23px;letter-spacing:.17em;color:var(--muted)}
+#title{font-weight:800;font-size:23px;letter-spacing:.1em;color:var(--soft)}
+#chip{font-size:30px;height:56px;padding:0 18px;border-radius:10px;border:2px solid var(--amber);color:var(--amber);display:flex;align-items:center}
+#segs{position:absolute;left:96px;top:120px;width:1728px;height:5px;display:flex;gap:8px}
+#segs div{flex:1;background:rgba(255,255,255,.10);border-radius:3px;overflow:hidden}
+#segs i{display:block;height:100%;width:0;background:var(--amber)}
+/* subtitulos */
+#cap{position:absolute;left:160px;top:928px;width:1600px;text-align:center;font-weight:700;font-size:46px;line-height:1.2;color:var(--text);text-shadow:0 3px 18px rgba(0,0,0,.85)}
+#cap b{color:var(--amber);font-weight:800}
+/* contrato */
+.doc{transform-origin:50% 60%}
+.docin{position:absolute;inset:0;background:var(--paper);border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.55);padding:46px 44px}
+.docin .ln{height:14px;border-radius:7px;background:rgba(20,26,46,.17);margin-bottom:24px;transform-origin:left center}
+.docin .sig{position:absolute;left:44px;bottom:64px}
+.docin .seal{position:absolute;right:40px;bottom:46px;width:132px;height:132px;border-radius:50%;border:6px solid var(--coral);color:var(--coral);font-size:42px;display:flex;align-items:center;justify-content:center}
+.ic{display:block}
+.node{display:flex;align-items:center;gap:22px}
+.node .o{width:104px;height:104px;border-radius:50%;background:rgba(255,255,255,.06);border:2px solid var(--line);display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div id="stage">
+  <svg width="0" height="0" style="position:absolute"><defs>
+    <filter id="rough0" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+    <filter id="rough1" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="11"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+    <filter id="rough2" x="-10%" y="-10%" width="120%" height="120%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="2" seed="27"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter></defs></svg>
+  <div class="bg"></div><div id="doodles"></div><div class="vig"></div><div class="band"></div>
+  <div id="scenes"></div>
+  <div id="top"><div class="l"><div id="brand" class="an"></div><div id="series"></div></div><div class="r"><div id="title"></div><div id="chip" class="an"></div></div></div>
+  <div id="segs"></div>
+  <div id="cap"></div>
+</div>
+<script>
+const SPEC = /*SPEC*/;
+const $ = (tag, cls, htm) => { const e = document.createElement(tag); if (cls) e.className = cls; if (htm != null) e.innerHTML = htm; return e; };
+const cl = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const eo = x => 1 - Math.pow(1 - cl(x), 3);
+const eio = x => { x = cl(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+const ebk = x => { x = cl(x); const c = 1.70158; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const tw = (t, t0, d, e = eo) => e((t - t0) / d);
+const lerp = (a, b, p) => a + (b - a) * p;
+const nf = n => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const pop = (el, t, t0, d = .45, dy = 36) => { const p = tw(t, t0, d); el.style.opacity = cl((t - t0) / (d * .6)); el.style.transform = `translateY(${(1 - p) * dy}px)`; };
+const slam = (el, t, t0, d = .42, rot = 0) => { const p = tw(t, t0, d, ebk); el.style.opacity = cl((t - t0) / .1); el.style.transform = `rotate(${rot}deg) scale(${2.2 - 1.2 * p})`; };
+const fade = (el, t, t0, d = .3) => { el.style.opacity = 1 - cl((t - t0) / d); };
+const Q = (r, sel) => r.querySelector(sel);
+
+// ---------- dibujos propios, genericos (sin logos ni envases de marca) ----------
+const IC = {
+  glass: (w, c = '#F5F2EA', liq = '#FF6A3D') => `<svg class="ic" width="${w}" height="${w * 1.35}" viewBox="0 0 200 270" fill="none">
+    <path d="M47 96 H153 L140 244 H60 Z" fill="${liq}" opacity=".92"/><path d="M47 96 H153" stroke="${c}" stroke-width="7" stroke-linecap="round" opacity=".9"/>
+    <path d="M34 20 H166 L142 252 H58 Z" stroke="${c}" stroke-width="9" stroke-linejoin="round"/>
+    <path d="M128 0 L104 200" stroke="${c}" stroke-width="8" stroke-linecap="round"/></svg>`,
+  bottle: (w, c = '#F5F2EA', lab = '#FFC83D') => `<svg class="ic" width="${w}" height="${w * 1.35}" viewBox="0 0 200 270" fill="none">
+    <rect x="80" y="8" width="40" height="20" rx="5" fill="${c}"/>
+    <path d="M88 28 V84 C88 106 60 110 60 140 V246 Q60 260 74 260 H126 Q140 260 140 246 V140 C140 110 112 106 112 84 V28 Z" stroke="${c}" stroke-width="9" stroke-linejoin="round"/>
+    <rect x="64" y="160" width="72" height="56" fill="${lab}" opacity=".95"/></svg>`,
+  flask: (w, c = '#F5F2EA', liq = '#FFC83D') => `<svg class="ic" width="${w}" height="${w * 1.3}" viewBox="0 0 200 260" fill="none">
+    <path d="M66 176 L44 228 Q38 244 56 244 H144 Q162 244 156 228 L134 176 Z" fill="${liq}" opacity=".95"/>
+    <path d="M78 18 H122 M86 18 V96 L40 226 Q32 248 56 248 H144 Q168 248 160 226 L114 96 V18" stroke="${c}" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  people: (w, c = '#F5F2EA') => `<svg class="ic" width="${w}" height="${w}" viewBox="0 0 200 200" fill="none">
+    <circle cx="70" cy="62" r="26" stroke="${c}" stroke-width="9"/><path d="M26 168 C26 124 114 124 114 168" stroke="${c}" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="140" cy="76" r="22" stroke="${c}" stroke-width="9"/><path d="M128 124 C160 118 180 140 180 168" stroke="${c}" stroke-width="9" stroke-linecap="round"/></svg>`,
+  arrow: (w, c = '#FFC83D') => `<svg class="ic" width="${w}" height="60" viewBox="0 0 ${w} 60" fill="none"><path d="M4 30 H${w - 14} M${w - 38} 8 L${w - 10} 30 L${w - 38} 52" stroke="${c}" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+};
+
+// ---------- dibujos a mano (genericos, sin logos, sin retratos) ----------
+const K = '#F5F2EA', SW = 'stroke="#F5F2EA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"';
+const svg = (w, body, vb = '0 0 200 200') => `<svg class="ic" width="${w}" viewBox="${vb}" fill="none">${body}</svg>`;
+const ART = {
+  shop: w => svg(w, `<rect x="30" y="80" width="140" height="104" rx="6" fill="#2B3A86" ${SW}/><path d="M16 84 L36 40 H164 L184 84 Z" fill="#FF6A3D" ${SW}/><path d="M66 40 L58 84 M100 40 V84 M134 40 L142 84" ${SW} stroke-width="6"/>
+    <rect x="112" y="116" width="38" height="68" rx="4" fill="#FFC83D" ${SW}/><rect x="46" y="112" width="48" height="40" rx="4" fill="#35E0A1" ${SW}/><circle cx="100" cy="18" r="15" fill="#35E0A1" ${SW} stroke-width="6"/><path d="M100 10 V26 M92 18 H108" stroke="#06231a" stroke-width="5" stroke-linecap="round"/>`),
+  coin: w => svg(w, `<ellipse cx="104" cy="108" rx="80" ry="80" fill="#C9930E"/><circle cx="96" cy="100" r="80" fill="#FFC83D" ${SW}/><circle cx="96" cy="100" r="58" stroke="#1c1400" stroke-opacity=".28" stroke-width="5"/>
+    <path d="M126 76 q-9 -20 -30 -20 q-28 0 -28 24 q0 20 30 26 q30 6 30 28 q0 24 -30 24 q-24 0 -32 -20 M96 40 V160" stroke="#1c1400" stroke-width="13" stroke-linecap="round" fill="none"/>`),
+  bill: w => svg(w, `<rect x="10" y="20" width="220" height="110" rx="12" fill="#35E0A1" ${SW}/><circle cx="120" cy="75" r="34" fill="#F5F2EA" stroke="#06231a" stroke-width="5"/><text x="120" y="98" text-anchor="middle" font-family="Anton" font-size="60" fill="#06231a">1</text>
+    <path d="M32 44 H56 M184 106 H208" stroke="#06231a" stroke-width="6" stroke-linecap="round"/>`, '0 0 240 150'),
+  factory: w => svg(w, `<path d="M52 96 V30 H78 V96" fill="#FF6A3D" ${SW}/><path d="M16 184 V96 H60 L60 120 L104 92 V120 L148 92 V120 L184 96 V184 Z" fill="#2B3A86" ${SW}/>
+    <rect x="40" y="140" width="26" height="26" rx="3" fill="#FFC83D" ${SW} stroke-width="5"/><rect x="88" y="140" width="26" height="26" rx="3" fill="#FFC83D" ${SW} stroke-width="5"/><rect x="136" y="140" width="26" height="26" rx="3" fill="#FFC83D" ${SW} stroke-width="5"/>
+    <circle cx="74" cy="14" r="10" fill="#C9D2E8" opacity=".8"/><circle cx="96" cy="6" r="13" fill="#C9D2E8" opacity=".6"/>`),
+  truck: w => svg(w, `<rect x="10" y="40" width="130" height="90" rx="8" fill="#FF6A3D" ${SW}/><path d="M140 70 H190 L222 100 V130 H140 Z" fill="#FFC83D" ${SW}/><path d="M158 82 H184 L198 98 H158 Z" fill="#26327A"/>
+    <circle cx="56" cy="136" r="22" fill="#141C48" ${SW}/><circle cx="182" cy="136" r="22" fill="#141C48" ${SW}/>
+    <path d="M40 112 V78 q0 -10 8 -10 q8 0 8 10 V112 M72 112 V78 q0 -10 8 -10 q8 0 8 10 V112 M104 112 V78 q0 -10 8 -10 q8 0 8 10 V112" stroke="#F5F2EA" stroke-width="5" stroke-linecap="round"/>`, '0 0 240 170'),
+  globe: w => svg(w, `<circle cx="100" cy="100" r="84" fill="#2B6FD6" ${SW}/><path d="M40 72 q22 -22 44 -8 q14 12 2 30 q-14 14 -30 6 q-16 -8 -16 -28 Z M112 104 q26 -12 44 8 q8 22 -10 36 q-22 10 -36 -8 q-8 -20 2 -36 Z M118 40 q18 -4 30 10 q-12 12 -28 6 Z" fill="#35E0A1"/>
+    <path d="M16 100 H184 M100 16 C60 60 60 140 100 184 M100 16 C140 60 140 140 100 184" stroke="#F5F2EA" stroke-opacity=".45" stroke-width="5" stroke-linecap="round"/>`),
+  bag: w => svg(w, `<path d="M72 44 L60 18 Q100 4 140 18 L128 44" fill="#C9930E" ${SW}/><path d="M72 44 H128 C170 80 186 130 170 164 Q160 186 100 186 Q40 186 30 164 C14 130 30 80 72 44 Z" fill="#FFC83D" ${SW}/>
+    <path d="M66 50 H134" ${SW}/><g transform="translate(22 30) scale(.8)"><path d="M126 76 q-9 -20 -30 -20 q-28 0 -28 24 q0 20 30 26 q30 6 30 28 q0 24 -30 24 q-24 0 -32 -20 M96 40 V160" stroke="#1c1400" stroke-width="13" stroke-linecap="round" fill="none"/></g>`),
+  person: (w, col = '#FF6A3D') => svg(w, `<path d="M36 196 C36 130 164 130 164 196 Z" fill="${col}" ${SW}/><circle cx="100" cy="86" r="38" fill="#F5F2EA" ${SW}/>
+    <path d="M52 62 H148" ${SW} stroke-width="10"/><path d="M66 60 V26 Q66 16 76 16 H124 Q134 16 134 26 V60 Z" fill="#141C48" ${SW}/><path d="M88 150 L100 166 L112 150" ${SW} stroke-width="6"/>`),
+  crate: w => svg(w, `<path d="M52 92 V58 q0 -12 9 -12 q9 0 9 12 V92 M91 92 V58 q0 -12 9 -12 q9 0 9 12 V92 M130 92 V58 q0 -12 9 -12 q9 0 9 12 V92" fill="#141C48" ${SW} stroke-width="6"/>
+    <rect x="54" y="30" width="14" height="12" rx="3" fill="#FFC83D"/><rect x="93" y="30" width="14" height="12" rx="3" fill="#FFC83D"/><rect x="132" y="30" width="14" height="12" rx="3" fill="#FFC83D"/>
+    <rect x="24" y="90" width="152" height="90" rx="8" fill="#C97A3A" ${SW}/><path d="M24 120 H176 M24 150 H176" stroke="#F5F2EA" stroke-opacity=".5" stroke-width="5"/>`),
+  pen: w => svg(w, `<path d="M40 160 L52 118 L136 34 Q150 22 164 36 Q178 50 166 64 L82 148 Z" fill="#FFC83D" ${SW}/><path d="M40 160 L52 118 L82 148 Z" fill="#F5F2EA" ${SW}/><path d="M122 48 L152 78" ${SW}/><path d="M30 184 q30 -16 56 0 t56 0 t40 -6" ${SW} stroke-width="6"/>`),
+  ticket: w => svg(w, `<path d="M12 40 H228 V68 a18 18 0 0 0 0 36 V132 H12 V104 a18 18 0 0 0 0 -36 Z" fill="#FF6A3D" ${SW}/><path d="M168 48 V124" stroke="#F5F2EA" stroke-width="6" stroke-dasharray="10 10"/>
+    <path d="M52 108 V78 H88 L84 108 Z" fill="#F5F2EA"/><path d="M40 74 H100" stroke="#F5F2EA" stroke-width="7" stroke-linecap="round"/><path d="M112 76 H150 M112 96 H140" stroke="#1b0b05" stroke-opacity=".55" stroke-width="7" stroke-linecap="round"/>`, '0 0 240 170'),
+  bottle: w => svg(w, `<path d="M84 34 V70 C84 92 56 98 56 124 V172 Q56 190 74 190 H126 Q144 190 144 172 V124 C144 98 116 92 116 70 V34 Z" fill="#3A1A10" ${SW}/><rect x="56" y="122" width="88" height="40" fill="#FF6A3D" ${SW} stroke-width="6"/><rect x="76" y="10" width="48" height="26" rx="6" fill="#FFC83D" ${SW} stroke-width="6"/>`),
+  helmet: w => svg(w, `<path d="M24 128 C24 20 176 20 176 128 Z" fill="#5E8C5A" ${SW}/><path d="M10 130 H190 Q194 150 176 150 H24 Q6 150 10 130 Z" fill="#46704A" ${SW}/><path d="M100 48 V128" stroke="#F5F2EA" stroke-opacity=".4" stroke-width="6"/><path d="M60 150 Q100 196 140 150" ${SW} stroke-width="6"/>`),
+  phone: w => svg(w, `<path d="M30 78 Q30 40 100 40 Q170 40 170 78 L170 96 Q170 104 160 104 H138 Q130 104 130 96 V84 H70 V96 Q70 104 62 104 H40 Q30 104 30 96 Z" fill="#FF6A3D" ${SW}/><path d="M62 104 L44 176 Q42 186 54 186 H146 Q158 186 156 176 L138 104" fill="#F5F2EA" ${SW}/><circle cx="100" cy="146" r="22" fill="#141C48"/>
+    <path d="M176 26 l12 -16 M186 44 l20 -8 M24 26 l-12 -16 M14 44 l-20 -8" stroke="#FFC83D" stroke-width="7" stroke-linecap="round"/>`),
+  vending: w => svg(w, `<rect x="40" y="8" width="120" height="184" rx="12" fill="#FF6A3D" ${SW}/><rect x="56" y="26" width="64" height="92" rx="6" fill="#26327A" ${SW} stroke-width="6"/><path d="M72 100 V64 q0 -8 6 -8 q6 0 6 8 V100 M94 100 V64 q0 -8 6 -8 q6 0 6 8 V100" stroke="#F5F2EA" stroke-width="5" stroke-linecap="round"/>
+    <rect x="132" y="34" width="14" height="30" rx="4" fill="#141C48"/><circle cx="139" cy="86" r="9" fill="#FFC83D"/><rect x="56" y="138" width="88" height="34" rx="6" fill="#141C48" ${SW} stroke-width="6"/>`),
+  medal: w => svg(w, `<path d="M62 8 L100 84 L138 8" stroke="#35E0A1" stroke-width="24" stroke-linejoin="round"/><circle cx="100" cy="124" r="62" fill="#FFC83D" ${SW}/><circle cx="100" cy="124" r="42" stroke="#1c1400" stroke-opacity=".25" stroke-width="5"/><path d="M100 96 L108 116 L130 118 L113 132 L119 154 L100 142 L81 154 L87 132 L70 118 L92 116 Z" fill="#F5F2EA"/>`),
+  hourglass: w => svg(w, `<path d="M44 14 H156 M44 186 H156" ${SW} stroke-width="12"/><path d="M56 16 V50 Q56 76 100 100 Q144 124 144 150 V184 H56 V150 Q56 124 100 100 Q144 76 144 50 V16 Z" fill="#26327A" ${SW}/><path d="M72 50 H128 Q124 70 100 86 Q76 70 72 50 Z" fill="#FFC83D"/><path d="M66 180 Q70 146 100 136 Q130 146 134 180 Z" fill="#FFC83D"/><path d="M100 96 V132" stroke="#FFC83D" stroke-width="6" stroke-linecap="round"/>`),
+  vault: w => svg(w, `<rect x="20" y="20" width="160" height="152" rx="14" fill="#8E9BBA" ${SW}/><rect x="40" y="40" width="120" height="112" rx="8" fill="#C9D2E8" ${SW} stroke-width="6"/><circle cx="100" cy="96" r="30" fill="#FFC83D" ${SW}/><path d="M100 66 V126 M70 96 H130 M79 75 L121 117 M121 75 L79 117" stroke="#1c1400" stroke-width="6" stroke-linecap="round"/><path d="M44 172 V190 M156 172 V190" ${SW} stroke-width="12"/>`),
+  glass: w => IC.glass(w * .74), flask: w => IC.flask(w * .77),
+  spark: (w, col = '#FFC83D') => svg(w, `<path d="M100 10 Q108 92 190 100 Q108 108 100 190 Q92 108 10 100 Q92 92 100 10 Z" fill="${col}"/>`),
+  squig: (w, col = '#F5F2EA') => svg(w, `<path d="M10 60 q22 -50 44 0 t44 0 t44 0 t44 0" stroke="${col}" stroke-width="10" stroke-linecap="round"/>`, '0 0 200 110'),
+  plus: (w, col = '#35E0A1') => svg(w, `<path d="M100 30 V170 M30 100 H170" stroke="${col}" stroke-width="26" stroke-linecap="round"/>`),
+  ring: (w, col = '#FF6A3D') => svg(w, `<circle cx="100" cy="100" r="74" stroke="${col}" stroke-width="20"/>`),
+};
+function rng(seed) { let a = seed >>> 0; return () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+
+const REG = {};
+
+// ---------- 1. contrato: documento + anio que se convierte en precio ----------
+REG.contrato = {
+  build(r, s) {
+    r.innerHTML = `
+      <div class="abs doc" style="left:150px;top:196px;width:560px;height:650px"><div class="docin">
+        <div class="an" style="font-size:44px;color:#141a2e">${s.docTitle}</div>
+        <div style="font-weight:700;font-size:25px;color:#5b5f6e;margin-top:10px;letter-spacing:.06em">${s.docPlace}</div>
+        <div class="lines" style="margin-top:36px"></div>
+        <svg class="sig" width="300" height="110" viewBox="0 0 300 110"><path d="M8 78 C40 20 62 20 58 62 C54 100 92 96 104 54 C112 26 128 30 126 60 C124 92 160 92 172 56 C180 34 196 40 196 62 C196 84 232 84 292 44" fill="none" stroke="#1c2340" stroke-width="5" stroke-linecap="round"/></svg>
+        <div class="seal an">${s.year}</div></div></div>
+      <div class="abs kick k1" style="left:832px;top:226px">${s.kicker}</div>
+      <div class="abs kick k2" style="left:832px;top:226px;color:var(--amber)">${s.kicker2 || ''}</div>
+      <div class="abs an yr" style="left:822px;top:286px;font-size:330px;transform-origin:0 50%">${s.year}</div>
+      <div class="abs an pr" style="left:822px;top:262px;font-size:400px;color:var(--amber);transform-origin:38% 55%">${s.price}</div>
+      <div class="abs sub" style="left:832px;top:706px;font-weight:600;font-size:44px;line-height:1.28;color:var(--soft)">${s.sub}</div>
+      <div class="abs chipx c-coral dd" style="left:1392px;top:150px;height:76px;font-size:36px;transform-origin:50% 50%">${s.doubt || ''}</div>`;
+    const L = Q(r, '.lines'); [92, 100, 84, 96, 70, 100, 88, 58].forEach(w => { const d = $('div', 'ln'); d.style.width = w + '%'; L.appendChild(d); });
+    const p = Q(r, '.sig path'); s._len = p.getTotalLength(); p.style.strokeDasharray = s._len;
+  },
+  draw(r, s, t) {
+    const a0 = s.a0, c = s.cue, doc = Q(r, '.doc'), p = tw(t, s.T0 + .05, .7);
+    doc.style.opacity = cl((t - s.T0 - .05) / .3); doc.style.transform = `translateX(${(1 - p) * -90}px) rotate(${-4 - (1 - p) * 6}deg)`;
+    r.querySelectorAll('.ln').forEach((e, i) => { e.style.transform = `scaleX(${tw(t, a0 + .1 + i * .07, .5)})`; });
+    Q(r, '.sig path').style.strokeDashoffset = s._len * (1 - tw(t, c.firma, .9, eio));
+    slam(Q(r, '.seal'), t, c.firma + .85, .4, -14);
+    const out = cl((t - c.precio + .12) / .22);
+    const k1 = Q(r, '.k1'), yr = Q(r, '.yr');
+    pop(k1, t, a0 + .1); pop(yr, t, a0 + .18, .55, 60);
+    if (out > 0) { k1.style.opacity = 1 - out; yr.style.opacity = 1 - out; yr.style.transform = `scale(${1 - .12 * out})`; }
+    pop(Q(r, '.k2'), t, c.precio + .05);
+    slam(Q(r, '.pr'), t, c.precio, .5);
+    pop(Q(r, '.sub'), t, c.sub);
+    slam(Q(r, '.dd'), t, c.duda ?? 1e9, .4, 4);
+  }
+};
+
+// ---------- 2. origen: el anio retrocede, el vaso y los 9 por dia ----------
+REG.origen = {
+  build(r, s) {
+    let minis = ''; for (let i = 0; i < s.count; i++) minis += `<div class="mg" style="position:absolute;left:${60 + i * 73}px;top:386px">${IC.glass(58)}</div>`;
+    let bub = ''; for (let i = 0; i < 7; i++) bub += `<div class="bub" style="position:absolute;width:${10 + (i % 3) * 5}px;height:${10 + (i % 3) * 5}px;border-radius:50%;background:rgba(255,255,255,.55)"></div>`;
+    r.innerHTML = `
+      <div class="abs an yr" style="left:0;top:300px;width:1920px;text-align:center;font-size:380px">${s.yearFrom}</div>
+      <div class="abs bk" style="left:0;top:716px;width:1920px;text-align:center"><span class="chipx c-amber" style="font-size:36px;height:74px">${s.back}</span></div>
+      <div class="abs chipx c-line pl" style="left:150px;top:166px">${s.place}</div>
+      <div class="panel p1" style="left:150px;top:262px;width:800px;height:600px">
+        <div class="abs gl" style="left:66px;top:78px">${IC.glass(250)}<div class="bubs" style="position:absolute;left:70px;top:130px;width:120px;height:180px;overflow:hidden">${bub}</div></div>
+        <div class="abs an pr" style="left:392px;top:96px;font-size:260px;color:var(--amber);transform-origin:30% 50%">${s.price}</div>
+        <div class="abs an pl2" style="left:398px;top:366px;font-size:72px">${s.priceLabel}</div>
+        <div class="abs mx" style="left:66px;top:484px;display:flex;gap:16px;align-items:center"><span class="chipx c-line">${s.mix[0]}</span><span class="an" style="font-size:46px;color:var(--muted)">+</span><span class="chipx c-line">${s.mix[1]}</span></div>
+      </div>
+      <div class="panel p2" style="left:990px;top:262px;width:780px;height:600px">
+        <div class="abs an nn" style="left:62px;top:44px;font-size:330px;color:var(--amber)">0</div>
+        <div class="abs an lb" style="left:286px;top:104px;font-size:88px;line-height:1.06">${s.countLabel.replace(' POR', '<br>POR')}</div>
+        ${minis}
+        <div class="abs nt" style="left:64px;top:506px;font-weight:600;font-size:30px;color:var(--muted)">${s.note}</div>
+      </div>`;
+  },
+  draw(r, s, t) {
+    const S = s.sent, c = s.cue, yr = Q(r, '.yr'), bk = Q(r, '.bk');
+    const pa = eio((t - S[0].t0 - .15) / (S[0].t1 - S[0].t0 - .1));
+    yr.textContent = Math.round(lerp(s.yearFrom, s.yearTo, pa));
+    const tA = S[1].t0 - .28, o = cl((t - tA) / .26);
+    yr.style.opacity = cl((t - s.T0) / .25) * (1 - o); yr.style.transform = `scale(${1 - .18 * o})`;
+    pop(bk, t, S[0].t0 + .55); if (o > 0) bk.style.opacity = 1 - o;
+    pop(Q(r, '.pl'), t, tA + .2); pop(Q(r, '.p1'), t, tA + .22, .5, 50);
+    pop(Q(r, '.mx'), t, c.mezcla); slam(Q(r, '.pr'), t, c.precio, .45); pop(Q(r, '.pl2'), t, c.precio + .22);
+    r.querySelectorAll('.bub').forEach((b, i) => { const ph = ((t * (26 + i * 5) + i * 37) % 190); b.style.left = (12 + i * 14) + 'px'; b.style.top = (180 - ph) + 'px'; b.style.opacity = ph > 150 ? (190 - ph) / 40 : .8; });
+    const tB = S[2].t0 - .15; pop(Q(r, '.p2'), t, tB, .5, 50);
+    Q(r, '.nn').textContent = Math.round(s.count * tw(t, c.nueve - .35, .8, eio)); pop(Q(r, '.lb'), t, c.nueve - .05);
+    r.querySelectorAll('.mg').forEach((g, i) => { const p = tw(t, c.nueve + i * .09, .32, ebk); g.style.opacity = cl((t - c.nueve - i * .09) / .1); g.style.transform = `scale(${p})`; });
+    pop(Q(r, '.nt'), t, c.nueve + 1.0);
+  }
+};
+
+// ---------- 3. compra: un anillo que se completa + cuenta del costo ----------
+REG.compra = {
+  build(r, s) {
+    const C = 2 * Math.PI * 180;
+    r.innerHTML = `
+      <div class="abs wh" style="left:150px;top:166px;display:flex;align-items:center;gap:20px"><span class="chipx c-amber">${s.who}</span><span style="font-weight:600;font-size:32px;color:var(--soft)">${s.role}</span></div>
+      <div class="abs rg" style="left:176px;top:286px;width:440px;height:440px">
+        <svg width="440" height="440" viewBox="0 0 440 440"><circle cx="220" cy="220" r="180" stroke="rgba(255,255,255,.09)" stroke-width="36" fill="none"/>
+          <circle class="arc" cx="220" cy="220" r="180" stroke="#FFC83D" stroke-width="36" fill="none" stroke-linecap="round" stroke-dasharray="${C}" stroke-dashoffset="${C}" transform="rotate(-90 220 220)"/></svg>
+        <div style="position:absolute;left:150px;top:128px">${IC.flask(140)}</div></div>
+      <div class="abs kick wt" style="left:176px;top:748px;width:440px;text-align:center">${s.what}</div>
+      <div class="abs tl" style="left:176px;top:828px;width:440px;height:40px">
+        <div style="position:absolute;left:70px;right:70px;top:18px;height:4px;background:rgba(255,255,255,.14)"></div>
+        <div class="an" style="position:absolute;left:0;top:0;font-size:36px;color:var(--soft)">${s.from}</div><div class="an" style="position:absolute;right:0;top:0;font-size:36px;color:var(--soft)">${s.to}</div>
+        <div class="dot" style="position:absolute;top:9px;width:22px;height:22px;border-radius:50%;background:var(--amber)"></div></div>
+      <div class="abs dn" style="left:176px;top:734px;width:440px;text-align:center;transform-origin:50% 50%"><span class="chipx c-mint">${s.done}</span></div>
+      <div class="abs kick kk" style="left:800px;top:330px">${s.kicker}</div>
+      <div class="abs an nn" style="left:792px;top:388px;font-size:236px;color:var(--amber)">USD 0</div>
+      <div class="abs sb" style="left:800px;top:660px;font-weight:600;font-size:44px;color:var(--soft)">${s.sub}</div>`;
+    s._C = C;
+  },
+  draw(r, s, t) {
+    const c = s.cue, S = s.sent;
+    pop(Q(r, '.wh'), t, s.T0 + .15); pop(Q(r, '.rg'), t, s.a0 + .1, .5, 50); pop(Q(r, '.wt'), t, s.a0 + .3); pop(Q(r, '.tl'), t, s.a0 + .4);
+    const p = eio((t - c.empieza) / (c.todo + .9 - c.empieza));
+    Q(r, '.arc').style.strokeDashoffset = s._C * (1 - p);
+    Q(r, '.dot').style.left = (70 + p * 278) + 'px';
+    slam(Q(r, '.dn'), t, c.todo + .95, .4, -3); if (t > c.todo + .85) Q(r, '.wt').style.opacity = 1 - cl((t - c.todo - .85) / .15);
+    pop(Q(r, '.kk'), t, S[1].t0 + .1);
+    const q = tw(t, c.precio - .25, 1.0, eio); const n = Q(r, '.nn');
+    n.textContent = 'USD ' + nf(s.total * q); pop(n, t, c.precio - .35, .4, 40);
+    pop(Q(r, '.sb'), t, c.precio + .9);
+  }
+};
+
+// ---------- 4. propuesta: dos caminos y un sello ----------
+REG.propuesta = {
+  build(r, s) {
+    r.innerHTML = `
+      <div class="panel ca" style="left:150px;top:190px;width:740px;height:660px">
+        <div class="abs an" style="left:52px;top:46px;font-size:64px">${s.a.title}</div>
+        <div class="abs" style="left:56px;top:170px">${IC.glass(190)}</div>
+        <div class="abs" style="left:292px;top:196px;width:400px;font-weight:600;font-size:36px;line-height:1.3;color:var(--soft)">${s.a.line}</div>
+        <div class="abs ch" style="left:56px;top:478px;transform-origin:30% 50%"><span class="chipx c-mint" style="height:74px;font-size:34px">${s.a.chip}</span></div>
+      </div>
+      <div class="abs ar" style="left:902px;top:484px">${IC.arrow(118)}</div>
+      <div class="panel cb" style="left:1030px;top:190px;width:740px;height:660px">
+        <div class="abs an" style="left:52px;top:46px;font-size:64px">${s.b.title}</div>
+        <div class="abs" style="left:56px;top:170px">${IC.bottle(190)}</div>
+        <div class="abs" style="left:292px;top:196px;width:410px;font-weight:600;font-size:36px;line-height:1.3;color:var(--soft)">${s.b.line}</div>
+        <div class="abs st an" style="left:270px;top:404px;font-size:150px;color:var(--coral);border:9px solid var(--coral);border-radius:22px;padding:8px 30px 14px;transform-origin:50% 50%;background:rgba(10,15,30,.72)">${s.stamp}</div>
+        <div class="abs sn" style="left:292px;top:614px;font-weight:700;font-size:28px;letter-spacing:.06em;color:var(--muted)">${s.stampNote.toUpperCase()}</div>
+      </div>`;
+  },
+  draw(r, s, t) {
+    const c = s.cue, ca = Q(r, '.ca'), cb = Q(r, '.cb');
+    pop(ca, t, s.T0 + .12, .5, 50); slam(Q(r, '.ch'), t, c.bien, .4);
+    const p = tw(t, c.abogados - .15, .6); cb.style.opacity = cl((t - c.abogados + .15) / .3); cb.style.transform = `translateX(${(1 - p) * 120}px)`;
+    if (t > c.abogados) ca.style.opacity = 1 - .45 * cl((t - c.abogados) / .5);
+    pop(Q(r, '.ar'), t, c.abogados + .25);
+    slam(Q(r, '.st'), t, c.precio, .45, -8); pop(Q(r, '.sn'), t, c.precio + .5);
+  }
+};
+
+// ---------- 5. red: mil puntos que se encienden ----------
+REG.red = {
+  build(r, s) {
+    r.innerHTML = `
+      <canvas class="abs cv" width="1640" height="470" style="left:140px;top:176px"></canvas>
+      <div class="abs rw" style="left:150px;top:672px;display:flex;align-items:flex-end;gap:38px">
+        <div class="an nn" style="font-size:190px;color:var(--amber);min-width:150px">${s.from}</div>
+        <div style="padding-bottom:14px"><div class="an" style="font-size:60px">${s.label}</div><div class="an yy" style="font-size:60px;color:var(--muted);margin-top:8px">${s.y0}</div></div></div>
+      <div class="abs ch" style="left:1290px;top:748px;transform-origin:50% 50%"><span class="chipx c-mint" style="height:78px;font-size:36px">${s.chipText}</span></div>
+      <div class="abs an2" style="right:150px;top:870px;font-weight:600;font-size:24px;color:var(--muted)">${s.animNote || ''}</div>`;
+    const n = s.cols * s.rows, R = rng(7), ord = [...Array(n).keys()];
+    for (let i = n - 1; i > 0; i--) { const j = Math.floor(R() * (i + 1)); [ord[i], ord[j]] = [ord[j], ord[i]]; }
+    s._rank = new Array(n); ord.forEach((d, k) => s._rank[d] = k);
+  },
+  draw(r, s, t) {
+    const c = s.cue, S = s.sent, n = s.cols * s.rows, cv = Q(r, '.cv'), g = cv.getContext('2d');
+    const p = cl((t - c.reparto) / (c.mil + .25 - c.reparto));
+    const N = t < c.reparto ? s.from : Math.max(s.from, Math.round(s.from + (n - s.from) * Math.pow(p, 1.7)));
+    cv.style.opacity = cl((t - s.T0 - .1) / .4);
+    g.clearRect(0, 0, 1640, 470);
+    const dx = 1640 / s.cols, dy = 470 / s.rows, beat = .5 + .5 * Math.sin(t * 5);
+    for (let i = 0; i < n; i++) {
+      const x = (i % s.cols + .5) * dx, y = (Math.floor(i / s.cols) + .5) * dy, k = s._rank[i];
+      if (k < N) { const fresh = cl(1 - (N - k) / 24) * (1 - cl((t - c.mil - .25) / .5)), rad = 7.5 + 5 * fresh + (N <= s.from ? 4 * beat : 0);
+        g.fillStyle = fresh > .02 ? '#FFE08A' : '#FFC83D'; g.beginPath(); g.arc(x, y, rad, 0, 6.2832); g.fill(); }
+      else { g.fillStyle = 'rgba(255,255,255,.11)'; g.beginPath(); g.arc(x, y, 5.5, 0, 6.2832); g.fill(); }
+    }
+    pop(Q(r, '.rw'), t, s.a0 + .1, .5, 50);
+    Q(r, '.nn').textContent = N >= n ? s.toText : nf(N);
+    Q(r, '.yy').textContent = t < c.reparto ? s.y0 : s.y0 + ' → ' + s.y1;      // sin anios intermedios: la fuente solo da el inicio y el final
+    pop(Q(r, '.an2'), t, c.reparto + .4);
+    slam(Q(r, '.ch'), t, c.local + .2, .4, -3);
+  }
+};
+
+// ---------- 6. venta: una barra que no se ve y otra que llena la pantalla ----------
+REG.venta = {
+  build(r, s) {
+    let dots = ''; for (let i = 0; i < 54; i++) dots += `<i style="position:absolute;left:${(i % 27) * 22}px;top:${Math.floor(i / 27) * 22}px;width:12px;height:12px;border-radius:50%;background:#FFC83D"></i>`;
+    const m = Math.round(s.b.value / s.a.value / 10) * 10;
+    r.innerHTML = `
+      <div class="abs kick fk" style="left:150px;top:372px">${s.flowKick || ''}</div>
+      <div class="abs fl" style="left:150px;top:170px;display:flex;align-items:center;gap:26px">
+        ${IC.flask(74)}<span class="an" style="font-size:50px">${s.flow[0]}</span>${IC.arrow(130)}
+        <span style="position:relative;display:inline-block;width:594px;height:36px">${dots}</span><span class="an" style="font-size:50px">${s.flow[1]}</span></div>
+      <div class="abs ra" style="left:150px;top:346px;width:1620px">
+        <div class="kick" style="font-size:28px">${s.a.label}</div>
+        <div style="display:flex;align-items:center;gap:26px;margin-top:14px"><div style="width:6px;height:64px;background:var(--amber);border-radius:3px"></div><div class="an" style="font-size:72px">USD ${nf(s.a.value)}</div></div></div>
+      <div class="abs rb" style="left:150px;top:526px;width:1620px">
+        <div class="kick" style="font-size:28px">${s.b.label}</div>
+        <div style="position:relative;margin-top:14px;height:96px;background:rgba(255,255,255,.06);border-radius:12px;overflow:hidden"><div class="bar" style="position:absolute;left:0;top:0;height:100%;width:0;background:var(--amber);border-radius:12px"></div></div>
+        <div class="an vv" style="font-size:124px;color:var(--amber);margin-top:16px">USD 0</div></div>
+      <div class="abs mu an" style="left:1318px;top:350px;font-size:104px;background:var(--coral);color:#1b0b05;border-radius:20px;padding:10px 30px 16px;transform-origin:50% 50%">×${nf(m)}</div>
+      <div class="abs nt" style="right:150px;top:806px;font-weight:600;font-size:26px;color:var(--muted)">${s.note}</div>`;
+  },
+  draw(r, s, t) {
+    const c = s.cue, fl = Q(r, '.fl');
+    const up = eio((t - c.costo + .55) / .55); fl.style.opacity = cl((t - s.T0 - .15) / .3); fl.style.transformOrigin = '0 50%'; fl.style.transform = `translateY(${(1 - up) * 306}px) scale(${1.08 - .08 * up})`; pop(Q(r, '.fk'), t, s.a0 + .1); if (up > 0) Q(r, '.fk').style.opacity = Math.min(+Q(r, '.fk').style.opacity, 1 - up * 1.6); fl.querySelectorAll('i').forEach((d, i) => { d.style.opacity = cl((t - s.a0 - .8 - i * .03) / .15); });
+    if (t > c.costo - .3) fl.style.opacity = 1 - .55 * cl((t - c.costo + .3) / .4);
+    pop(Q(r, '.ra'), t, c.costo, .45, 40); pop(Q(r, '.rb'), t, c.venta - .45, .45, 40);
+    const p = tw(t, c.venta, 1.5, eio);
+    Q(r, '.bar').style.width = (p * 100) + '%'; Q(r, '.vv').textContent = 'USD ' + nf(s.b.value * p);
+    slam(Q(r, '.mu'), t, c.venta + 1.75, .45, 5); pop(Q(r, '.nt'), t, c.venta + 1.2);
+  }
+};
+
+// ---------- 7. hoy: la cifra grande y la cadena ----------
+REG.hoy = {
+  build(r, s) {
+    const icons = [IC.flask(54), IC.bottle(48), IC.glass(48)];
+    const chain = s.chain.map((x, i) => `<div class="node nd"><div class="o">${icons[i]}</div><span class="an" style="font-size:46px">${x}</span></div>` + (i < 2 ? `<div class="nd">${IC.arrow(110)}</div>` : '')).join('');
+    r.innerHTML = `
+      <div class="abs chipx c-line th" style="left:150px;top:166px">${s.then}</div>
+      <div class="abs bg2" style="left:146px;top:238px;display:flex;align-items:baseline;gap:34px">
+        <div class="an nn" style="font-size:340px;color:var(--amber);min-width:770px">0</div><div class="an un" style="font-size:132px">${s.bigUnit}</div></div>
+      <div class="abs an ut" style="left:156px;top:594px;font-size:86px">${s.unit}</div>
+      <div class="abs sr" style="left:1010px;top:636px;font-weight:600;font-size:26px;color:var(--muted)">${s.src}</div>
+      <div class="abs cps" style="left:150px;top:738px;display:flex;gap:22px"><span class="chipx c-line c1" style="height:76px;font-size:34px">${s.chips[0]}</span><span class="chipx c-mint c2" style="height:76px;font-size:34px">${s.chips[1]}</span></div>
+      <div class="abs chn" style="left:150px;top:728px;display:flex;align-items:center;gap:30px">${chain}</div>`;
+  },
+  draw(r, s, t) {
+    const c = s.cue, S = s.sent;
+    pop(Q(r, '.th'), t, s.T0 + .15);
+    const n = Q(r, '.nn'); n.textContent = nf(s.big * tw(t, c.numero - .3, 1.3, eio)); pop(Q(r, '.bg2'), t, c.numero - .4, .4, 50);
+    pop(Q(r, '.ut'), t, c.numero + .9); pop(Q(r, '.sr'), t, c.numero + 1.3);
+    const off = cl((t - S[1].t0 + .3) / .25);
+    const c1 = Q(r, '.c1'), c2 = Q(r, '.c2'); pop(c1, t, c.marcas); pop(c2, t, c.paises);
+    if (off > 0) { c1.style.opacity = Math.min(+c1.style.opacity, 1 - off); c2.style.opacity = Math.min(+c2.style.opacity, 1 - off); }
+    r.querySelectorAll('.nd').forEach((e, i) => pop(e, t, S[1].t0 + i * .22, .4, 30));
+  }
+};
+
+// ---------- 8. cierre: resumen en dos cifras y marca ----------
+REG.cierre = {
+  build(r, s) {
+    const R = s.recap || [];
+    r.innerHTML = `
+      <div class="abs rc" style="left:0;top:236px;width:1920px;display:flex;justify-content:center;align-items:center;gap:70px">
+        <div class="ra" style="text-align:center;transform-origin:50% 50%"><div class="an" style="font-size:300px;color:var(--amber)">${R[0] ? R[0].big : ''}</div><div class="kick" style="margin-top:18px">${R[0] ? R[0].label : ''}</div></div>
+        <div class="rx">${IC.arrow(170, '#8E9BBA')}</div>
+        <div class="rb" style="text-align:center;transform-origin:50% 50%"><div class="an" style="font-size:300px">${R[1] ? R[1].big : ''}</div><div class="kick" style="margin-top:18px">${R[1] ? R[1].label : ''}</div></div></div>
+      <div class="abs an br" style="left:0;top:226px;width:1920px;text-align:center;font-size:230px;color:var(--amber);transform-origin:50% 50%">${SPEC.brand}</div>
+      <div class="abs tg" style="left:0;top:488px;width:1920px;text-align:center;font-weight:700;font-size:52px">${s.tag}</div>
+      <div class="abs so" style="left:310px;top:636px;width:1300px;text-align:center;font-weight:500;font-size:27px;line-height:1.4;color:var(--muted)">${s.sources}</div>
+      <div class="abs lg" style="left:0;top:760px;width:1920px;text-align:center;font-weight:700;font-size:30px;color:var(--soft)">${s.legal}</div>`;
+  },
+  draw(r, s, t) {
+    const c = s.cue, m = c.marca ?? s.a0;
+    if (s.recap) {
+      slam(Q(r, '.ra'), t, c.recapA, .45); pop(Q(r, '.rx'), t, c.recapB - .15); slam(Q(r, '.rb'), t, c.recapB, .45);
+      const o = cl((t - m + .4) / .3); if (o > 0) Q(r, '.rc').style.opacity = 1 - o; else Q(r, '.rc').style.opacity = 1;
+    } else Q(r, '.rc').style.opacity = 0;
+    slam(Q(r, '.br'), t, m - .05, .5); pop(Q(r, '.tg'), t, m + .45); pop(Q(r, '.so'), t, m + 1.2); pop(Q(r, '.lg'), t, m + 1.6);
+  }
+};
+
+
+// ---------- tipos genericos para videos largos ----------
+const wob = (ic, w, col) => `<div class="wob">${ART[ic](w, col)}</div>`;
+const cueOr = (s, k, alt) => (s.cue && s.cue[k] != null) ? s.cue[k] : alt;
+const head = s => `<div class="abs kick kk" style="left:150px;top:166px;color:var(--amber)">${s.kicker || ''}</div>` + (s.head ? `<div class="abs an hh" style="left:146px;top:214px;font-size:84px">${s.head}</div>` : '');
+const drawHead = (r, s, t) => { pop(Q(r, '.kk'), t, s.T0 + .2); const h = Q(r, '.hh'); if (h) pop(h, t, s.T0 + .32); };
+REG.cartas = {
+  build(r, s) {
+    const N = s.cards.length, gap = 36, w = (1620 - (N - 1) * gap) / N, top = s.head ? 330 : 250, h = s.head ? 520 : 590, iw = Math.min(230, w * .5);
+    r.innerHTML = head(s) + s.cards.map((c, i) => { const fs = Math.floor(Math.min(112, (w - 70) / (.47 * c.big.length)));
+      return `<div class="panel cd" style="left:${150 + i * (w + gap)}px;top:${top}px;width:${w}px;height:${h}px;text-align:center">
+        <div class="ci" style="display:inline-block;margin-top:${h * .07}px;height:${iw * 1.05}px;transform-origin:50% 60%">${wob(c.ic, iw, c.col)}</div>
+        <div class="an cb" style="font-size:${fs}px;color:${c.color || 'var(--amber)'};margin-top:${h * .05}px;white-space:nowrap">${c.big}</div>
+        <div class="cl" style="font-weight:600;font-size:${N > 3 ? 30 : 36}px;line-height:1.25;color:var(--soft);margin:18px 34px 0">${c.label}</div></div>`; }).join('');
+  },
+  draw(r, s, t) {
+    drawHead(r, s, t);
+    r.querySelectorAll('.cd').forEach((c, i) => { const t0 = cueOr(s, 'c' + i, s.sent[Math.min(i, s.sent.length - 1)].t0);
+      pop(c, t, t0 - .15, .5, 60); const ic = c.querySelector('.ci'), p = tw(t, t0 + .05, .5, ebk); ic.style.transform = `scale(${p})`;
+      pop(c.querySelector('.cb'), t, t0 + .2); pop(c.querySelector('.cl'), t, t0 + .4); });
+  }
+};
+REG.dato = {
+  build(r, s) {
+    const txt = s.num != null ? (s.pre || '') + nf(s.num) + (s.suf || '') : s.big, fs = Math.floor(Math.min(350, 860 / (.47 * txt.length))), sy = 250 + (400 - fs) * .3 + fs * 1.04 + (s.unitSize || 84) + 22;
+    r.innerHTML = head(s) + `
+      <div class="abs an bg1" style="left:142px;top:${250 + (400 - fs) * .3}px;font-size:${fs}px;color:var(--amber);transform-origin:20% 55%;white-space:nowrap">${txt}</div>
+      <div class="abs an un" style="left:150px;top:${250 + (400 - fs) * .3 + fs * 1.04}px;font-size:${s.unitSize || 84}px;white-space:nowrap">${s.unit || ''}</div>
+      <div class="abs sb" style="left:152px;top:${250 + (400 - fs) * .3 + fs * 1.04 + (s.unitSize || 84) + 22}px;font-weight:600;font-size:42px;color:var(--soft)">${s.sub || ''}</div>
+      <div class="abs chs" style="left:150px;top:${sy + 70}px;display:flex;gap:18px">${(s.chips || []).map((c, i) => `<span class="chipx ${i % 2 ? 'c-coral' : 'c-mint'} ch">${c}</span>`).join('')}</div>
+      <div class="abs ai" style="left:${s.artX || 1190}px;top:${s.artY || 250}px;transform-origin:50% 60%">${wob(s.ic, s.artW || 520, s.col)}</div>`;
+  },
+  draw(r, s, t) {
+    drawHead(r, s, t);
+    const tb = cueOr(s, 'big', s.a0 + .4), b = Q(r, '.bg1');
+    if (s.num != null) b.textContent = (s.pre || '') + nf(s.num * tw(t, tb - .1, .9, eio)) + (s.suf || '');
+    slam(b, t, tb, .5); pop(Q(r, '.un'), t, tb + .3); pop(Q(r, '.sb'), t, cueOr(s, 'sub', tb + .7));
+    r.querySelectorAll('.ch').forEach((c, i) => pop(c, t, cueOr(s, 'chip' + i, tb + 1.5 + i * .5)));
+    const ta = cueOr(s, 'art', s.a0 + .15), a = Q(r, '.ai'); a.style.opacity = cl((t - ta) / .12); a.style.transform = `scale(${tw(t, ta, .55, ebk)})`;
+  }
+};
+REG.cita = {
+  build(r, s) {
+    r.innerHTML = head(s) + `
+      <div class="abs cp" style="left:150px;top:262px;width:1120px;height:540px;background:var(--paper);border-radius:28px;box-shadow:0 16px 0 rgba(8,10,32,.4);padding:56px 60px;transform-origin:50% 50%">
+        <div class="an" style="font-size:150px;line-height:.6;color:var(--coral);height:70px">“</div>
+        <div class="ct" style="font-weight:700;font-size:${s.size || 60}px;line-height:1.22;color:#141C48">${s.text}</div>
+        <div class="cy" style="position:absolute;left:60px;bottom:44px;font-weight:600;font-size:27px;color:#5b5f6e">${s.by || ''}</div></div>
+      <div class="abs ai" style="left:${s.artX || 1350}px;top:${s.artY || 300}px;transform-origin:50% 60%">${wob(s.ic, s.artW || 420, s.col)}</div>`;
+    r.querySelectorAll('.ct b').forEach(b => { b.style.color = '#E2491D'; b.style.fontWeight = 800; });
+  },
+  draw(r, s, t) {
+    drawHead(r, s, t);
+    const tc = cueOr(s, 'text', s.a0 + .3), c = Q(r, '.cp'), p = tw(t, tc - .2, .6);
+    c.style.opacity = cl((t - tc + .2) / .25); c.style.transform = `translateY(${(1 - p) * 60}px) rotate(${-1.5 - (1 - p) * 3}deg)`;
+    pop(Q(r, '.ct'), t, tc + .1); pop(Q(r, '.cy'), t, tc + 1.2);
+    const ta = cueOr(s, 'art', s.a0 + .15), a = Q(r, '.ai'); a.style.opacity = cl((t - ta) / .12); a.style.transform = `scale(${tw(t, ta, .55, ebk)})`;
+  }
+};
+REG.linea = {
+  build(r, s) {
+    const N = s.pts.length, x0 = 330, x1 = 1590, y = 620;
+    r.innerHTML = head(s) + `<div class="abs" style="left:${x0}px;top:${y}px;width:${x1 - x0}px;height:8px;border-radius:4px;background:rgba(255,255,255,.14)"><div class="lf" style="height:100%;width:0;border-radius:4px;background:var(--amber)"></div></div>` +
+      s.pts.map((p, i) => { const x = N > 1 ? x0 + (x1 - x0) * i / (N - 1) : (x0 + x1) / 2;
+        return `<div class="abs pt" style="left:${x - 230}px;top:${s.head ? 330 : 290}px;width:460px;text-align:center">
+          <div class="pi" style="display:inline-block;height:${s.head ? 230 : 270}px;transform-origin:50% 70%">${wob(p.ic, s.head ? 200 : 236, p.col)}</div>
+          <div style="height:${s.head ? 60 : 60}px"><div class="pd" style="display:inline-block;margin-top:${s.head ? 42 : 42}px;width:36px;height:36px;border-radius:50%;background:var(--amber);border:6px solid #141C48"></div></div>
+          <div class="an py" style="font-size:${p.y.length > 6 ? 64 : 92}px;color:var(--amber);margin-top:36px;white-space:nowrap">${p.y}</div>
+          <div class="pl" style="font-weight:600;font-size:32px;line-height:1.25;color:var(--soft);margin:12px 30px 0">${p.label}</div></div>`; }).join('');
+  },
+  draw(r, s, t) {
+    drawHead(r, s, t);
+    const N = s.pts.length; let prog = 0;
+    r.querySelectorAll('.pt').forEach((e, i) => { const t0 = cueOr(s, 'p' + i, s.sent[Math.min(i, s.sent.length - 1)].t0); if (N > 1) prog = Math.max(prog, (i + tw(t, t0 - .5, .5, eio) - 1) / (N - 1));
+      e.style.opacity = cl((t - t0 + .05) / .15); e.querySelector('.pi').style.transform = `scale(${tw(t, t0, .5, ebk)})`; e.querySelector('.pd').style.transform = `scale(${tw(t, t0 - .05, .35, ebk)})`;
+      pop(e.querySelector('.py'), t, t0 + .1); pop(e.querySelector('.pl'), t, t0 + .35); });
+    Q(r, '.lf').style.width = cl(prog) * 100 + '%';
+  }
+};
+
+// ---------- montaje ----------
+const SC = SPEC.scenes, host = document.getElementById('scenes'), roots = [];
+document.getElementById('brand').textContent = SPEC.brand; document.getElementById('series').textContent = SPEC.series; document.getElementById('title').textContent = SPEC.title;
+const segs = document.getElementById('segs');
+SC.forEach((s, i) => { const r = $('div', 'sc'); host.appendChild(r); roots.push(r); r.style.display = 'block'; REG[s.type].build(r, s); r.style.display = 'none'; const d = $('div'); d.appendChild($('i')); segs.appendChild(d); });
+const dood = document.getElementById('doodles'), DD = []; { const R = rng(7), kinds = ['spark', 'squig', 'plus', 'ring', 'coin', 'spark', 'squig'];
+  for (let i = 0; i < 26; i++) { const d = $('div', '', ART[kinds[i % kinds.length]](46 + Math.round(R() * 70))); const o = { x: (i % 7) * 285 + R() * 180 - 40, y: Math.floor(i / 7) * 270 + R() * 190 + 10, r: R() * 360, v: .5 + R(), ph: R() * 6.28, el: d }; dood.appendChild(d); DD.push(o); } }
+SC.forEach((s, i) => { s._art = (s.art || []).map((a, j) => { const e = $('div', 'art', ART[a.ic](a.w, a.col)); e.style.left = a.x + 'px'; e.style.top = a.y + 'px'; roots[i].appendChild(e); return e; }); });
+SC.forEach((s, i) => { s._wob = [...roots[i].querySelectorAll('.wob')]; });
+function drawWob(s, t) { s._wob.forEach((e, j) => { e.style.filter = `url(#rough${Math.floor(t * 4 + j) % 3})`; e.style.transform = `translateY(${Math.sin(t * 1.5 + j * 2) * 6}px) rotate(${Math.sin(t * 1.1 + j * 1.7) * 2.4}deg)`; }); }
+function drawArt(s, t) { (s.art || []).forEach((a, j) => { const e = s._art[j], t0 = typeof a.at === 'string' ? (s.cue[a.at] ?? s.a0) + (a.d || 0) : s.a0 + (a.at || 0), p = tw(t, t0, .5, ebk), end = a.outS != null ? s.sent[a.outS].t0 - .35 : a.out ? (s.cue[a.out] ?? 1e9) : 1e9;
+  e.style.opacity = cl((t - t0) / .12) * (1 - cl((t - end + .2) / .2)); e.style.filter = `url(#rough${Math.floor(t * 4 + j) % 3})`;
+  e.style.transform = `translateY(${Math.sin(t * 1.5 + j * 2) * 7}px) rotate(${(a.rot || 0) + Math.sin(t * 1.1 + j) * 2.2}deg) scale(${p})`; }); }
+const CAPS = SC.flatMap(s => s.caps), cap = document.getElementById('cap'), chip = document.getElementById('chip'), grid = null;
+function render(t) {
+  let k = 0; for (let i = 0; i < SC.length; i++) if (t >= SC[i].T0) k = i;
+  const s = SC[k], last = k === SC.length - 1;
+  roots.forEach((r, i) => { r.style.display = i === k ? 'block' : 'none'; });
+  const r = roots[k]; r.style.opacity = cl((t - s.T0) / .3) * (last ? 1 : 1 - cl((t - s.T1 + .26) / .26));
+  REG[s.type].draw(r, s, t);
+  drawArt(s, t); drawWob(s, t); DD.forEach(o => { o.el.style.transform = `translate(${o.x + Math.sin(t * .25 * o.v + o.ph) * 26}px,${o.y + Math.cos(t * .2 * o.v + o.ph) * 22}px) rotate(${o.r + t * 4 * (o.v - 1)}deg)`; });
+  chip.textContent = s.chip || ''; chip.style.display = s.chip ? 'flex' : 'none'; chip.style.opacity = cl((t - s.T0) / .3);
+  [...segs.children].forEach((d, i) => { d.firstChild.style.width = (i < k ? 100 : i > k ? 0 : cl((t - s.T0) / (s.T1 - s.T0)) * 100) + '%'; });
+  let c = null; for (const x of CAPS) if (t >= x.t0 && t < x.t1) c = x;
+  if (c) { if (cap._h !== c.html) { cap.innerHTML = c.html; cap._h = c.html; } cap.style.opacity = cl((t - c.t0) / .1); } else { cap.style.opacity = 0; }
+}
+render(0);
+</script>
+</body>
+</html>

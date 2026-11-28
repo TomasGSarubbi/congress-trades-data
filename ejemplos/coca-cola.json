@@ -1,0 +1,1219 @@
+{
+ "brand": "CIFRA CLAVE",
+ "series": "HISTORIAS DE EMPRESAS",
+ "title": "COCA-COLA · EL CONTRATO DE 1 DÓLAR",
+ "fps": 30,
+ "lead": 0.5,
+ "gap": 0.65,
+ "tail": 2.2,
+ "scenes": [
+  {
+   "type": "contrato",
+   "chip": "1899",
+   "narr": [
+    "En {1899|mil ochocientos noventa y nueve}, el presidente de Coca-Cola firmó un contrato que hoy parece una locura.",
+    "Vendió, por *{1 dólar|un dólar}*, el derecho a embotellar su bebida en casi todo Estados Unidos.",
+    "¿Un mal negocio? Veamos."
+   ],
+   "cues": {
+    "firma": {
+     "s": 0,
+     "at": "firmó"
+    },
+    "precio": {
+     "s": 1,
+     "at": "1 dólar"
+    },
+    "sub": {
+     "s": 1,
+     "at": "el"
+    },
+    "duda": {
+     "s": 2,
+     "at": "¿Un"
+    }
+   },
+   "year": "1899",
+   "kicker": "EL CONTRATO DE",
+   "price": "USD 1",
+   "sub": "por el derecho a embotellar Coca-Cola<br>en casi todo Estados Unidos",
+   "docTitle": "CONTRATO DE EMBOTELLADO",
+   "docPlace": "Año 1899",
+   "doubt": "¿UN MAL NEGOCIO?",
+   "kicker2": "PRECIO DEL CONTRATO",
+   "art": [
+    {
+     "ic": "coin",
+     "x": 1690,
+     "y": 640,
+     "w": 180,
+     "at": "precio",
+     "d": 0.35,
+     "rot": 10
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "",
+   "kicker": "EN ESTA HISTORIA",
+   "hold": 0.6,
+   "narr": [
+    "En esta historia hay un farmacéutico, un contrato, una botella, una guerra y un error famoso.",
+    "Vamos por partes."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "farmacéutico,"
+    },
+    "c1": {
+     "s": 0,
+     "at": "contrato,"
+    },
+    "c2": {
+     "s": 0,
+     "at": "botella,"
+    },
+    "c3": {
+     "s": 0,
+     "at": "guerra"
+    },
+    "c4": {
+     "s": 0,
+     "at": "error"
+    }
+   },
+   "cards": [
+    {
+     "ic": "flask",
+     "big": "FARMACÉUTICO",
+     "label": "1886"
+    },
+    {
+     "ic": "pen",
+     "big": "CONTRATO",
+     "label": "1899"
+    },
+    {
+     "ic": "bottle",
+     "big": "BOTELLA",
+     "label": "1915"
+    },
+    {
+     "ic": "helmet",
+     "big": "GUERRA",
+     "label": "1941"
+    },
+    {
+     "ic": "phone",
+     "big": "ERROR",
+     "label": "1985"
+    }
+   ]
+  },
+  {
+   "type": "origen",
+   "chip": "1886",
+   "narr": [
+    "Para entenderlo hay que volver {13|trece} años atrás.",
+    "En Atlanta, el farmacéutico John Pemberton creó un jarabe que una farmacia servía mezclado con soda, a *{5 centavos|cinco centavos}* el vaso.",
+    "El primer año se vendieron, en promedio, *{9 vasos por día|nueve vasos por día}*."
+   ],
+   "cues": {
+    "mezcla": {
+     "s": 1,
+     "at": "jarabe"
+    },
+    "precio": {
+     "s": 1,
+     "at": "5 centavos"
+    },
+    "nueve": {
+     "s": 2,
+     "at": "9 vasos por día"
+    }
+   },
+   "yearFrom": 1899,
+   "yearTo": 1886,
+   "back": "13 AÑOS ATRÁS",
+   "place": "ATLANTA · MAYO DE 1886",
+   "price": "5¢",
+   "priceLabel": "EL VASO",
+   "mix": [
+    "JARABE",
+    "SODA"
+   ],
+   "count": 9,
+   "countLabel": "VASOS POR DÍA",
+   "note": "promedio del primer año",
+   "hold": 0.6,
+   "art": [
+    {
+     "ic": "shop",
+     "x": 1170,
+     "y": 340,
+     "w": 460,
+     "at": "mezcla",
+     "d": -2.2,
+     "outS": 2,
+     "rot": -2
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "1886",
+   "kicker": "1886 · EL COMIENZO",
+   "hold": 0.6,
+   "narr": [
+    "El nombre se le ocurrió a su contador, {Frank Robinson|Frank Róbinson}: pensó que esas dos letras iguales iban a verse bien en los anuncios.",
+    "Pero el negocio no arrancaba. Nueve vasos, a cinco centavos cada uno, son *{45 centavos|cuarenta y cinco centavos}* por día.",
+    "Pemberton murió en {1888|mil ochocientos ochenta y ocho}, sin saber en qué se iba a convertir su jarabe."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "nombre"
+    },
+    "c1": {
+     "s": 1,
+     "at": "45 centavos"
+    },
+    "c2": {
+     "s": 2,
+     "at": "1888"
+    }
+   },
+   "cards": [
+    {
+     "ic": "pen",
+     "big": "EL NOMBRE",
+     "label": "idea de su contador, Frank Robinson"
+    },
+    {
+     "ic": "coin",
+     "big": "45¢ POR DÍA",
+     "label": "9 vasos × 5 centavos<br>(cálculo propio)"
+    },
+    {
+     "ic": "hourglass",
+     "big": "1888",
+     "label": "muere Pemberton, el creador"
+    }
+   ]
+  },
+  {
+   "type": "compra",
+   "chip": "1888–1891",
+   "narr": [
+    "Dos años después, el empresario Asa Candler empezó a comprar la fórmula.",
+    "Quedarse con todo le llevó tres años y le costó, en total, *{2.300 dólares|dos mil trescientos dólares}*."
+   ],
+   "cues": {
+    "empieza": {
+     "s": 0,
+     "at": "empezó"
+    },
+    "todo": {
+     "s": 1,
+     "at": "tres"
+    },
+    "precio": {
+     "s": 1,
+     "at": "2.300 dólares"
+    }
+   },
+   "who": "ASA CANDLER",
+   "role": "empresario de Atlanta",
+   "what": "LA FÓRMULA",
+   "from": 1888,
+   "to": 1891,
+   "kicker": "LE COSTÓ, EN TOTAL",
+   "total": 2300,
+   "sub": "control completo en 1891",
+   "done": "100% SUYA EN 1891",
+   "hold": 0.5,
+   "art": [
+    {
+     "ic": "person",
+     "x": 1560,
+     "y": 630,
+     "w": 230,
+     "at": "empieza",
+     "rot": 3
+    },
+    {
+     "ic": "bag",
+     "x": 1400,
+     "y": 690,
+     "w": 160,
+     "at": "precio",
+     "d": 0.3,
+     "rot": -6
+    }
+   ]
+  },
+  {
+   "type": "dato",
+   "chip": "CUPONES",
+   "kicker": "LA IDEA DE CANDLER",
+   "big": "GRATIS",
+   "unit": "UN VASO POR CUPÓN",
+   "sub": "se canjeaba en la fuente de soda",
+   "ic": "ticket",
+   "artW": 560,
+   "artX": 1200,
+   "artY": 300,
+   "hold": 0.8,
+   "narr": [
+    "Candler ya tenía la fórmula, pero también un problema: todavía muy poca gente conocía su bebida.",
+    "Su solución fue regalarla.",
+    "Repartió cupones que se cambiaban por un vaso *gratis*."
+   ],
+   "cues": {
+    "art": {
+     "s": 2,
+     "at": "cupones"
+    },
+    "big": {
+     "s": 2,
+     "at": "gratis"
+    }
+   }
+  },
+  {
+   "type": "dato",
+   "chip": "1894–1913",
+   "kicker": "CUPONES CANJEADOS · 1894–1913",
+   "big": "8,5",
+   "unit": "MILLONES DE CUPONES",
+   "sub": "cada uno, un vaso gratis",
+   "chips": [
+    "1 de cada 9 estadounidenses ya la había probado"
+   ],
+   "ic": "glass",
+   "artW": 420,
+   "artX": 1300,
+   "artY": 230,
+   "hold": 0.8,
+   "narr": [
+    "Entre {1894|mil ochocientos noventa y cuatro} y {1913|mil novecientos trece} se canjearon más de *{8,5 millones|ocho millones y medio}* de cupones.",
+    "Para entonces, según la compañía, *uno de cada nueve* estadounidenses ya la había probado."
+   ],
+   "cues": {
+    "big": {
+     "s": 0,
+     "at": "8,5 millones"
+    },
+    "chip0": {
+     "s": 1,
+     "at": "uno"
+    }
+   }
+  },
+  {
+   "type": "cartas",
+   "chip": "1894",
+   "kicker": "1894 · MISISIPI",
+   "head": "ALGUIEN YA LA HABÍA EMBOTELLADO",
+   "hold": 0.6,
+   "narr": [
+    "Mientras tanto, en {1894|mil ochocientos noventa y cuatro}, un comerciante de Misisipi llamado {Joseph Biedenharn|Yósef Bídenjarn} instaló una máquina embotelladora en el fondo de su local.",
+    "Fue el primero en poner Coca-Cola en botellas.",
+    "Pero en Atlanta, el negocio seguía siendo otro."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "comerciante"
+    },
+    "c1": {
+     "s": 1,
+     "at": "primero"
+    }
+   },
+   "cards": [
+    {
+     "ic": "shop",
+     "big": "MISISIPI",
+     "label": "el local de Joseph Biedenharn"
+    },
+    {
+     "ic": "bottle",
+     "big": "LA PRIMERA",
+     "label": "Coca-Cola en botella, 1894"
+    }
+   ]
+  },
+  {
+   "type": "propuesta",
+   "chip": "1899",
+   "narr": [
+    "Candler vendía el jarabe a las fuentes de soda, y le iba muy bien.",
+    "Hasta que dos abogados de {Chattanooga|Chatanuga} le propusieron otra cosa: embotellarla a gran escala.",
+    "Les cedió ese derecho por *{1 dólar|un dólar}*."
+   ],
+   "cues": {
+    "bien": {
+     "s": 0,
+     "at": "le"
+    },
+    "abogados": {
+     "s": 1,
+     "at": "dos"
+    },
+    "precio": {
+     "s": 2,
+     "at": "1 dólar"
+    }
+   },
+   "a": {
+    "title": "FUENTE DE SODA",
+    "line": "El jarabe se servía en el mostrador",
+    "chip": "ventas casi ×10 para 1892"
+   },
+   "b": {
+    "title": "EN BOTELLAS",
+    "line": "La propuesta de dos abogados<br>de Chattanooga"
+   },
+   "stamp": "USD 1",
+   "stampNote": "derecho cedido en 1899",
+   "hold": 0.7
+  },
+  {
+   "type": "cartas",
+   "chip": "1899",
+   "kicker": "¿POR QUÉ FIRMÓ CANDLER?",
+   "hold": 0.8,
+   "narr": [
+    "Los abogados se llamaban {Benjamin Thomas|Bényamin Tómas} y {Joseph Whitehead|Yósef Uáitjed}.",
+    "¿Y por qué Candler aceptó? Su negocio eran las fuentes de soda, y no creía demasiado en las botellas.",
+    "Un economista que estudió el caso cree que quizás firmó solo para sacarlos de su oficina."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "abogados"
+    },
+    "c1": {
+     "s": 1,
+     "at": "negocio"
+    },
+    "c2": {
+     "s": 2,
+     "at": "economista"
+    }
+   },
+   "cards": [
+    {
+     "ic": "person",
+     "big": "THOMAS Y WHITEHEAD",
+     "label": "los dos abogados de Chattanooga"
+    },
+    {
+     "ic": "shop",
+     "big": "FUENTES DE SODA",
+     "label": "el negocio en el que creía Candler"
+    },
+    {
+     "ic": "pen",
+     "big": "UNA HIPÓTESIS",
+     "label": "quizás firmó para sacarlos de su oficina (A. Young, en NPR)"
+    }
+   ]
+  },
+  {
+   "type": "red",
+   "chip": "1899–1919",
+   "narr": [
+    "Ellos no tenían capital para cubrir el país.",
+    "Así que repartieron el territorio entre empresarios locales, y cada uno puso su propia planta.",
+    "En {20|veinte} años pasaron de {2|dos} plantas a *más de {1.000|mil}*."
+   ],
+   "cues": {
+    "reparto": {
+     "s": 1,
+     "at": "repartieron"
+    },
+    "local": {
+     "s": 1,
+     "at": "cada"
+    },
+    "veinte": {
+     "s": 2,
+     "at": "20"
+    },
+    "mil": {
+     "s": 2,
+     "at": "1.000"
+    }
+   },
+   "cols": 50,
+   "rows": 20,
+   "from": 2,
+   "toText": "1.000+",
+   "y0": 1899,
+   "y1": 1919,
+   "label": "PLANTAS EMBOTELLADORAS",
+   "chipText": "95% de dueños locales",
+   "hold": 1.0,
+   "animNote": "Animación ilustrativa: la fuente informa el inicio (2) y el final (más de 1.000)."
+  },
+  {
+   "type": "cartas",
+   "chip": "1899",
+   "kicker": "EL CONTRATO DE 1899",
+   "head": "LA LETRA CHICA",
+   "hold": 0.8,
+   "narr": [
+    "Pero aquel contrato tenía una letra chica.",
+    "La compañía se comprometía a venderles el jarabe a un *precio fijo*.",
+    "Y no tenía fecha de vencimiento.",
+    "Si los costos subían, el problema era de la compañía. Renegociarlo le llevó años."
+   ],
+   "cues": {
+    "c0": {
+     "s": 1,
+     "at": "precio"
+    },
+    "c1": {
+     "s": 2,
+     "at": "fecha"
+    },
+    "c2": {
+     "s": 3,
+     "at": "Renegociarlo"
+    }
+   },
+   "cards": [
+    {
+     "ic": "bill",
+     "big": "PRECIO FIJO",
+     "label": "del jarabe para los embotelladores"
+    },
+    {
+     "ic": "hourglass",
+     "big": "SIN VENCIMIENTO",
+     "label": "el contrato no tenía fecha de fin"
+    },
+    {
+     "ic": "pen",
+     "big": "AÑOS",
+     "label": "tardó la compañía en renegociarlo"
+    }
+   ]
+  },
+  {
+   "type": "dato",
+   "chip": "1886–1959",
+   "kicker": "PRECIO DE UNA COCA-COLA",
+   "big": "5¢",
+   "unit": "EL MISMO PRECIO",
+   "sub": "de 1886 a 1959 · más de 70 años",
+   "ic": "vending",
+   "artW": 400,
+   "artX": 1300,
+   "artY": 250,
+   "hold": 0.8,
+   "narr": [
+    "Eso ayuda a explicar un dato difícil de creer.",
+    "Una Coca-Cola costaba *{5 centavos|cinco centavos}* en {1886|mil ochocientos ochenta y seis}.",
+    "Y en {1959|mil novecientos cincuenta y nueve} todavía se conseguía a cinco centavos.",
+    "Más de *{70 años|setenta años}* con el mismo precio."
+   ],
+   "cues": {
+    "art": {
+     "s": 0,
+     "at": "dato"
+    },
+    "big": {
+     "s": 1,
+     "at": "5 centavos"
+    },
+    "sub": {
+     "s": 3,
+     "at": "70 años"
+    }
+   }
+  },
+  {
+   "type": "cartas",
+   "chip": "1886–1959",
+   "kicker": "¿POR QUÉ NO SUBÍA EL PRECIO?",
+   "hold": 0.8,
+   "narr": [
+    "¿Por qué no subía? Dos economistas que estudiaron el caso dan dos razones principales.",
+    "La primera, aquel contrato con los embotelladores.",
+    "La segunda, las máquinas expendedoras: aceptaban una sola moneda, la de cinco centavos.",
+    "Al final, la inflación terminó con ese precio."
+   ],
+   "cues": {
+    "c0": {
+     "s": 1,
+     "at": "primera"
+    },
+    "c1": {
+     "s": 2,
+     "at": "segunda"
+    },
+    "c2": {
+     "s": 3,
+     "at": "inflación"
+    }
+   },
+   "cards": [
+    {
+     "ic": "pen",
+     "big": "EL CONTRATO",
+     "label": "con los embotelladores"
+    },
+    {
+     "ic": "vending",
+     "big": "UNA MONEDA",
+     "label": "las máquinas solo aceptaban la de 5 centavos"
+    },
+    {
+     "ic": "coin",
+     "big": "INFLACIÓN",
+     "label": "al final, terminó con ese precio"
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "AÑOS 50",
+   "kicker": "¿Y SUBIRLO A 10 CENTAVOS?",
+   "hold": 0.8,
+   "narr": [
+    "Antes de eso, la compañía buscó alternativas.",
+    "Pasar a la moneda de diez centavos era duplicar el precio de un día para otro.",
+    "Quería algo intermedio.",
+    "Según contó la radio pública de Estados Unidos, hasta se habló de una moneda de siete centavos y medio."
+   ],
+   "cues": {
+    "c0": {
+     "s": 1,
+     "at": "diez"
+    },
+    "c1": {
+     "s": 3,
+     "at": "siete"
+    }
+   },
+   "cards": [
+    {
+     "ic": "coin",
+     "big": "10¢",
+     "label": "era duplicar el precio"
+    },
+    {
+     "ic": "coin",
+     "big": "7,5¢",
+     "label": "la moneda intermedia de la que se llegó a hablar (NPR)"
+    }
+   ]
+  },
+  {
+   "type": "cita",
+   "chip": "1915",
+   "kicker": "1915 · EL DESAFÍO DE LA BOTELLA",
+   "text": "Una botella tan distinta que se reconozca <b>al tacto, en la oscuridad</b>, o <b>rota en el suelo</b>.",
+   "by": "Pedido a fabricantes de vidrio de Estados Unidos, 1915 (traducción)",
+   "ic": "bottle",
+   "hold": 1.0,
+   "narr": [
+    "El éxito trajo otro problema: los imitadores.",
+    "En {1915|mil novecientos quince}, los embotelladores destinaron hasta {500 dólares|quinientos dólares} a crear una botella propia, y lanzaron un desafío a fabricantes de vidrio de todo el país.",
+    "Pedían una botella tan distinta que se pudiera reconocer al tacto, en la oscuridad, o incluso rota en el suelo."
+   ],
+   "cues": {
+    "art": {
+     "s": 0,
+     "at": "imitadores"
+    },
+    "text": {
+     "s": 1,
+     "at": "1915"
+    }
+   }
+  },
+  {
+   "type": "cartas",
+   "chip": "1915",
+   "kicker": "LA GANADORA",
+   "hold": 0.8,
+   "narr": [
+    "Ganó una fábrica de vidrio de Indiana, la {Root Glass Company|Rut Glas Cómpani}.",
+    "La patente se concedió el {16|dieciséis} de noviembre de {1915|mil novecientos quince}.",
+    "Y esa fecha terminó grabada en el vidrio de la botella."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "fábrica"
+    },
+    "c1": {
+     "s": 1,
+     "at": "16"
+    },
+    "c2": {
+     "s": 2,
+     "at": "grabada"
+    }
+   },
+   "cards": [
+    {
+     "ic": "factory",
+     "big": "INDIANA",
+     "label": "Root Glass Company"
+    },
+    {
+     "ic": "pen",
+     "big": "16 NOV 1915",
+     "label": "se concede la patente"
+    },
+    {
+     "ic": "bottle",
+     "big": "EN EL VIDRIO",
+     "label": "la fecha quedó grabada en la botella"
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "1915–1916",
+   "kicker": "EL DISEÑO",
+   "hold": 0.8,
+   "narr": [
+    "El diseño tiene una historia curiosa.",
+    "En la fábrica buscaron inspiración en una enciclopedia, y terminaron copiando la forma de la vaina del cacao, que ni siquiera es un ingrediente de la bebida.",
+    "El primer prototipo era inestable, y hubo que corregirlo.",
+    "La botella llegó al mercado en {1916|mil novecientos dieciséis}."
+   ],
+   "cues": {
+    "c0": {
+     "s": 1,
+     "at": "enciclopedia,"
+    },
+    "c1": {
+     "s": 1,
+     "at": "cacao,"
+    },
+    "c2": {
+     "s": 3,
+     "at": "1916"
+    }
+   },
+   "cards": [
+    {
+     "ic": "pen",
+     "big": "ENCICLOPEDIA",
+     "label": "ahí buscaron la inspiración"
+    },
+    {
+     "ic": "spark",
+     "big": "CACAO",
+     "label": "copiaron la forma de su vaina"
+    },
+    {
+     "ic": "bottle",
+     "big": "1916",
+     "label": "la botella llega al mercado"
+    }
+   ]
+  },
+  {
+   "type": "venta",
+   "chip": "1919",
+   "narr": [
+    "La compañía siguió vendiendo el jarabe, ahora a todas esas plantas.",
+    "Y en {1919|mil novecientos diecinueve}, lo que a Candler le había costado {2.300 dólares|dos mil trescientos dólares} se vendió en *{25 millones|veinticinco millones}*."
+   ],
+   "cues": {
+    "costo": {
+     "s": 1,
+     "at": "lo"
+    },
+    "venta": {
+     "s": 1,
+     "at": "se"
+    }
+   },
+   "flow": [
+    "JARABE",
+    "MÁS DE 1.000 PLANTAS"
+   ],
+   "a": {
+    "label": "1891 · LO QUE LE COSTÓ A CANDLER",
+    "value": 2300
+   },
+   "b": {
+    "label": "1919 · PRECIO DE VENTA DE LA COMPAÑÍA",
+    "value": 25000000
+   },
+   "note": "Dólares de cada época, sin ajustar por inflación.",
+   "hold": 1.6,
+   "flowKick": "LA COMPAÑÍA SIGUIÓ VENDIENDO EL JARABE",
+   "art": [
+    {
+     "ic": "bag",
+     "x": 1160,
+     "y": 668,
+     "w": 150,
+     "at": "venta",
+     "d": 0.5,
+     "rot": -5
+    },
+    {
+     "ic": "coin",
+     "x": 1350,
+     "y": 690,
+     "w": 120,
+     "at": "venta",
+     "d": 0.7,
+     "rot": 8
+    }
+   ]
+  },
+  {
+   "type": "dato",
+   "chip": "1891–1919",
+   "kicker": "DE 2.300 A 25 MILLONES DE DÓLARES",
+   "big": "×10.870",
+   "unit": "EN 28 AÑOS",
+   "sub": "cálculo propio, en dólares de cada época",
+   "ic": "bag",
+   "artW": 440,
+   "artX": 1290,
+   "artY": 270,
+   "hold": 0.8,
+   "narr": [
+    "Hagamos la cuenta: es casi *{11.000 veces|once mil veces}* más, en {28|veintiocho} años.",
+    "Y buena parte de ese crecimiento pasó por una red de plantas que la compañía no tuvo que construir."
+   ],
+   "cues": {
+    "big": {
+     "s": 0,
+     "at": "11.000 veces"
+    }
+   }
+  },
+  {
+   "type": "linea",
+   "chip": "1923–1928",
+   "kicker": "ROBERT WOODRUFF · PRESIDENTE DESDE 1923",
+   "head": "TRES MOVIMIENTOS DE LOS AÑOS 20",
+   "hold": 0.9,
+   "narr": [
+    "En {1923|mil novecientos veintitrés} asumió la presidencia {Robert Woodruff|Róbert Wúdraf}, que iba a marcar a la compañía durante décadas.",
+    "Ese mismo año apareció el envase de cartón para llevar seis botellas a casa.",
+    "En {1925|mil novecientos veinticinco}, la fórmula secreta se guardó en la bóveda de un banco.",
+    "Y en {1928|mil novecientos veintiocho}, la bebida llegó a los Juegos Olímpicos de Ámsterdam."
+   ],
+   "cues": {
+    "p0": {
+     "s": 1,
+     "at": "envase"
+    },
+    "p1": {
+     "s": 2,
+     "at": "1925"
+    },
+    "p2": {
+     "s": 3,
+     "at": "1928"
+    }
+   },
+   "pts": [
+    {
+     "y": "1923",
+     "label": "seis botellas para llevar a casa",
+     "ic": "crate"
+    },
+    {
+     "y": "1925",
+     "label": "la fórmula, a la bóveda de un banco",
+     "ic": "vault"
+    },
+    {
+     "y": "1928",
+     "label": "Juegos Olímpicos de Ámsterdam",
+     "ic": "medal"
+    }
+   ]
+  },
+  {
+   "type": "cita",
+   "chip": "1941",
+   "kicker": "1941 · LA ORDEN DE WOODRUFF",
+   "text": "Una botella por <b>5 centavos</b> para cada soldado, <b>esté donde esté</b> y cueste lo que le cueste a la compañía.",
+   "by": "Robert Woodruff, según la historia oficial de la compañía (traducción)",
+   "ic": "helmet",
+   "artY": 330,
+   "hold": 1.0,
+   "narr": [
+    "Después llegó la Segunda Guerra Mundial. Cuando empezó, Coca-Cola ya se embotellaba en {44|cuarenta y cuatro} países.",
+    "En {1941|mil novecientos cuarenta y uno}, {Woodruff|Wúdraf} dio una orden.",
+    "Que cada soldado estadounidense pudiera comprar una botella por cinco centavos, estuviera donde estuviera, y costara lo que le costara a la compañía."
+   ],
+   "cues": {
+    "art": {
+     "s": 0,
+     "at": "Guerra"
+    },
+    "text": {
+     "s": 1,
+     "at": "1941"
+    }
+   }
+  },
+  {
+   "type": "cartas",
+   "chip": "1943",
+   "kicker": "1943 · EL PEDIDO DESDE EL NORTE DE ÁFRICA",
+   "hold": 0.8,
+   "narr": [
+    "En {1943|mil novecientos cuarenta y tres} llegó un pedido desde el cuartel aliado en el norte de África: equipos para *{10 plantas|diez plantas}* embotelladoras.",
+    "En seis meses, la primera ya funcionaba en Argel.",
+    "Pidieron diez. No iban a ser las únicas."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "10 plantas"
+    },
+    "c1": {
+     "s": 1,
+     "at": "primera"
+    }
+   },
+   "cards": [
+    {
+     "ic": "helmet",
+     "big": "10 PLANTAS",
+     "label": "el pedido de junio de 1943"
+    },
+    {
+     "ic": "factory",
+     "big": "ARGEL",
+     "label": "la primera, en seis meses"
+    }
+   ]
+  },
+  {
+   "type": "dato",
+   "chip": "1941–1945",
+   "kicker": "PLANTAS ENVIADAS AL EXTERIOR DURANTE LA GUERRA",
+   "num": 64,
+   "unit": "PLANTAS EMBOTELLADORAS",
+   "sub": "lo más cerca posible de las zonas de combate",
+   "chips": [
+    "más de 5.000 millones de botellas"
+   ],
+   "ic": "factory",
+   "artW": 460,
+   "artX": 1260,
+   "artY": 250,
+   "hold": 0.9,
+   "narr": [
+    "Para cumplirla, se enviaron al exterior *{64|sesenta y cuatro}* plantas embotelladoras, lo más cerca posible de las zonas de combate.",
+    "Los militares tomaron más de *{5.000 millones|cinco mil millones}* de botellas.",
+    "Y cuando la guerra terminó, esa red fue la base para crecer en el resto del mundo."
+   ],
+   "cues": {
+    "big": {
+     "s": 0,
+     "at": "64"
+    },
+    "chip0": {
+     "s": 1,
+     "at": "5.000 millones"
+    }
+   }
+  },
+  {
+   "type": "dato",
+   "chip": "1985",
+   "kicker": "23 DE ABRIL DE 1985",
+   "big": "99",
+   "unit": "AÑOS SIN CAMBIAR LA FÓRMULA",
+   "unitSize": 72,
+   "sub": "hasta ese día",
+   "ic": "flask",
+   "artW": 460,
+   "artX": 1300,
+   "artY": 250,
+   "hold": 0.8,
+   "narr": [
+    "Y ahora, el día en que la compañía tocó su producto más famoso.",
+    "El {23|veintitrés} de abril de {1985|mil novecientos ochenta y cinco} anunció una nueva fórmula para Coca-Cola.",
+    "Era el primer cambio en *{99 años|noventa y nueve años}*.",
+    "¿Por qué? Según la propia compañía, la preferencia del público venía bajando."
+   ],
+   "cues": {
+    "big": {
+     "s": 2,
+     "at": "99 años"
+    }
+   }
+  },
+  {
+   "type": "cartas",
+   "chip": "1985",
+   "kicker": "LA REACCIÓN",
+   "hold": 0.9,
+   "narr": [
+    "La reacción fue inmediata: *miles de llamadas* de protesta, y gente acumulando botellas de la fórmula anterior.",
+    "El cambio duró *{79 días|setenta y nueve días}*.",
+    "El {11|once} de julio, la fórmula original volvió a las tiendas, con el nombre {Coca-Cola Classic|Coca-Cola Clásic}.",
+    "Hoy la compañía lo cuenta como una lección sobre tomar riesgos."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "miles"
+    },
+    "c1": {
+     "s": 1,
+     "at": "79 días"
+    },
+    "c2": {
+     "s": 2,
+     "at": "11"
+    }
+   },
+   "cards": [
+    {
+     "ic": "phone",
+     "big": "MILES",
+     "label": "de llamadas de protesta"
+    },
+    {
+     "ic": "hourglass",
+     "big": "79 DÍAS",
+     "label": "duró la nueva fórmula"
+    },
+    {
+     "ic": "bottle",
+     "big": "11 JUL 1985",
+     "label": "vuelve la fórmula original"
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "1985",
+   "kicker": "ASÍ DE FUERTE FUE",
+   "hold": 0.8,
+   "narr": [
+    "Así de fuerte fue la reacción: en mayo, en Atlanta, hubo manifestantes con carteles que pedían la bebida de siempre.",
+    "Y cuando la fórmula original volvió, la noticia abrió dos noticieros nacionales y salió en la tapa de casi todos los diarios importantes."
+   ],
+   "cues": {
+    "c0": {
+     "s": 0,
+     "at": "manifestantes"
+    },
+    "c1": {
+     "s": 1,
+     "at": "noticia"
+    }
+   },
+   "cards": [
+    {
+     "ic": "person",
+     "big": "ATLANTA",
+     "label": "protestas con carteles, mayo de 1985"
+    },
+    {
+     "ic": "spark",
+     "big": "EN TAPA",
+     "label": "de casi todos los diarios importantes"
+    }
+   ]
+  },
+  {
+   "type": "hoy",
+   "chip": "HOY",
+   "narr": [
+    "Hoy la compañía dice servir *{2.200 millones|dos mil doscientos millones}* de bebidas por día, sumando todas sus marcas, en más de {200|doscientos} países.",
+    "Y siguen llegando a través de embotelladores."
+   ],
+   "cues": {
+    "numero": {
+     "s": 0,
+     "at": "2.200 millones"
+    },
+    "marcas": {
+     "s": 0,
+     "at": "sumando"
+    },
+    "paises": {
+     "s": 0,
+     "at": "en"
+    },
+    "red": {
+     "s": 1,
+     "at": "a"
+    }
+   },
+   "then": "1886 · 9 POR DÍA",
+   "big": 2200,
+   "bigUnit": "MILLONES",
+   "unit": "DE BEBIDAS POR DÍA",
+   "chips": [
+    "todas las marcas de la compañía",
+    "más de 200 países y territorios"
+   ],
+   "chain": [
+    "LA COMPAÑÍA",
+    "EMBOTELLADORES",
+    "EL PÚBLICO"
+   ],
+   "src": "Dato de la empresa",
+   "art": [
+    {
+     "ic": "globe",
+     "x": 1480,
+     "y": 250,
+     "w": 340,
+     "at": "paises",
+     "d": -0.3
+    }
+   ]
+  },
+  {
+   "type": "cartas",
+   "chip": "BALANCE",
+   "kicker": "ENTONCES, ¿FUE UN MAL NEGOCIO?",
+   "hold": 0.9,
+   "narr": [
+    "Entonces, ¿fue un mal negocio aquel contrato de un dólar?",
+    "Tuvo un costo: la compañía quedó atada durante años a un precio fijo.",
+    "Pero a cambio consiguió una red que no pagó con su dinero: *más de {1.000|mil} plantas* llevando su bebida a cada rincón del país.",
+    "Vender el jarabe, y dejar que otros embotellen. Ese modelo sigue en pie."
+   ],
+   "cues": {
+    "c0": {
+     "s": 1,
+     "at": "costo:"
+    },
+    "c1": {
+     "s": 2,
+     "at": "1.000"
+    },
+    "c2": {
+     "s": 3,
+     "at": "Vender"
+    }
+   },
+   "cards": [
+    {
+     "ic": "bill",
+     "big": "EL COSTO",
+     "label": "años atada a un precio fijo"
+    },
+    {
+     "ic": "factory",
+     "big": "1.000+ PLANTAS",
+     "label": "de empresarios locales"
+    },
+    {
+     "ic": "globe",
+     "big": "EL MODELO",
+     "label": "vender el jarabe, que otros embotellen"
+    }
+   ]
+  },
+  {
+   "type": "linea",
+   "chip": "RESUMEN",
+   "kicker": "EL RECORRIDO",
+   "hold": 1.0,
+   "narr": [
+    "Repasemos el recorrido.",
+    "{1886|Mil ochocientos ochenta y seis}: nueve vasos por día.",
+    "{1899|Mil ochocientos noventa y nueve}: un contrato de un dólar.",
+    "{1919|Mil novecientos diecinueve}: la compañía se vende en veinticinco millones.",
+    "Y hoy: dos mil doscientos millones de bebidas por día."
+   ],
+   "cues": {
+    "p0": {
+     "s": 1,
+     "at": "1886"
+    },
+    "p1": {
+     "s": 2,
+     "at": "1899"
+    },
+    "p2": {
+     "s": 3,
+     "at": "1919"
+    },
+    "p3": {
+     "s": 4,
+     "at": "hoy:"
+    }
+   },
+   "pts": [
+    {
+     "y": "1886",
+     "label": "9 vasos por día",
+     "ic": "glass"
+    },
+    {
+     "y": "1899",
+     "label": "el contrato de 1 dólar",
+     "ic": "bill"
+    },
+    {
+     "y": "1919",
+     "label": "se vende en 25 millones",
+     "ic": "bag"
+    },
+    {
+     "y": "HOY",
+     "label": "2.200 millones de bebidas por día",
+     "ic": "globe"
+    }
+   ]
+  },
+  {
+   "type": "cierre",
+   "chip": "",
+   "narr": [
+    "*{1 dólar|Un dólar}* por un contrato.",
+    "Y a cambio, *más de {1.000|mil} plantas* vendiendo su bebida.",
+    "Esto fue Cifra Clave: historias de empresas, contadas con datos. Si te gustó, suscríbete para ver la próxima."
+   ],
+   "cues": {
+    "recapA": {
+     "s": 0,
+     "at": "1 dólar"
+    },
+    "recapB": {
+     "s": 1,
+     "at": "más"
+    },
+    "marca": {
+     "s": 2,
+     "at": "Esto"
+    }
+   },
+   "tag": "Historias de empresas, contadas con datos.",
+   "sources": "Fuentes: The Coca-Cola Company (páginas de historia, folleto «125 años», sitio de inversores y presentación ante la SEC de 2025), Tennessee Encyclopedia, NPR Planet Money y el estudio de Levy y Young sobre el precio de 5 centavos. Consultadas el 27 y 28/11/2026.",
+   "legal": "Contenido informativo. No es recomendación de inversión. Voz generada con IA.",
+   "recap": [
+    {
+     "big": "USD 1",
+     "label": "UN CONTRATO"
+    },
+    {
+     "big": "1.000+",
+     "label": "PLANTAS EN 20 AÑOS"
+    }
+   ]
+  }
+ ]
+}
